@@ -29,12 +29,6 @@
 
 
   if( !is_admin() ) {
-    // Remove script de emoji
-    remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-
-    // Remove estilos do emoji
-    remove_action( 'admin_print_styles', 'print_emoji_styles' );
-
     // Remove os links da postagem proximo e anterior
     remove_action( 'wp_head', 'adjacent_posts_rel_link', 10, 0 );
     remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
@@ -44,6 +38,9 @@
 
     // Remove todos os links de feed rss extras
     remove_action( 'wp_head', 'feed_links_extra', 3 );
+
+    // Remove script de emoji
+    remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 
     // Remove o link de descoberta simples
     remove_action( 'wp_head', 'rsd_link' );
@@ -62,6 +59,9 @@
 
     // Remove a tag de link da API REST no cabeçalho da página
     remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
+
+    // Remove estilos do emoji
+    remove_action( 'wp_print_styles', 'print_emoji_styles' );
   }
 
   if( !function_exists( 'ka_init_setup' ) ) {
