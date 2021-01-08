@@ -27,7 +27,6 @@
   // Hook remove scripts que estão no footer
   add_action( 'wp_footer', 'deregister_scripts' );
 
-
   if( !is_admin() ) {
     // Remove os links da postagem proximo e anterior
     remove_action( 'wp_head', 'adjacent_posts_rel_link', 10, 0 );
@@ -73,6 +72,9 @@
      */
     function ka_init_setup() {
       global $ka_dir;
+
+      // Inicializa o arquivo de internacionalização
+      load_theme_textdomain( 'kauabanga', $ka_dir . 'languages' );
 
       // Adiciona suporte ao WooCommerce
       add_theme_support( 'woocommerce' );
