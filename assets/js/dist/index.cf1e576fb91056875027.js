@@ -1,0 +1,1 @@
+console.log(new function n(o){return function(n,o){if(!(n instanceof o))throw new TypeError("Cannot call a class as a function")}(this,n),o}("P"));

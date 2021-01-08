@@ -11,8 +11,10 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "prettier/prettier": "error",
+    "func-names": "off",
+    "import/no-extraneous-dependencies": "off",
     "no-param-reassign": "off",
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "prettier/prettier": "error"
   }
 }
