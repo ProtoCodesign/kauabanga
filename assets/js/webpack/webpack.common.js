@@ -10,6 +10,10 @@ const PATHS = {
     sass: resolve(__dirname, '..', '..', 'sass', 'style.scss'),
     ts: resolve(__dirname, '..', 'src', 'index.ts'),
   },
+  watch: [
+    resolve(__dirname, '..', '..', '..', '**', '*.php'),
+    resolve(__dirname, '..', '..', '..', 'languages', '*.pot'),
+  ],
 };
 
 const commonConfig = {
