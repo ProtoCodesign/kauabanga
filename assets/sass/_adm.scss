@@ -1,0 +1,9 @@
+.customize-support header {
+  margin-top: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed;
+  }
+}

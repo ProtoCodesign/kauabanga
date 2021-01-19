@@ -14,3 +14,18 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: header.php:30, header.php:35
+msgid "Pesquisar"
+msgstr ""
+
+#: header.php:42, header.php:44
+msgid "Categorias"
+msgstr ""
+
+#: header.php:49, header.php:50
+msgid "Minha conta"
+msgstr ""
+
+#: header.php:54, header.php:60
+msgid "Carrinho"
+msgstr ""
