@@ -4,9 +4,52 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.2.3
+  Version: 0.2.4
   Text Domain: kauabanga
 */
+/* Reset styles */
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+p,
+small,
+a,
+div,
+section,
+ul,
+li,
+tr,
+td,
+th,
+footer,
+header,
+nav,
+img,
+input,
+textarea,
+label,
+button,
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none; }
+
+img {
+  display: block; }
+
+button {
+  box-shadow: none; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
 /* Grid */
 .container {
   width: 85%;

@@ -1,0 +1,46 @@
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+p,
+small,
+a,
+div,
+section,
+ul,
+li,
+tr,
+td,
+th,
+footer,
+header,
+nav,
+img,
+input,
+textarea,
+label,
+button,
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  box-shadow: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
