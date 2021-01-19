@@ -2,6 +2,8 @@
   // Template Name: Home
 
   get_header();
+
+  global $ka_uri;
 ?>
 
 <?php if( get_theme_mod( 'banner-home-top-active' ) ) { ?>
@@ -19,5 +21,23 @@
 </main>
 <?php } ?>
 
+<?php if( get_theme_mod( 'banner-home-regua-active' ) ) { ?>
+<section class="banner-ruler">
+  <span>
+    <img src="<?= $ka_uri; ?>assets/svgs/icons/safe.svg" alt="<?php esc_attr_e( 'Compra segura', 'kauabanga' ); ?>" />
+    <?php _e( 'Sua compra é 100% segura', 'kauabanga' ); ?>
+  </span>
+  <span>
+    <img src="<?= $ka_uri; ?>assets/svgs/icons/credit-card.svg"
+      alt="<?php esc_attr_e( 'Compre parcelado', 'kauabanga' ); ?>" />
+    <?php _e( 'Parcele em até 12x sem juros', 'kauabanga' ); ?>
+  </span>
+  <span>
+    <img src="<?= $ka_uri; ?>assets/svgs/icons/truck.svg"
+      alt="<?php esc_attr_e( 'Entrega por todo o Brasil', 'kauabanga' ); ?>" />
+    <?php _e( 'Entrega por todo o Brasil', 'kauabanga' ); ?>
+  </span>
+</section>
+<?php } ?>
 
 <?php get_footer(); ?>

@@ -38,7 +38,7 @@ msgstr ""
 msgid "Topo"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:25
+#: inc/customizer/customize-banners.php:25, inc/customizer/customize-banners.php:127
 msgid "Ativar/Desativar"
 msgstr ""
 
@@ -46,26 +46,50 @@ msgstr ""
 msgid "Imagem do anúncio"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:54
+#: inc/customizer/customize-banners.php:58
 msgid "Título"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:70
+#: inc/customizer/customize-banners.php:74
 msgid "Descrição"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:80
+#: inc/customizer/customize-banners.php:84
 msgid "Ver Mais"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:86
+#: inc/customizer/customize-banners.php:90
 msgid "Botão título"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:103
+#: inc/customizer/customize-banners.php:107
 msgid "Link"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:115
+msgid "Régua"
 msgstr ""
 
 #: page-home.php:2
 msgid "Home"
+msgstr ""
+
+#: page-home.php:27
+msgid "Compra segura"
+msgstr ""
+
+#: page-home.php:28
+msgid "Sua compra é 100% segura"
+msgstr ""
+
+#: page-home.php:32
+msgid "Compre parcelado"
+msgstr ""
+
+#: page-home.php:33
+msgid "Parcele em até 12x sem juros"
+msgstr ""
+
+#: page-home.php:37, page-home.php:38
+msgid "Entrega por todo o Brasil"
 msgstr ""
