@@ -14,18 +14,58 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: header.php:30, header.php:35
+#: header.php:30, header.php:37
 msgid "Pesquisar"
 msgstr ""
 
-#: header.php:42, header.php:44
+#: header.php:44, header.php:47
 msgid "Categorias"
 msgstr ""
 
-#: header.php:49, header.php:50
+#: header.php:52, header.php:54
 msgid "Minha conta"
 msgstr ""
 
-#: header.php:54, header.php:60
+#: header.php:58, header.php:64
 msgid "Carrinho"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:4
+msgid "Banners"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:13
+msgid "Topo"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:25
+msgid "Ativar/Desativar"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:41
+msgid "Imagem do anúncio"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:54
+msgid "Título"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:70
+msgid "Descrição"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:80
+msgid "Ver Mais"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:86
+msgid "Botão título"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:103
+msgid "Link"
+msgstr ""
+
+#: page-home.php:2
+msgid "Home"
 msgstr ""

@@ -859,3 +859,63 @@ nav a img {
   left: 10px;
   top: -2px; }
 
+/* Banner home */
+.banner-home {
+  width: 100%;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center; }
+
+.banner-content h1 {
+  color: #fff;
+  margin-bottom: 30px; }
+
+.banner-content h4 {
+  color: #d6d6d6;
+  font-weight: 500;
+  margin-bottom: 60px; }
+
+@media only screen and (max-width: 1599px) {
+  .banner-home {
+    height: 65vh; }
+  .banner-content h1 {
+    margin-bottom: 24px; }
+  .banner-content h4 {
+    margin-bottom: 48px; } }
+
+/* Banner ruler */
+.banner-ruler {
+  width: 100%;
+  background-color: #25201b;
+  padding-bottom: 45px;
+  padding-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.banner-ruler span {
+  color: #ededed;
+  display: inline-flex;
+  align-items: center; }
+
+.banner-ruler span + span {
+  margin-left: 60px; }
+
+.banner-ruler span img {
+  display: inline-block;
+  height: 45px;
+  margin-right: 10px; }
+
+@media only screen and (max-width: 1599px) {
+  .banner-ruler {
+    padding-bottom: 36px;
+    padding-top: 36px; }
+  .banner-ruler span + span {
+    margin-left: 48px; }
+  .banner-ruler span img {
+    height: 36px;
+    margin-right: 8px; } }
+

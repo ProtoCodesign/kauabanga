@@ -1,5 +1,7 @@
 <?php
   if( is_customize_preview() ) {
+    global $ka_dir;
+
     /**
      * Remove seções do customizador
      *
@@ -11,5 +13,7 @@
       $wp_customize->remove_section( 'custom_css' ); // Remove a customização de css
     }
     add_action( 'customize_register', 'remove_customize', 10 );
+
+    require_once( $ka_dir . 'inc/customizer/customize-banners.php'  );
   }
 ?>
