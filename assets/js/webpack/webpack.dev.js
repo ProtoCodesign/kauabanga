@@ -7,11 +7,6 @@ const devConfig = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/i,
-        use: 'ts-loader',
-        exclude: /node_modules/,
-      },
-      {
         test: /\.s(a|c)ss$/i,
         use: [
           {
