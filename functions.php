@@ -19,7 +19,10 @@
   $ka_uri = trailingslashit( get_template_directory_uri() );
 
   // Hook executa as configurações do tema
-  add_action( 'after_setup_theme', 'ka_init_setup' );
+  add_action( 'after_setup_theme', 'ka_setup_init', 0 );
+
+  // Hook executa as configurações do tema
+  add_action( 'after_setup_theme', 'ka_customizer_init', 5 );
 
   // Hook remove estilos do wordpress
   add_action( 'wp_enqueue_scripts', 'deregister_styles' );
@@ -63,14 +66,14 @@
     remove_action( 'wp_print_styles', 'print_emoji_styles' );
   }
 
-  if( !function_exists( 'ka_init_setup' ) ) {
+  if( !function_exists( 'ka_setup_init' ) ) {
     /**
      * Carrega as configurações do tema
      *
      * @since 0.1.0
      * @return void
      */
-    function ka_init_setup() {
+    function ka_setup_init() {
       global $ka_dir;
 
       // Inicializa o arquivo de internacionalização
@@ -79,9 +82,24 @@
       // Adiciona suporte ao WooCommerce
       add_theme_support( 'woocommerce' );
 
+      // Adiciona suporte a atualização em tempo real
+      add_theme_support( 'customize-selective-refresh-widgets' );
+
       // Importa as outras configurações do tema
       require_once( $ka_dir . 'inc/kauabanga.php' );
     }
+  }
+
+  /**
+   * Inicializa a visualização customizada
+   *
+   * @since 0.3.2
+   * @return void
+   */
+  function ka_customizer_init() {
+    global $ka_dir;
+
+    require_once( $ka_dir . 'inc/customizer/customizer.php' );
   }
 
   /**

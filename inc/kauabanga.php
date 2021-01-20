@@ -49,4 +49,6 @@
       wp_enqueue_style( 'ka-style');
     endif;
   }
+
+  require_once( $ka_dir . 'inc/wc-functions.php' );
 ?>
