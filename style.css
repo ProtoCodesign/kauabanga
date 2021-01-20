@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.4.3
+  Version: 0.4.7
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -1012,4 +1012,37 @@ nav a img {
     padding: 12px 8px 0px 8px; }
   .product-info .price .current-price {
     margin-left: 4px; } }
+
+/* Newsletter */
+.newsletter {
+  background-color: #25201b;
+  padding-bottom: 90px;
+  padding-top: 90px; }
+
+.newsletter .container {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center; }
+
+.newsletter h4 {
+  display: inline-flex;
+  color: #ffffff; }
+
+.newsletter .input-with-button {
+  display: flex;
+  flex: 1;
+  margin-left: 45px; }
+
+.newsletter .input-with-button button {
+  margin-left: 10px; }
+
+@media only screen and (max-width: 1599px) {
+  .newsletter {
+    padding-bottom: 72px;
+    padding-top: 72px; }
+  .newsletter .input-with-button {
+    margin-left: 36px; }
+  .newsletter .input-with-button button {
+    margin-left: 8px; } }
 

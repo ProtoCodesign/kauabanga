@@ -42,7 +42,7 @@ msgstr ""
 msgid "Topo"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:25, inc/customizer/customize-banners.php:127
+#: inc/customizer/customize-banners.php:25, inc/customizer/customize-banners.php:127, inc/customizer/customize-newsletter.php:17
 msgid "Ativar/Desativar"
 msgstr ""
 
@@ -54,7 +54,7 @@ msgstr ""
 msgid "Título"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:74
+#: inc/customizer/customize-banners.php:74, inc/customizer/customize-newsletter.php:33
 msgid "Descrição"
 msgstr ""
 
@@ -72,6 +72,22 @@ msgstr ""
 
 #: inc/customizer/customize-banners.php:115
 msgid "Régua"
+msgstr ""
+
+#: inc/customizer/customize-newsletter.php:4
+msgid "Newsletter"
+msgstr ""
+
+#: inc/customizer/customize-newsletter.php:27
+msgid "Assine a nossa newsletter e receba promoções em primeira mão!"
+msgstr ""
+
+#: inc/customizer/customize-newsletter.php:43
+msgid "Enviar"
+msgstr ""
+
+#: inc/customizer/customize-newsletter.php:49
+msgid "Botão"
 msgstr ""
 
 #: page-home.php:2

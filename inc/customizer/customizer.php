@@ -14,6 +14,7 @@
     }
     add_action( 'customize_register', 'remove_customize', 10 );
 
-    require_once( $ka_dir . 'inc/customizer/customize-banners.php'  );
+    require_once( $ka_dir . 'inc/customizer/customize-newsletter.php' );
+    require_once( $ka_dir . 'inc/customizer/customize-banners.php' );
   }
 ?>

@@ -68,4 +68,16 @@
   <?php ka_product_list( $data['sales'] ); ?>
 </section>
 
+<?php if( get_theme_mod( 'newsletter-active' ) ) { ?>
+<section class="newsletter">
+  <div class="row container col l12 xl12">
+    <h4><?= get_theme_mod( 'newsletter-description' ); ?></h4>
+    <form class="input-with-button">
+      <input type="email" class="bg-dark" placeholder="Email">
+      <button type="submit" class="btn-secondary"><?= get_theme_mod( 'newsletter-button-title' ); ?></button>
+    </form>
+  </div>
+</section>
+<?php } ?>
+
 <?php get_footer(); ?>
