@@ -6,10 +6,18 @@
   global $ka_uri;
 
   $data = array();
-  $data['featured_products'] = sanitize_products( wc_get_products( array(
-        'limit'  => 12,
-        'featured' => true,
-        'orderBy' => 'date'
+  $data['featured'] = sanitize_products( wc_get_products( array(
+        'limit'     => 12,
+        'orderby'   => 'date',
+        'featured'  => true
+      )
+    )
+  );
+  $data['sales'] = sanitize_products( wc_get_products( array(
+        'limit'     => 12,
+        'order'     => 'DESC',
+        'orderby'   => 'meta_value_num',
+        'meta_key'  => 'total_sales'
       )
     )
   );
@@ -52,7 +60,12 @@
 
 <section class="ka-highlights container">
   <h2 class="ka-title"><?php _e( 'Destaques', 'kauabanga' ); ?></h2>
-  <?php ka_product_list( $data['featured_products'] ); ?>
+  <?php ka_product_list( $data['featured'] ); ?>
+</section>
+
+<section class="ka-highlights container">
+  <h2 class="ka-title"><?php _e( 'Mais vendidos', 'kauabanga' ); ?></h2>
+  <?php ka_product_list( $data['sales'] ); ?>
 </section>
 
 <?php get_footer(); ?>

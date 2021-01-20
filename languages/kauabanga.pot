@@ -78,26 +78,30 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: page-home.php:36
+#: page-home.php:44
 msgid "Compra segura"
 msgstr ""
 
-#: page-home.php:38
+#: page-home.php:46
 msgid "Sua compra é 100% segura"
 msgstr ""
 
-#: page-home.php:42
+#: page-home.php:50
 msgid "Compre parcelado"
 msgstr ""
 
-#: page-home.php:43
+#: page-home.php:51
 msgid "Parcele em até 12x sem juros"
 msgstr ""
 
-#: page-home.php:47, page-home.php:48
+#: page-home.php:55, page-home.php:56
 msgid "Entrega por todo o Brasil"
 msgstr ""
 
-#: page-home.php:54
+#: page-home.php:62
 msgid "Destaques"
+msgstr ""
+
+#: page-home.php:67
+msgid "Mais vendidos"
 msgstr ""
