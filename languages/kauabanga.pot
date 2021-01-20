@@ -30,6 +30,10 @@ msgstr ""
 msgid "Carrinho"
 msgstr ""
 
+#: inc/wc-functions.php:55, inc/wc-functions.php:59
+msgid "R$"
+msgstr ""
+
 #: inc/customizer/customize-banners.php:4
 msgid "Banners"
 msgstr ""
@@ -74,22 +78,26 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: page-home.php:27
+#: page-home.php:36
 msgid "Compra segura"
 msgstr ""
 
-#: page-home.php:28
+#: page-home.php:38
 msgid "Sua compra é 100% segura"
 msgstr ""
 
-#: page-home.php:32
+#: page-home.php:42
 msgid "Compre parcelado"
 msgstr ""
 
-#: page-home.php:33
+#: page-home.php:43
 msgid "Parcele em até 12x sem juros"
 msgstr ""
 
-#: page-home.php:37, page-home.php:38
+#: page-home.php:47, page-home.php:48
 msgid "Entrega por todo o Brasil"
+msgstr ""
+
+#: page-home.php:54
+msgid "Destaques"
 msgstr ""
