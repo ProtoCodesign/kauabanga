@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.4.7
+  Version: 0.5.0
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -1045,4 +1045,67 @@ nav a img {
     margin-left: 36px; }
   .newsletter .input-with-button button {
     margin-left: 8px; } }
+
+/* Footer */
+footer {
+  background-color: #0c0905; }
+
+footer .main-content {
+  padding-bottom: 90px;
+  padding-top: 90px; }
+
+footer .business-info {
+  color: #ffffff;
+  padding: 45px 0;
+  background-color: #3c3430;
+  text-align: center; }
+
+footer .main-content .col {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+footer h4 {
+  color: #f7bc28; }
+
+footer p {
+  color: #d6d6d6;
+  margin-top: 20px; }
+
+footer a {
+  color: #ffffff;
+  display: block;
+  margin-top: 20px; }
+
+footer .logo {
+  margin-top: 5px; }
+
+.footer-socials a {
+  display: flex;
+  align-items: center; }
+
+.footer-socials a img {
+  display: inline-block;
+  width: 30px;
+  padding: 5px;
+  background-color: #6b635f;
+  border-radius: 5px;
+  margin-right: 10px; }
+
+@media only screen and (max-width: 1599px) {
+  footer .main-content {
+    padding-bottom: 72px;
+    padding-top: 72px; }
+  footer .business-info {
+    padding: 36px 0; }
+  footer p {
+    margin-top: 16px; }
+  footer a {
+    margin-top: 16px; }
+  footer .logo {
+    margin-top: 5px; }
+  .footer-socials a img {
+    width: 24px;
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 8px; } }
 

@@ -14,6 +14,58 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: footer.php:28
+msgid "Kauabanga"
+msgstr ""
+
+#: footer.php:32
+msgid "Todos os direitos reservados &#169;"
+msgstr ""
+
+#: footer.php:43, inc/customizer/customize-footer.php:12
+msgid "Navegação"
+msgstr ""
+
+#: footer.php:87, inc/customizer/customize-footer.php:100
+msgid "Institucional"
+msgstr ""
+
+#: footer.php:124, inc/customizer/customize-footer.php:188
+msgid "Redes sociais"
+msgstr ""
+
+#: footer.php:129
+msgid "Facebook kauabanga"
+msgstr ""
+
+#: footer.php:136
+msgid "Instagram kauabanga"
+msgstr ""
+
+#: footer.php:144
+msgid "Whatsapp kauabanga"
+msgstr ""
+
+#: footer.php:151
+msgid "Formas de pagamento"
+msgstr ""
+
+#: footer.php:153
+msgid "Cartão de crédito"
+msgstr ""
+
+#: footer.php:154
+msgid "Débito em conta"
+msgstr ""
+
+#: footer.php:155
+msgid "Boleto bancário"
+msgstr ""
+
+#: footer.php:156
+msgid "Tranferência PIX"
+msgstr ""
+
 #: header.php:30, header.php:37
 msgid "Pesquisar"
 msgstr ""
@@ -38,11 +90,15 @@ msgstr ""
 msgid "Banners"
 msgstr ""
 
+#: inc/customizer/customize-banners.php:6
+msgid "Área de configurações dos banners da loja"
+msgstr ""
+
 #: inc/customizer/customize-banners.php:13
 msgid "Topo"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:25, inc/customizer/customize-banners.php:127, inc/customizer/customize-newsletter.php:17
+#: inc/customizer/customize-banners.php:25, inc/customizer/customize-banners.php:127, inc/customizer/customize-footer.php:200, inc/customizer/customize-footer.php:232, inc/customizer/customize-footer.php:264, inc/customizer/customize-newsletter.php:17
 msgid "Ativar/Desativar"
 msgstr ""
 
@@ -74,8 +130,60 @@ msgstr ""
 msgid "Régua"
 msgstr ""
 
+#: inc/customizer/customize-footer.php:4
+msgid "Rodapé"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:6
+msgid "Área de configurações do rodapé"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:24, inc/customizer/customize-footer.php:112
+msgid "Página 1"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:40, inc/customizer/customize-footer.php:128
+msgid "Página 2"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:56, inc/customizer/customize-footer.php:144
+msgid "Página 3"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:72, inc/customizer/customize-footer.php:160
+msgid "Página 4"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:88, inc/customizer/customize-footer.php:176
+msgid "Página 5"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:210
+msgid "https://facebook.com/"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:216
+msgid "Link(Facebook)"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:242
+msgid "https://www.instagram.com/"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:248
+msgid "Link(Instagram)"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:280
+msgid "Número(Whatsapp)"
+msgstr ""
+
 #: inc/customizer/customize-newsletter.php:4
 msgid "Newsletter"
+msgstr ""
+
+#: inc/customizer/customize-newsletter.php:6
+msgid "Área de configurações da newsletter da loja"
 msgstr ""
 
 #: inc/customizer/customize-newsletter.php:27
@@ -88,6 +196,10 @@ msgstr ""
 
 #: inc/customizer/customize-newsletter.php:49
 msgid "Botão"
+msgstr ""
+
+#: inc/customizer/customizer.php:23
+msgid "Informações da empresa"
 msgstr ""
 
 #: page-home.php:2

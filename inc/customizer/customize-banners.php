@@ -3,7 +3,7 @@
     $wp_customize->add_panel( 'banners', array(
         'title'            => __( 'Banners', 'kauabanga' ),
         'priority'         => 30,
-        'description'      => __( 'Área de configurações dos banners da loja' ),
+        'description'      => __( 'Área de configurações dos banners da loja', 'kauabanga' ),
         'active_callback'  => 'is_front_page'
       )
     );
@@ -135,5 +135,5 @@
     );
   }
 
-  add_action( 'customize_register', 'customize_banners', 30 );
+  add_action( 'customize_register', 'customize_banners', 15 );
 ?>
