@@ -82,7 +82,7 @@ msgstr ""
 msgid "Carrinho"
 msgstr ""
 
-#: inc/wc-functions.php:55, inc/wc-functions.php:59
+#: inc/wc-functions.php:55, inc/wc-functions.php:59, woocommerce/archive-product.php:86, woocommerce/archive-product.php:90
 msgid "R$"
 msgstr ""
 
@@ -234,34 +234,34 @@ msgstr ""
 msgid "Mais vendidos"
 msgstr ""
 
-#: woocommerce/archive-product.php:9
+#: woocommerce/archive-product.php:22
 msgid "Filtrar"
 msgstr ""
 
-#: woocommerce/archive-product.php:12
+#: woocommerce/archive-product.php:25
 msgid "Preço"
 msgstr ""
 
-#: woocommerce/archive-product.php:16
+#: woocommerce/archive-product.php:29
 msgid "Até R$100"
 msgstr ""
 
-#: woocommerce/archive-product.php:22
+#: woocommerce/archive-product.php:35
 msgid "R$100 a R$300"
 msgstr ""
 
-#: woocommerce/archive-product.php:28
+#: woocommerce/archive-product.php:41
 msgid "R$300 a R$700"
 msgstr ""
 
-#: woocommerce/archive-product.php:34
+#: woocommerce/archive-product.php:47
 msgid "R$700 a R$1200"
 msgstr ""
 
-#: woocommerce/archive-product.php:40
+#: woocommerce/archive-product.php:53
 msgid "Mínimo"
 msgstr ""
 
-#: woocommerce/archive-product.php:43
+#: woocommerce/archive-product.php:56
 msgid "Máximo"
 msgstr ""

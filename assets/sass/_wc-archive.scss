@@ -1,0 +1,87 @@
+.section-main {
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.woocommerce-ordering {
+  float: none !important;
+  margin-bottom: 0 !important;
+  margin-right: 15px !important;
+  margin-left: auto !important;
+  z-index: 2;
+  width: 38%;
+  border-radius: 5px;
+
+  select {
+    padding: 20px 25px;
+    background-color: #f4f4f4;
+    color: #6b635f;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    outline: none;
+  }
+}
+
+.showcase-archive .row {
+  min-width: 100%;
+  z-index: 1;
+}
+
+.showcase-archive .row .col,
+.showcase-archive.col {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-links {
+  margin-left: 15px;
+  margin-top: 60px;
+
+  .page-numbers {
+    padding: 16px 24px;
+    border-radius: 5px;
+    color: #afafaf;
+    background-color: #f4f4f4;
+    font-weight: 600;
+  }
+
+  .page-numbers + .page-numbers {
+    margin-left: 10px;
+  }
+
+  span.page-numbers {
+    color: #ffffff;
+    background-color: #554d49;
+  }
+
+  .next::after,
+  .prev::before {
+    content: "";
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNC44MjkiIHZpZXdCb3g9IjAgMCAxOCAxNC44MjkiPgogIDxnIGlkPSJhcnJvdy1idXR0b24iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01MjcuNSAtNzczLjA4NikiPgogICAgPHBhdGggaWQ9IkNhbWluaG9fNzQiIGRhdGEtbmFtZT0iQ2FtaW5obyA3NCIgZD0iTTEzMzkuNjQxLDk4Ljg4M2w2LDYsNi02IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MzkuNjE3IDIxMjYuMTQxKSByb3RhdGUoLTkwKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjUyMDFiIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHBhdGggaWQ9IkNhbWluaG9fNzUiIGRhdGEtbmFtZT0iQ2FtaW5obyA3NSIgZD0iTTUxMS4xNiw3ODBoMTYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3LjM0IDAuNSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI1MjAxYiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8L2c+Cjwvc3ZnPgo=");
+    margin-left: 8px;
+    width: 18px;
+    height: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .prev::before {
+    margin-left: 0;
+    margin-right: 8px;
+    transform: rotate(180deg);
+  }
+
+  .next,
+  .prev {
+    background-color: #f7bc28;
+    color: #25201b;
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  .woocommerce-ordering {
+    margin-right: 12px !important;
+  }
+}
