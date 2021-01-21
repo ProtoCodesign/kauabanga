@@ -6,7 +6,6 @@ const PATHS = {
   dist: resolve(__dirname, '..', 'dist'),
   files: {
     css: join('..', '..', '..', '[name].css'),
-    cssMin: join('..', '..', '..', '[name].min.css'),
     sass: resolve(__dirname, '..', '..', 'sass', 'style.scss'),
     ts: resolve(__dirname, '..', 'src', 'index.ts'),
   },
@@ -49,9 +48,7 @@ const commonConfig = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: process.argv.includes('production')
-        ? PATHS.files.cssMin
-        : PATHS.files.css,
+      filename: PATHS.files.css,
     }),
     new CleanWebpackPlugin(),
   ],

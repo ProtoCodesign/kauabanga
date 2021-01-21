@@ -25,29 +25,19 @@
   function ka_register_styles() {
     global $ka_uri, $ka_version;
 
-    // Registra o estilo minificado
-    wp_register_style( 'ka-style-min' , $ka_uri . 'style.min.css',
-      [], $ka_version
-    );
-
     // Registra o estilo padrão
     wp_register_style( 'ka-style' , $ka_uri . 'style.css', [], $ka_version );
   }
 
   /**
-   * Carrega estilos do tema dependendo do ambiente
+   * Carrega estilos do tema
    *
    * @since 0.1.0
    * @return void
    */
   function ka_enqueue_styles() {
-    if( !is_admin() ) :
-      // Carrega o estilo minificado
-      wp_enqueue_style( 'ka-style-min' );
-    else :
-      // Carrega o estilo padrão
-      wp_enqueue_style( 'ka-style');
-    endif;
+    // Carrega o estilo padrão
+    wp_enqueue_style( 'ka-style');
   }
 
   require_once( $ka_dir . 'inc/wc-functions.php' );
