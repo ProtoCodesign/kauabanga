@@ -9,13 +9,6 @@ header {
   z-index: 999;
 }
 
-@media only screen and (max-width: 1599px) {
-  header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-}
-
 header div {
   display: flex;
   align-items: center;
@@ -29,12 +22,6 @@ header .logo {
 .logo img {
   align-items: center;
   height: 35px;
-}
-
-@media only screen and (max-width: 1599px) {
-  .logo img {
-    height: 28px;
-  }
 }
 
 header .container .col {
@@ -60,37 +47,6 @@ header .container .col {
   right: 15px;
 }
 
-@media only screen and (max-width: 1599px) {
-  .search button {
-    padding: 16px;
-    right: 12px;
-  }
-
-  .search button img {
-    width: 16px;
-  }
-
-  .nav-dropdown img {
-    margin-left: 8px;
-    height: 7px;
-  }
-
-  nav a img {
-    height: 20px;
-    margin-right: 4px;
-  }
-
-  .link-cart,
-  .link-account {
-    margin-left: 24px;
-  }
-
-  .count-itens-cart {
-    left: 8px;
-    top: -2px;
-  }
-}
-
 .search button img {
   width: 20px;
 }
@@ -98,6 +54,7 @@ header .container .col {
 nav {
   display: inline-flex;
   align-items: center;
+  margin-right: 15px;
 }
 
 nav * {
@@ -139,4 +96,48 @@ nav a img {
   position: absolute;
   left: 10px;
   top: -2px;
+}
+
+@media only screen and (max-width: 1599px) {
+  header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .logo img {
+    height: 28px;
+  }
+
+  .search button {
+    padding: 16px;
+    right: 12px;
+  }
+
+  .search button img {
+    width: 16px;
+  }
+
+  .nav-dropdown img {
+    margin-left: 8px;
+    height: 7px;
+  }
+
+  nav {
+    margin-right: 12px;
+  }
+
+  nav a img {
+    height: 20px;
+    margin-right: 4px;
+  }
+
+  .link-cart,
+  .link-account {
+    margin-left: 24px;
+  }
+
+  .count-itens-cart {
+    left: 8px;
+    top: -2px;
+  }
 }

@@ -26,43 +26,43 @@ msgstr ""
 msgid "Navegação"
 msgstr ""
 
-#: footer.php:87, inc/customizer/customize-footer.php:100
+#: footer.php:86, inc/customizer/customize-footer.php:100
 msgid "Institucional"
 msgstr ""
 
-#: footer.php:124, inc/customizer/customize-footer.php:188
+#: footer.php:123, inc/customizer/customize-footer.php:188
 msgid "Redes sociais"
 msgstr ""
 
-#: footer.php:129
+#: footer.php:128
 msgid "Facebook kauabanga"
 msgstr ""
 
-#: footer.php:136
+#: footer.php:135
 msgid "Instagram kauabanga"
 msgstr ""
 
-#: footer.php:144
+#: footer.php:143
 msgid "Whatsapp kauabanga"
 msgstr ""
 
-#: footer.php:151
+#: footer.php:150
 msgid "Formas de pagamento"
 msgstr ""
 
-#: footer.php:153
+#: footer.php:152
 msgid "Cartão de crédito"
 msgstr ""
 
-#: footer.php:154
+#: footer.php:153
 msgid "Débito em conta"
 msgstr ""
 
-#: footer.php:155
+#: footer.php:154
 msgid "Boleto bancário"
 msgstr ""
 
-#: footer.php:156
+#: footer.php:155
 msgid "Tranferência PIX"
 msgstr ""
 
@@ -232,4 +232,36 @@ msgstr ""
 
 #: page-home.php:67
 msgid "Mais vendidos"
+msgstr ""
+
+#: woocommerce/archive-product.php:9
+msgid "Filtrar"
+msgstr ""
+
+#: woocommerce/archive-product.php:12
+msgid "Preço"
+msgstr ""
+
+#: woocommerce/archive-product.php:16
+msgid "Até R$100"
+msgstr ""
+
+#: woocommerce/archive-product.php:22
+msgid "R$100 a R$300"
+msgstr ""
+
+#: woocommerce/archive-product.php:28
+msgid "R$300 a R$700"
+msgstr ""
+
+#: woocommerce/archive-product.php:34
+msgid "R$700 a R$1200"
+msgstr ""
+
+#: woocommerce/archive-product.php:40
+msgid "Mínimo"
+msgstr ""
+
+#: woocommerce/archive-product.php:43
+msgid "Máximo"
 msgstr ""
