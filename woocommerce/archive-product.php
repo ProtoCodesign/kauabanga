@@ -67,6 +67,12 @@
     <div class="row">
       <?php if( is_array( $data['products'] ) ) : ?>
       <?php ka_product_list( $data['products'], 'col l4 xl4', array( 'container' => false ) ); ?>
+      <?php the_posts_pagination( array(
+            'prev_text' => __( 'Anterior', 'kauabanga' ),
+            'next_text' => __( 'Próxima', 'kauabanga' ),
+          )
+        );
+      ?>
       <?php endif; ?>
     </div>
   </section>

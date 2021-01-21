@@ -23,4 +23,13 @@
 
     return $products_formated;
   }
+
+  /**
+   * Retorna o número de produtos por pagina
+   * @since 0.6.0
+   * @return integer número de produtos
+   */
+  function ka_products_per_page() {
+    return intval( apply_filters( 'ka_products_per_page', 12 ) );
+  }
 ?>

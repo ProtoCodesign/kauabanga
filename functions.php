@@ -125,12 +125,25 @@
     }
   }
 
-  // Importa as configurações do custom preview
-  require_once( $ka_dir . 'inc/customizer/customizer.php' );
+  /**
+   * Inicializa o custom preview
+   *
+   * @since 0.3.2
+   * @return void
+   */
+  function ka_customizer_init() {
+    global $ka_dir;
+
+    // Importa as configurações do custom preview
+    require_once( $ka_dir . 'inc/customizer/customizer.php' );
+  }
 
   if( is_woocommerce_activated() ) {
     // Adiciona suporte ao WooCommerce
     add_theme_support( 'woocommerce' );
+
+    // Importa os hooks modificado do WooCommerce
+    require_once( $ka_dir . 'inc/wc/hooks.php' );
 
     // Importa funções criadas para o WooCommerce
     require_once( $ka_dir . 'inc/wc/functions.php' );
