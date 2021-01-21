@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --env production",
-    "dev": "webpack --env proxy=127.0.0.1/kauabanga --watch"
+    "dev": "webpack --env proxy=localhost/kauabanga --watch"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
