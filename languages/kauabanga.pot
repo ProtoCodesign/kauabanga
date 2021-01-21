@@ -82,10 +82,6 @@ msgstr ""
 msgid "Carrinho"
 msgstr ""
 
-#: inc/wc-functions.php:55, inc/wc-functions.php:59, woocommerce/archive-product.php:86, woocommerce/archive-product.php:90
-msgid "R$"
-msgstr ""
-
 #: inc/customizer/customize-banners.php:4
 msgid "Banners"
 msgstr ""
@@ -200,6 +196,10 @@ msgstr ""
 
 #: inc/customizer/customizer.php:23
 msgid "Informações da empresa"
+msgstr ""
+
+#: inc/wc/template-tags.php:36, inc/wc/template-tags.php:40
+msgid "R$"
 msgstr ""
 
 #: page-home.php:2

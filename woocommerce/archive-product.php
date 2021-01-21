@@ -8,7 +8,7 @@
     $products[] = wc_get_product( get_the_ID() );
   endwhile; endif;
 
-  $data['products'] = sanitize_products( $products );
+  $data['products'] = ka_sanitize_products( $products );
 ?>
 
 <?php get_header(); ?>
@@ -65,36 +65,9 @@
     </section>
 
     <div class="row">
-      <?php if( is_array( $data['products'] ) ) { ?>
-      <?php foreach( $data['products'] as $product ) { ?>
-      <div class="col l4 xl4">
-        <a href="<?= $product['link']; ?>" class="product">
-          <div class="image-product">
-            <img src="<?= $product['image']; ?>" alt="<?= $product['name']; ?>" draggable="false" />
-
-            <small
-              class="tag-discount"><?= 100 - (100 * $product['sale_price']) / $product['regular_price']; ?>%</small>
-
-            <small class="tag-category"><?= $product['category']; ?></small>
-          </div>
-
-          <div class="product-info">
-            <p class="product-name"><?= $product['name']; ?></p>
-
-            <span class="price">
-              <?php if( $product['price'] != $product['regular_price'] ) { ?>
-              <p class="discount-price"><?php _e( 'R$', 'kauabanga' ); ?>
-                <?= number_format( $product['regular_price'], 2, ",", "." ); ?></p>
-              <?php } ?>
-
-              <h4 class="current-price"><?php _e( 'R$', 'kauabanga' ); ?>
-                <?= number_format(  $product['price'], 2, ",", "." ); ?></h4>
-            </span>
-          </div>
-        </a>
-      </div>
-      <?php } } ?>
-
+      <?php if( is_array( $data['products'] ) ) : ?>
+      <?php ka_product_list( $data['products'], 'col l4 xl4', array( 'container' => false ) ); ?>
+      <?php endif; ?>
     </div>
   </section>
 </main>

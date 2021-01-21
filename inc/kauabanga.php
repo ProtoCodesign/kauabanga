@@ -55,8 +55,6 @@
     wp_enqueue_script( 'main', get_bundle_file( 'assets/js/dist/', 'index.*.js' ) , null, null, true );
   }
 
-  require_once( $ka_dir . 'inc/wc-functions.php' );
-
   // Importa funções que serão usadas globalmente
   require_once( $ka_dir . 'inc/utils/index.php' );
 ?>
