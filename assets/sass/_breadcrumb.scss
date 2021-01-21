@@ -1,0 +1,33 @@
+.breadcrumb {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ededed;
+}
+
+.woocommerce-breadcrumb {
+  margin: 0 !important;
+  font-size: 21px !important;
+  color: #afafaf !important;
+}
+
+.woocommerce-breadcrumb a {
+  font-size: 21px !important;
+  color: #6b635f !important;
+  margin-right: 7px;
+}
+
+@media only screen and (max-width: 1599px) {
+  .breadcrumb {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .woocommerce-breadcrumb {
+    font-size: 17px !important;
+  }
+
+  .woocommerce-breadcrumb a {
+    font-size: 17px !important;
+    margin-right: 5px;
+  }
+}
