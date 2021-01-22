@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.6.0
+  Version: 0.6.1
   Text Domain: kauabanga
 */
 
@@ -27,6 +27,9 @@
 
 /* Showcase vitrine */
 @import "showcase-vitrine";
+
+/* Categories */
+@import "categories";
 
 /* Card product */
 @import "product-card";

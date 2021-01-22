@@ -63,6 +63,34 @@
   <?php ka_product_list( $data['featured'], 'col l3 xl3' ); ?>
 </section>
 
+<section class="ka-categories row container">
+  <?php
+    $terms = get_terms( array (
+        'order'      => 'ASC',
+        'orderby'    => 'rand',
+        'taxonomy'   => 'product_cat',
+        'hide_empty' => true,
+      )
+    );
+
+    foreach( $terms as $term ) :
+      $image = wp_get_attachment_url( get_term_meta( $term->term_id, 'thumbnail_id', true ) );
+      $link = get_term_link( $term, 'product_cat' );
+  ?>
+  <div class="col l2 xl2">
+    <div class="square-container">
+      <a href="<?= $link; ?>" class="square-content">
+        <div>
+          <img src="<?= $image ?>" alt="<?= $term->name; ?>">
+          <p><?= $term->name; ?></p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <?php endforeach; ?>
+
+</section>
+
 <section class="ka-highlights container">
   <h2 class="ka-title"><?php _e( 'Mais vendidos', 'kauabanga' ); ?></h2>
   <?php ka_product_list( $data['sales'], 'col l3 xl3' ); ?>
