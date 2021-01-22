@@ -80,7 +80,11 @@ h4 {
 
 p,
 a,
-small {
+small,
+span,
+div,
+main,
+section {
   font-weight: 500;
   line-height: 1.6;
 }
@@ -173,7 +177,12 @@ input.bg-dark::placeholder {
 
   p,
   a,
-  input {
+  input,
+  label,
+  span,
+  div,
+  main,
+  section {
     font-size: 21px;
   }
 
@@ -202,7 +211,11 @@ input.bg-dark::placeholder {
   p,
   a,
   input,
-  label {
+  label,
+  span,
+  div,
+  main,
+  section {
     font-size: 17px;
   }
 
@@ -253,7 +266,11 @@ input.bg-dark::placeholder {
   p,
   a,
   input,
-  label {
+  label,
+  span,
+  div,
+  main,
+  section {
     font-size: 14px;
   }
 
@@ -282,7 +299,11 @@ input.bg-dark::placeholder {
   p,
   a,
   input,
-  label {
+  label,
+  span,
+  div,
+  main,
+  section {
     font-size: 12px;
   }
 

@@ -20,11 +20,11 @@
 <body <?php body_class(); ?>>
   <header id="header" class="row">
     <div class="container">
-      <a href="<?= wc_get_page_permalink( 'shop' ); ?>">
-        <div class="logo col l2 xl2">
+      <div class="logo col l2 xl2">
+        <a href="<?= get_site_url(); ?>">
           <img src="<?= $ka_uri; ?>assets/svgs/logo-black-colored.svg" alt="Kauabanga" />
-        </div>
-      </a>
+        </a>
+      </div>
       <div class="search col l5 xl5">
         <form action="<?= wc_get_page_permalink( 'shop' ); ?>" method="GET">
           <input type="text" name="s" id="s" placeholder="<?php esc_attr_e( 'Pesquisar', 'kauabanga' ); ?>"

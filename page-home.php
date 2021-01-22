@@ -6,14 +6,14 @@
   global $ka_uri;
 
   $data = array();
-  $data['featured'] = sanitize_products( wc_get_products( array(
+  $data['featured'] = ka_sanitize_products( wc_get_products( array(
         'limit'     => 12,
         'orderby'   => 'date',
         'featured'  => true
       )
     )
   );
-  $data['sales'] = sanitize_products( wc_get_products( array(
+  $data['sales'] = ka_sanitize_products( wc_get_products( array(
         'limit'     => 12,
         'order'     => 'DESC',
         'orderby'   => 'meta_value_num',
@@ -60,12 +60,40 @@
 
 <section class="ka-highlights container">
   <h2 class="ka-title"><?php _e( 'Destaques', 'kauabanga' ); ?></h2>
-  <?php ka_product_list( $data['featured'] ); ?>
+  <?php ka_product_list( $data['featured'], 'col l3 xl3' ); ?>
+</section>
+
+<section class="ka-categories row container">
+  <?php
+    $terms = get_terms( array (
+        'order'      => 'ASC',
+        'orderby'    => 'rand',
+        'taxonomy'   => 'product_cat',
+        'hide_empty' => true,
+      )
+    );
+
+    foreach( $terms as $term ) :
+      $image = wp_get_attachment_url( get_term_meta( $term->term_id, 'thumbnail_id', true ) );
+      $link = get_term_link( $term, 'product_cat' );
+  ?>
+  <div class="col l2 xl2">
+    <div class="square-container">
+      <a href="<?= $link; ?>" class="square-content">
+        <div>
+          <img src="<?= $image ?>" alt="<?= $term->name; ?>">
+          <p><?= $term->name; ?></p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <?php endforeach; ?>
+
 </section>
 
 <section class="ka-highlights container">
   <h2 class="ka-title"><?php _e( 'Mais vendidos', 'kauabanga' ); ?></h2>
-  <?php ka_product_list( $data['sales'] ); ?>
+  <?php ka_product_list( $data['sales'], 'col l3 xl3' ); ?>
 </section>
 
 <?php if( get_theme_mod( 'newsletter-active' ) ) { ?>
