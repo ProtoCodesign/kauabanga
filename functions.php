@@ -82,6 +82,12 @@
       // Adiciona suporte a atualização em tempo real
       add_theme_support( 'customize-selective-refresh-widgets' );
 
+      // Adiciona suporte a menus
+      add_theme_support( 'menus' );
+
+      // Registra o menu de categorias
+      register_nav_menu( 'categories', __( 'Categorias', 'kauabanga' ) );
+
       // Importa as outras configurações do tema
       require_once( $ka_dir . 'inc/kauabanga.php' );
     }
