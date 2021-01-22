@@ -11,10 +11,17 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
+    "import/extensions": ["error", "never", { "svg": "always" }],
     "func-names": "off",
     "import/no-extraneous-dependencies": "off",
+    "no-new": "off",
     "no-param-reassign": "off",
     "no-underscore-dangle": "off",
     "prettier/prettier": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
   }
 }
