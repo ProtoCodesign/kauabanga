@@ -18,7 +18,7 @@
 </section>
 
 <main class="section-main row container">
-  <section class="filters col l3 xl3">
+  <section class="filters col m4 l3 xl3">
     <h3 class="ka-title"><?php _e( 'Filtrar', 'kauabanga' ); ?></h3>
 
     <form class="form-price">
@@ -59,14 +59,14 @@
     </form>
   </section>
 
-  <section class="showcase-archive col l9 xl9">
+  <section class="showcase-archive col m8 l9 xl9">
     <section class="order-archive">
       <?php woocommerce_catalog_ordering(); ?>
     </section>
 
     <div class="row">
       <?php if( is_array( $data['products'] ) ) : ?>
-      <?php ka_product_list( $data['products'], 'col l4 xl4', array( 'container' => false ) ); ?>
+      <?php ka_product_list( $data['products'], 'col m6 l4 xl4', array( 'container' => false ) ); ?>
       <?php the_posts_pagination( array(
             'prev_text' => __( 'Anterior', 'kauabanga' ),
             'next_text' => __( 'Próxima', 'kauabanga' ),

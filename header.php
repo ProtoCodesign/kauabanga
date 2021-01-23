@@ -64,7 +64,9 @@
           <a href="<?= wc_get_page_permalink( 'myaccount' ); ?>" class="link-account">
             <img src="<?= $ka_uri; ?>assets/svgs/icons/person.svg"
               alt="<?php esc_attr_e( 'Minha conta', 'kauabanga' ); ?>" />
+            <?php if( !wp_is_mobile() ) { ?>
             <?php _e( 'Minha conta', 'kauabanga' ); ?>
+            <?php } ?>
           </a>
 
           <a href="<?= wc_get_page_permalink( 'cart' ); ?>" class="link-cart">
@@ -75,7 +77,9 @@
             <span class="count-itens-cart"><?= $cart_count; ?></span>
             <?php } ?>
 
+            <?php if( !wp_is_mobile() ) { ?>
             <?php _e( 'Carrinho', 'kauabanga' ); ?>
+            <?php } ?>
           </a>
         </nav>
       </span>
@@ -89,14 +93,6 @@
 
           <ul class="container-dropdown">
             <?php print_r(wp_nav_menu( $args ) ); ?>
-
-            <!-- <li class="category">
-              <a href="#">
-                <img src="assets/img/svg/icon-chair.svg" alt="ìcone de cadeira" />
-                Variados
-              </a>
-            </li> -->
-          </ul>
         </span>
 
         <a href="<?= wc_get_page_permalink( 'myaccount' ); ?>" class="link-account">

@@ -1,3 +1,4 @@
+/* FOOTER */
 footer {
   background-color: #0c0905;
 }
@@ -79,5 +80,34 @@ footer .logo {
     padding: 4px;
     border-radius: 4px;
     margin-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  footer .main-content {
+    padding-bottom: 54px;
+    padding-top: 54px;
+  }
+
+  .footer-socials,
+  .footer-payment-forms {
+    margin-top: 36px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer {
+    margin-bottom: 56px;
+  }
+
+  footer .business-info {
+    padding: 12px 0;
+  }
+
+  .footer-navigation,
+  .footer-institutional,
+  .footer-socials,
+  .footer-payment-forms {
+    margin-top: 36px;
   }
 }

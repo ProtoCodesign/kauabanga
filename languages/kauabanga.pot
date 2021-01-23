@@ -66,7 +66,7 @@ msgstr ""
 msgid "Tranferência PIX"
 msgstr ""
 
-#: functions.php:89, header.php:86
+#: functions.php:89, header.php:90
 msgid "Categorias"
 msgstr ""
 
@@ -74,11 +74,11 @@ msgstr ""
 msgid "Pesquisar"
 msgstr ""
 
-#: header.php:66, header.php:67, header.php:104, header.php:105
+#: header.php:66, header.php:68, header.php:108, header.php:109
 msgid "Minha conta"
 msgstr ""
 
-#: header.php:72, header.php:78, header.php:109, header.php:115
+#: header.php:74, header.php:81, header.php:113, header.php:119
 msgid "Carrinho"
 msgstr ""
 
@@ -206,31 +206,31 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: page-home.php:44
+#: page-home.php:47
 msgid "Compra segura"
 msgstr ""
 
-#: page-home.php:46
+#: page-home.php:49
 msgid "Sua compra é 100% segura"
 msgstr ""
 
-#: page-home.php:50
+#: page-home.php:53
 msgid "Compre parcelado"
 msgstr ""
 
-#: page-home.php:51
+#: page-home.php:54
 msgid "Parcele em até 12x sem juros"
 msgstr ""
 
-#: page-home.php:55, page-home.php:56
+#: page-home.php:58, page-home.php:59
 msgid "Entrega por todo o Brasil"
 msgstr ""
 
-#: page-home.php:62
+#: page-home.php:66
 msgid "Destaques"
 msgstr ""
 
-#: page-home.php:95
+#: page-home.php:99
 msgid "Mais vendidos"
 msgstr ""
 

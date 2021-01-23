@@ -26,41 +26,45 @@
 <?php if( get_theme_mod( 'banner-home-top-active' ) ) { ?>
 <main class="banner-home" id="next-element"
   style="background-image: url('<?= get_theme_mod( 'banner-home-top-background' ); ?>');">
-  <div class="banner-content col l8 xl8 l1-offset xl1-offset">
-    <h1><?= get_theme_mod( 'banner-home-top-title' ); ?></h1>
+  <div class="row container">
+    <div class="banner-content col s12 m11 l8 xl8 m0-offset l1-offset xl1-offset">
+      <h1><?= get_theme_mod( 'banner-home-top-title' ); ?></h1>
 
-    <h4><?= get_theme_mod( 'banner-home-top-description' ); ?></h4>
+      <h4><?= get_theme_mod( 'banner-home-top-description' ); ?></h4>
 
-    <a href="<?= get_theme_mod( 'banner-home-top-button-url' ); ?>" class="btn-primary">
-      <?= get_theme_mod( 'banner-home-top-button-title' ); ?>
-    </a>
+      <a href="<?= get_theme_mod( 'banner-home-top-button-url' ); ?>" class="btn-primary">
+        <?= get_theme_mod( 'banner-home-top-button-title' ); ?>
+      </a>
+    </div>
   </div>
 </main>
 <?php } ?>
 
 <?php if( get_theme_mod( 'banner-home-regua-active' ) ) { ?>
 <section class="banner-ruler">
-  <span>
-    <img src="<?= $ka_uri; ?>assets/svgs/icons/safe.svg" alt="<?php esc_attr_e( 'Compra segura', 'kauabanga' ); ?>"
-      draggable="false" />
-    <?php _e( 'Sua compra é 100% segura', 'kauabanga' ); ?>
-  </span>
-  <span>
-    <img src="<?= $ka_uri; ?>assets/svgs/icons/credit-card.svg"
-      alt="<?php esc_attr_e( 'Compre parcelado', 'kauabanga' ); ?>" draggable="false" />
-    <?php _e( 'Parcele em até 12x sem juros', 'kauabanga' ); ?>
-  </span>
-  <span>
-    <img src="<?= $ka_uri; ?>assets/svgs/icons/truck.svg"
-      alt="<?php esc_attr_e( 'Entrega por todo o Brasil', 'kauabanga' ); ?>" draggable="false" />
-    <?php _e( 'Entrega por todo o Brasil', 'kauabanga' ); ?>
-  </span>
+  <div class="row container col s12 m10 l12 xl12">
+    <span>
+      <img src="<?= $ka_uri; ?>assets/svgs/icons/safe.svg" alt="<?php esc_attr_e( 'Compra segura', 'kauabanga' ); ?>"
+        draggable="false" />
+      <?php _e( 'Sua compra é 100% segura', 'kauabanga' ); ?>
+    </span>
+    <span>
+      <img src="<?= $ka_uri; ?>assets/svgs/icons/credit-card.svg"
+        alt="<?php esc_attr_e( 'Compre parcelado', 'kauabanga' ); ?>" draggable="false" />
+      <?php _e( 'Parcele em até 12x sem juros', 'kauabanga' ); ?>
+    </span>
+    <span>
+      <img src="<?= $ka_uri; ?>assets/svgs/icons/truck.svg"
+        alt="<?php esc_attr_e( 'Entrega por todo o Brasil', 'kauabanga' ); ?>" draggable="false" />
+      <?php _e( 'Entrega por todo o Brasil', 'kauabanga' ); ?>
+    </span>
+  </div>
 </section>
 <?php } ?>
 
 <section class="ka-highlights container">
   <h2 class="ka-title"><?php _e( 'Destaques', 'kauabanga' ); ?></h2>
-  <?php ka_product_list( $data['featured'], 'col l3 xl3' ); ?>
+  <?php ka_product_list( $data['featured'], 'col s12 m4 l3 xl3' ); ?>
 </section>
 
 <section class="ka-categories row container">
@@ -77,7 +81,7 @@
       $image = wp_get_attachment_url( get_term_meta( $term->term_id, 'thumbnail_id', true ) );
       $link = get_term_link( $term, 'product_cat' );
   ?>
-  <div class="col l2 xl2">
+  <div class="col s4 m3 l2 xl2">
     <div class="square-container">
       <a href="<?= $link; ?>" class="square-content">
         <div>
@@ -93,7 +97,7 @@
 
 <section class="ka-highlights container">
   <h2 class="ka-title"><?php _e( 'Mais vendidos', 'kauabanga' ); ?></h2>
-  <?php ka_product_list( $data['sales'], 'col l3 xl3' ); ?>
+  <?php ka_product_list( $data['sales'], 'col s12 m4 l3 xl3' ); ?>
 </section>
 
 <?php if( get_theme_mod( 'newsletter-active' ) ) { ?>

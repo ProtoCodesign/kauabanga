@@ -1,3 +1,4 @@
+/* CARD PRODUCT */
 .showcase .col {
   padding-top: 0;
   padding-bottom: 0;
@@ -102,5 +103,24 @@
 
   .product-info .price .current-price {
     margin-left: 4px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .product {
+    margin-top: 48px;
+  }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+  .showcase .s12 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .product {
+    margin-top: 36px;
   }
 }

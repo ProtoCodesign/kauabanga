@@ -20,6 +20,7 @@ h1.ka-title,
 h2.ka-title,
 h3.ka-title {
   font-style: italic;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -293,7 +294,7 @@ input.bg-dark::placeholder {
   }
 
   h4 {
-    font-size: 14px;
+    font-size: 17px;
   }
 
   p,
@@ -304,10 +305,10 @@ input.bg-dark::placeholder {
   div,
   main,
   section {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   small {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
