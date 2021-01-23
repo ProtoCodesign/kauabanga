@@ -15,6 +15,15 @@ footer .business-info {
   text-align: center;
 }
 
+.business-info > div {
+  justify-content: center;
+}
+
+.business-info > div.col {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 footer .main-content .col {
   padding-top: 0;
   padding-bottom: 0;
