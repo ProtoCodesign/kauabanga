@@ -2,8 +2,13 @@
   margin-top: 32px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
+  .customize-support header {
+    margin-top: 46px;
+  }
+
   #wpadminbar {
-    position: fixed;
+    position: fixed !important;
+    top: 0 !important;
   }
 }

@@ -66,19 +66,19 @@ msgstr ""
 msgid "Tranferência PIX"
 msgstr ""
 
-#: header.php:30, header.php:37
-msgid "Pesquisar"
-msgstr ""
-
-#: header.php:44, header.php:47
+#: functions.php:89, header.php:90, woocommerce/archive-product.php:25
 msgid "Categorias"
 msgstr ""
 
-#: header.php:52, header.php:54
+#: header.php:31, header.php:38
+msgid "Pesquisar"
+msgstr ""
+
+#: header.php:66, header.php:68, header.php:101, header.php:102
 msgid "Minha conta"
 msgstr ""
 
-#: header.php:58, header.php:64
+#: header.php:74, header.php:81, header.php:106, header.php:112
 msgid "Carrinho"
 msgstr ""
 
@@ -206,31 +206,31 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: page-home.php:44
+#: page-home.php:47
 msgid "Compra segura"
 msgstr ""
 
-#: page-home.php:46
+#: page-home.php:49
 msgid "Sua compra é 100% segura"
 msgstr ""
 
-#: page-home.php:50
+#: page-home.php:53
 msgid "Compre parcelado"
 msgstr ""
 
-#: page-home.php:51
+#: page-home.php:54
 msgid "Parcele em até 12x sem juros"
 msgstr ""
 
-#: page-home.php:55, page-home.php:56
+#: page-home.php:58, page-home.php:59
 msgid "Entrega por todo o Brasil"
 msgstr ""
 
-#: page-home.php:62
+#: page-home.php:66
 msgid "Destaques"
 msgstr ""
 
-#: page-home.php:67
+#: page-home.php:99
 msgid "Mais vendidos"
 msgstr ""
 
@@ -238,30 +238,38 @@ msgstr ""
 msgid "Filtrar"
 msgstr ""
 
-#: woocommerce/archive-product.php:25
+#: woocommerce/archive-product.php:60
 msgid "Preço"
 msgstr ""
 
-#: woocommerce/archive-product.php:29
+#: woocommerce/archive-product.php:64
 msgid "Até R$100"
 msgstr ""
 
-#: woocommerce/archive-product.php:35
+#: woocommerce/archive-product.php:70
 msgid "R$100 a R$300"
 msgstr ""
 
-#: woocommerce/archive-product.php:41
+#: woocommerce/archive-product.php:76
 msgid "R$300 a R$700"
 msgstr ""
 
-#: woocommerce/archive-product.php:47
+#: woocommerce/archive-product.php:82
 msgid "R$700 a R$1200"
 msgstr ""
 
-#: woocommerce/archive-product.php:53
+#: woocommerce/archive-product.php:88
 msgid "Mínimo"
 msgstr ""
 
-#: woocommerce/archive-product.php:56
+#: woocommerce/archive-product.php:91
 msgid "Máximo"
+msgstr ""
+
+#: woocommerce/archive-product.php:106
+msgid "Anterior"
+msgstr ""
+
+#: woocommerce/archive-product.php:107
+msgid "Próxima"
 msgstr ""

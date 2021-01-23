@@ -8,7 +8,8 @@
     margin-bottom: 30px;
   }
 
-  h4 {
+  h4,
+  .widgettitle {
     margin-bottom: 20px;
   }
 
@@ -179,6 +180,22 @@
     opacity: 0.5;
   }
 
+  .filter-categories,
+  .woocommerce-widget-layered-nav-list__item {
+    li + li {
+      margin-top: 20px;
+    }
+
+    a {
+      color: #6b635f;
+    }
+  }
+
+  ul .count {
+    font-size: 17px;
+    color: #d6d6d6;
+  }
+
   .form-price {
     span {
       display: block;
@@ -203,7 +220,9 @@
     }
   }
 
-  form + form {
+  form + form,
+  .widget_layered_nav,
+  .form-price {
     margin-top: 45px;
   }
 
@@ -212,7 +231,8 @@
       margin-bottom: 24px;
     }
 
-    h4 {
+    h4,
+    .widgettitle {
       margin-bottom: 16px;
     }
 
@@ -253,8 +273,22 @@
       border-radius: 4px;
     }
 
-    form + form {
+    form + form,
+    .widget_layered_nav,
+    .form-price {
       margin-top: 36px;
+    }
+
+    .filter-categories,
+    .woocommerce-widget-layered-nav-list__item {
+      li + li {
+        margin-top: 16px;
+      }
+    }
+
+    ul .count {
+      font-size: 14px;
+      color: #9b9b9b;
     }
 
     .form-price {

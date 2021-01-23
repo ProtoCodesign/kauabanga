@@ -1,3 +1,4 @@
+/* NEWSLETTER */
 .newsletter {
   background-color: #25201b;
   padding-bottom: 90px;
@@ -38,5 +39,28 @@
 
   .newsletter .input-with-button button {
     margin-left: 8px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .newsletter {
+    padding-bottom: 54px;
+    padding-top: 54px;
+  }
+
+  .newsletter h4 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .newsletter .input-with-button {
+    margin-left: 0px;
+    margin-top: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .newsletter h4 {
+    margin: 0 auto;
   }
 }

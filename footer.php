@@ -23,7 +23,7 @@
 
   <footer>
     <div class="main-content row container">
-      <div class="logo col l3 xl3">
+      <div class="logo col s12 m4 l3 xl3">
         <a href="<?= get_site_url(); ?>">
           <img src="<?= $ka_uri ?>assets/svgs/logo-white.svg" alt="<?php esc_attr_e( 'Kauabanga', 'kauabanga' )?>">
         </a>
@@ -39,7 +39,7 @@
           !empty( $theme_mods['navigation-page-five'] )
         ) {
       ?>
-      <div class="footer-navigation col l2 xl2">
+      <div class="footer-navigation col s6 m4 l2 xl2">
         <h4><?php _e( 'Navegação', 'kauabanga' ); ?></h4>
 
         <?php if( !empty( $theme_mods['navigation-page-one'] ) ) { ?>
@@ -82,7 +82,7 @@
           !empty( $theme_mods['institutional-page-five'] )
         ) {
       ?>
-      <div class="footer-institutional col l2 xl2">
+      <div class="footer-institutional col s6 m4 l2 xl2">
         <h4><?php _e( 'Institucional', 'kauabanga' ); ?></h4>
 
         <?php if( !empty( $theme_mods['institutional-page-one'] ) ) { ?>
@@ -119,7 +119,7 @@
       <?php } ?>
 
       <?php if ( $theme_mods['facebook-active'] || $theme_mods['instagram-active'] || $theme_mods['whatsapp-active'] ) { ?>
-      <div class="footer-socials col l2 xl2">
+      <div class="footer-socials col s6 m4 l2 xl2">
         <h4><?php _e( 'Redes sociais', 'kauabanga' ); ?></h4>
 
         <?php if( $theme_mods['facebook-active'] ) { ?>
@@ -146,7 +146,7 @@
       </div>
       <?php } ?>
 
-      <div class="footer-payment-forms col l3 xl3">
+      <div class="footer-payment-forms col s6 m4 l3 xl3">
         <h4><?php _e( 'Formas de pagamento', 'kauabanga' ); ?></h4>
 
         <p><?php _e( 'Cartão de crédito', 'kauabanga' ); ?></p>
@@ -157,7 +157,9 @@
     </div>
 
     <div class="business-info">
-      <?= get_theme_mod( 'title-tagline-business-info' ); ?>
+      <div class="row container col s9 m12 l12 xl12">
+        <?= get_theme_mod( 'title-tagline-business-info' ); ?>
+      </div>
     </div>
   </footer>
 
