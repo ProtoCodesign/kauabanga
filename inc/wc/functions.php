@@ -11,13 +11,15 @@
 
     foreach( $products as $product ) {
       $products_formated[] = array(
+        'id'             => $product->get_id(),
         'name'           => $product->get_name(),
         'price'          => $product->get_price(),
         'sale_price'     => $product->get_sale_price(),
         'regular_price'  => $product->get_regular_price(),
         'image'          => wp_get_attachment_image_src( $product->get_image_id() )[0],
         'link'           => $product->get_permalink(),
-        'category'       => get_the_category_by_ID( $product->get_category_ids()[0] )
+        'category'       => get_the_category_by_ID( $product->get_category_ids()[0] ),
+        'attributes'     => $product->get_attributes()
       );
     }
 

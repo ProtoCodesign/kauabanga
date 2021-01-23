@@ -92,10 +92,11 @@
           <img src="<?= $ka_uri; ?>assets/svgs/icons/arrow-down.svg" alt="seta do dropdown" />
 
           <ul class="container-dropdown">
-            <?php print_r(wp_nav_menu( $args ) ); ?>
+            <?php wp_nav_menu( $args ); ?>
+          </ul>
         </span>
 
-        <a href="<?= wc_get_page_permalink( 'myaccount' ); ?>" class="link-account">
+        <a href=" <?= wc_get_page_permalink( 'myaccount' ); ?>" class="link-account">
           <img src="<?= $ka_uri; ?>assets/svgs/icons/person.svg"
             alt="<?php esc_attr_e( 'Minha conta', 'kauabanga' ); ?>" />
           <?php _e( 'Minha conta', 'kauabanga' ); ?>

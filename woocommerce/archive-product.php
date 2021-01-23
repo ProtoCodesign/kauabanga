@@ -21,6 +21,41 @@
   <section class="filters col m4 l3 xl3">
     <h3 class="ka-title"><?php _e( 'Filtrar', 'kauabanga' ); ?></h3>
 
+    <ul class="filter-categories">
+      <h4><?php _e( 'Categorias', 'kauabanga' ); ?></h4>
+      <?php
+        $terms = get_terms( array (
+            'order'      => 'ASC',
+            'orderby'    => 'rand',
+            'taxonomy'   => 'product_cat',
+            'hide_empty' => true,
+          )
+        );
+
+        foreach( $terms as $term ) {
+          $link = get_term_link( $term, 'product_cat' );
+      ?>
+
+      <li class="filter-category">
+        <a href="<?= $link; ?>">
+          <?= $term->name ?>
+          <span class="count"><?= '(' . $term->count . ')'; ?></span>
+        </a>
+      </li>
+      <?php } ?>
+    </ul>
+
+    <?php
+      $attribute_taxonomies = wc_get_attribute_taxonomies();
+      foreach( $attribute_taxonomies as $attribute ) {
+        the_widget( 'WC_Widget_Layered_Nav', array(
+            'title'      => $attribute->attribute_label,
+            'attribute'  => $attribute->attribute_name,
+          )
+        );
+      }
+    ?>
+
     <form class="form-price">
       <h4><?php _e( 'Preço', 'kauabanga' );?></h4>
 

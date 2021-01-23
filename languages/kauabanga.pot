@@ -66,7 +66,7 @@ msgstr ""
 msgid "Tranferência PIX"
 msgstr ""
 
-#: functions.php:89, header.php:90
+#: functions.php:89, header.php:90, woocommerce/archive-product.php:25
 msgid "Categorias"
 msgstr ""
 
@@ -74,11 +74,11 @@ msgstr ""
 msgid "Pesquisar"
 msgstr ""
 
-#: header.php:66, header.php:68, header.php:108, header.php:109
+#: header.php:66, header.php:68, header.php:101, header.php:102
 msgid "Minha conta"
 msgstr ""
 
-#: header.php:74, header.php:81, header.php:113, header.php:119
+#: header.php:74, header.php:81, header.php:106, header.php:112
 msgid "Carrinho"
 msgstr ""
 
@@ -238,38 +238,38 @@ msgstr ""
 msgid "Filtrar"
 msgstr ""
 
-#: woocommerce/archive-product.php:25
+#: woocommerce/archive-product.php:60
 msgid "Preço"
 msgstr ""
 
-#: woocommerce/archive-product.php:29
+#: woocommerce/archive-product.php:64
 msgid "Até R$100"
 msgstr ""
 
-#: woocommerce/archive-product.php:35
+#: woocommerce/archive-product.php:70
 msgid "R$100 a R$300"
 msgstr ""
 
-#: woocommerce/archive-product.php:41
+#: woocommerce/archive-product.php:76
 msgid "R$300 a R$700"
 msgstr ""
 
-#: woocommerce/archive-product.php:47
+#: woocommerce/archive-product.php:82
 msgid "R$700 a R$1200"
 msgstr ""
 
-#: woocommerce/archive-product.php:53
+#: woocommerce/archive-product.php:88
 msgid "Mínimo"
 msgstr ""
 
-#: woocommerce/archive-product.php:56
+#: woocommerce/archive-product.php:91
 msgid "Máximo"
 msgstr ""
 
-#: woocommerce/archive-product.php:71
+#: woocommerce/archive-product.php:106
 msgid "Anterior"
 msgstr ""
 
-#: woocommerce/archive-product.php:72
+#: woocommerce/archive-product.php:107
 msgid "Próxima"
 msgstr ""

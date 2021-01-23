@@ -74,7 +74,8 @@ h3 {
   line-height: 1.25;
 }
 
-h4 {
+h4,
+.widgettitle {
   font-weight: 600;
   line-height: 1.6;
 }
@@ -172,7 +173,8 @@ input.bg-dark::placeholder {
     font-size: 36px;
   }
 
-  h4 {
+  h4,
+  .widgettitle {
     font-size: 27px;
   }
 
@@ -205,7 +207,8 @@ input.bg-dark::placeholder {
     font-size: 27px;
   }
 
-  h4 {
+  h4,
+  .widgettitle {
     font-size: 21px;
   }
 
@@ -260,7 +263,8 @@ input.bg-dark::placeholder {
     font-size: 21px;
   }
 
-  h4 {
+  h4,
+  .widgettitle {
     font-size: 17px;
   }
 
@@ -293,7 +297,8 @@ input.bg-dark::placeholder {
     font-size: 17px;
   }
 
-  h4 {
+  h4,
+  .widgettitle {
     font-size: 17px;
   }
 
