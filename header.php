@@ -18,11 +18,12 @@
 ?>
 
 <body <?php body_class(); ?>>
-  <header id="header" class="row">
+  <header class="row">
     <div class="container">
       <div class="logo col s4 m2 l2 xl2">
         <a href="<?= get_site_url(); ?>">
-          <img src="<?= $ka_uri; ?>assets/svgs/logo-black-colored.svg" alt="Kauabanga" />
+          <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/logo-black-colored.svg' ); ?>"
+            alt="<?php esc_attr_e( 'Kauabanga', 'kauabanga' ); ?>" />
         </a>
       </div>
 
@@ -34,7 +35,7 @@
           <input type="text" name="post_type" value="product" class="hidden" />
 
           <button type="submit" id="searchbutton">
-            <img src="<?= $ka_uri; ?>assets/svgs/icons/search.svg"
+            <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/search.svg' ); ?>"
               alt="<?php esc_attr_e( 'Pesquisar', 'kauabanga' ); ?>" />
           </button>
         </form>
@@ -49,7 +50,7 @@
             <ul class="container-dropdown">
               <?php
                 $args = array(
-                  'menu'       => 'categories',
+                  'menu'            => 'categories',
                   'container'       => false,
                   'echo'            => true,
                   'items_wrap'      => '%3$s',
@@ -62,15 +63,16 @@
           </span>
 
           <a href="<?= wc_get_page_permalink( 'myaccount' ); ?>" class="link-account">
-            <img src="<?= $ka_uri; ?>assets/svgs/icons/person.svg"
+            <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/person.svg' ); ?>"
               alt="<?php esc_attr_e( 'Minha conta', 'kauabanga' ); ?>" />
+
             <?php if( !wp_is_mobile() ) { ?>
             <?php _e( 'Minha conta', 'kauabanga' ); ?>
             <?php } ?>
           </a>
 
           <a href="<?= wc_get_page_permalink( 'cart' ); ?>" class="link-cart">
-            <img src="<?= $ka_uri; ?>assets/svgs/icons/cart.svg"
+            <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/cart.svg' ); ?>"
               alt="<?php esc_attr_e( 'Carrinho', 'kauabanga' ); ?>" />
 
             <?php if($cart_count) { ?>
@@ -89,7 +91,8 @@
         <span class="nav-dropdown">
           <?php _e( 'Categorias', 'kauabanga' ); ?>
 
-          <img src="<?= $ka_uri; ?>assets/svgs/icons/arrow-down.svg" alt="seta do dropdown" />
+          <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/arrow-down.svg' ); ?>"
+            alt="<?php esc_attr_e( 'Abrir menu', 'kauabanga' ); ?>" />
 
           <ul class="container-dropdown">
             <?php wp_nav_menu( $args ); ?>
@@ -97,13 +100,14 @@
         </span>
 
         <a href=" <?= wc_get_page_permalink( 'myaccount' ); ?>" class="link-account">
-          <img src="<?= $ka_uri; ?>assets/svgs/icons/person.svg"
+          <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/person.svg' ); ?>"
             alt="<?php esc_attr_e( 'Minha conta', 'kauabanga' ); ?>" />
           <?php _e( 'Minha conta', 'kauabanga' ); ?>
         </a>
 
         <a href="<?= wc_get_page_permalink( 'cart' ); ?>" class="link-cart">
-          <img src="<?= $ka_uri; ?>assets/svgs/icons/cart.svg" alt="<?php esc_attr_e( 'Carrinho', 'kauabanga' ); ?>" />
+          <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/cart.svg' ); ?>"
+            alt="<?php esc_attr_e( 'Carrinho', 'kauabanga' ); ?>" />
 
           <?php if($cart_count) { ?>
           <span class="count-itens-cart"><?= $cart_count; ?></span>

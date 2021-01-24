@@ -14,72 +14,88 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: footer.php:28
+#: footer.php:29, header.php:26
 msgid "Kauabanga"
 msgstr ""
 
-#: footer.php:32
+#: footer.php:33
 msgid "Todos os direitos reservados &#169;"
 msgstr ""
 
-#: footer.php:43, inc/customizer/customize-footer.php:12
+#: footer.php:44, inc/customizer/customize-footer.php:12
 msgid "Navegação"
 msgstr ""
 
-#: footer.php:86, inc/customizer/customize-footer.php:100
+#: footer.php:87, inc/customizer/customize-footer.php:100
 msgid "Institucional"
 msgstr ""
 
-#: footer.php:123, inc/customizer/customize-footer.php:188
+#: footer.php:124, inc/customizer/customize-footer.php:188
 msgid "Redes sociais"
 msgstr ""
 
-#: footer.php:128
+#: footer.php:129
 msgid "Facebook kauabanga"
 msgstr ""
 
-#: footer.php:135
+#: footer.php:130
+msgid "Facebook"
+msgstr ""
+
+#: footer.php:137
 msgid "Instagram kauabanga"
 msgstr ""
 
-#: footer.php:143
+#: footer.php:138
+msgid "Instagram"
+msgstr ""
+
+#: footer.php:146
 msgid "Whatsapp kauabanga"
 msgstr ""
 
-#: footer.php:150
-msgid "Formas de pagamento"
-msgstr ""
-
-#: footer.php:152
-msgid "Cartão de crédito"
-msgstr ""
-
-#: footer.php:153
-msgid "Débito em conta"
+#: footer.php:147
+msgid "Whatsapp"
 msgstr ""
 
 #: footer.php:154
+msgid "Formas de pagamento"
+msgstr ""
+
+#: footer.php:156
+msgid "Cartão de crédito"
+msgstr ""
+
+#: footer.php:157
+msgid "Débito em conta"
+msgstr ""
+
+#: footer.php:158
 msgid "Boleto bancário"
 msgstr ""
 
-#: footer.php:155
+#: footer.php:159
 msgid "Tranferência PIX"
 msgstr ""
 
-#: functions.php:89, header.php:90, woocommerce/archive-product.php:25
+#: functions.php:89, header.php:92, woocommerce/archive-product.php:26
 msgid "Categorias"
 msgstr ""
 
-#: header.php:31, header.php:38
+#: header.php:32, header.php:39
 msgid "Pesquisar"
 msgstr ""
 
-#: header.php:66, header.php:68, header.php:101, header.php:102
+#: header.php:67, header.php:70, header.php:104, header.php:105
 msgid "Minha conta"
 msgstr ""
 
-#: header.php:74, header.php:81, header.php:106, header.php:112
+#: header.php:76, header.php:83, header.php:110, header.php:116
 msgid "Carrinho"
+msgstr ""
+
+#: header.php:95
+msgid "Abrir menu"
 msgstr ""
 
 #: inc/customizer/customize-banners.php:4
@@ -206,7 +222,7 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: page-home.php:47
+#: page-home.php:48
 msgid "Compra segura"
 msgstr ""
 
@@ -238,38 +254,42 @@ msgstr ""
 msgid "Filtrar"
 msgstr ""
 
-#: woocommerce/archive-product.php:60
+#: woocommerce/archive-product.php:61
 msgid "Preço"
 msgstr ""
 
-#: woocommerce/archive-product.php:64
+#: woocommerce/archive-product.php:65
 msgid "Até R$100"
 msgstr ""
 
-#: woocommerce/archive-product.php:70
+#: woocommerce/archive-product.php:71
 msgid "R$100 a R$300"
 msgstr ""
 
-#: woocommerce/archive-product.php:76
+#: woocommerce/archive-product.php:77
 msgid "R$300 a R$700"
 msgstr ""
 
-#: woocommerce/archive-product.php:82
+#: woocommerce/archive-product.php:83
 msgid "R$700 a R$1200"
 msgstr ""
 
-#: woocommerce/archive-product.php:88
+#: woocommerce/archive-product.php:89
 msgid "Mínimo"
 msgstr ""
 
-#: woocommerce/archive-product.php:91
+#: woocommerce/archive-product.php:92
 msgid "Máximo"
 msgstr ""
 
-#: woocommerce/archive-product.php:106
+#: woocommerce/archive-product.php:101
+msgid "Filtrar produtos"
+msgstr ""
+
+#: woocommerce/archive-product.php:110
 msgid "Anterior"
 msgstr ""
 
-#: woocommerce/archive-product.php:107
+#: woocommerce/archive-product.php:111
 msgid "Próxima"
 msgstr ""

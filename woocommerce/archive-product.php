@@ -58,29 +58,29 @@
     ?>
 
     <form class="form-price">
-      <h4><?php _e( 'Preço', 'kauabanga' );?></h4>
+      <h4><?php _e( 'Preço', 'kauabanga' ); ?></h4>
 
       <span>
         <a href="<?= remove_query_arg( array( 'min_price', 'max_price' ) ); ?>?min_price=0&max_price=100">
-          <?php _e( 'Até R$100', 'kauabanga' );?>
+          <?php _e( 'Até R$100', 'kauabanga' ); ?>
         </a>
       </span>
 
       <span>
         <a href="<?= remove_query_arg( array( 'min_price', 'max_price' ) ); ?>?min_price=100&max_price=300">
-          <?php _e( 'R$100 a R$300', 'kauabanga' );?>
+          <?php _e( 'R$100 a R$300', 'kauabanga' ); ?>
         </a>
       </span>
 
       <span>
         <a href="<?= remove_query_arg( array( 'min_price', 'max_price' ) ); ?>?min_price=300&max_price=700">
-          <?php _e( 'R$300 a R$700', 'kauabanga' );?>
+          <?php _e( 'R$300 a R$700', 'kauabanga' ); ?>
         </a>
       </span>
 
       <span>
         <a href="<?= remove_query_arg( array( 'min_price', 'max_price' ) ); ?>?min_price=700&max_price=1200">
-          <?php _e( 'R$700 a R$1200', 'kauabanga' );?>
+          <?php _e( 'R$700 a R$1200', 'kauabanga' ); ?>
         </a>
       </span>
 
@@ -97,8 +97,8 @@
 
   <section class="showcase-archive col s12 m9 l9 xl9">
     <section class="order-archive">
-      <span class="btn-filter"><img src="<?= $ka_uri; ?>assets/svgs/icons/filter.svg"
-          alt="<?php _e( 'Filtrar produtos', 'kauabanga' ) ?>"></span>
+      <span class="btn-filter"><img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/filter.svg' ); ?>"
+          alt="<?php _e( 'Filtrar produtos', 'kauabanga' ); ?>"></span>
       <?php woocommerce_catalog_ordering(); ?>
     </section>
 
