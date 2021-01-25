@@ -25,7 +25,8 @@
     <div class="main-content row container">
       <div class="logo col s12 m4 l3 xl3">
         <a href="<?= get_site_url(); ?>">
-          <img src="<?= $ka_uri ?>assets/svgs/logo-white.svg" alt="<?php esc_attr_e( 'Kauabanga', 'kauabanga' )?>">
+          <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/logo-white.svg' ); ?>"
+            alt="<?php esc_attr_e( 'Kauabanga', 'kauabanga' )?>">
         </a>
         <p><?= ucfirst( preg_replace( '/(https?:\/\/)/', '', get_site_url() ) ); ?> -
           <?= Date('Y'); ?></p>
@@ -124,23 +125,26 @@
 
         <?php if( $theme_mods['facebook-active'] ) { ?>
         <a href="<?= $theme_mods['facebook-url']; ?>" target="_blank" class="jq-footer-social-facebook">
-          <img src="<?= $ka_uri ?>assets/svgs/icons/facebook.svg"
-            alt="<?php esc_attr_e( 'Facebook kauabanga', 'kauabanga' )?>" class="icon-socials">Facebook
+          <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/facebook.svg' ); ?>"
+            alt="<?php esc_attr_e( 'Facebook kauabanga', 'kauabanga' )?>" class="icon-socials" />
+          <?php _e( 'Facebook', 'kauabanga' ); ?>
         </a>
         <?php } ?>
 
         <?php if( $theme_mods['instagram-active'] ) { ?>
         <a href="<?= $theme_mods['instagram-url']; ?>" target="_blank" class="jq-footer-social-instagram">
-          <img src="<?= $ka_uri ?>assets/svgs/icons/instagram.svg"
-            alt="<?php esc_attr_e( 'Instagram kauabanga', 'kauabanga' )?>" class="icon-socials">Instagram
+          <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/instagram.svg' ); ?>"
+            alt="<?php esc_attr_e( 'Instagram kauabanga', 'kauabanga' )?>" class="icon-socials" />
+          <?php _e( 'Instagram', 'kauabanga' ); ?>
         </a>
         <?php } ?>
 
         <?php if( $theme_mods['whatsapp-active'] ) { ?>
         <a href="https://api.whatsapp.com/send?phone=<?= $theme_mods['whatsapp-number']; ?>" target="_blank"
           class="jq-footer-social-whatsapp">
-          <img src="<?= $ka_uri ?>assets/svgs/icons/whatsapp.svg"
-            alt="<?php esc_attr_e( 'Whatsapp kauabanga', 'kauabanga' )?>" class="icon-socials">Whatsapp
+          <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/whatsapp.svg' ); ?>"
+            alt="<?php esc_attr_e( 'Whatsapp kauabanga', 'kauabanga' )?>" class="icon-socials" />
+          <?php _e( 'Whatsapp', 'kauabanga' ); ?>
         </a>
         <?php } ?>
       </div>

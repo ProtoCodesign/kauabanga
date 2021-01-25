@@ -1,18 +1,20 @@
-interface MenuElements {
-  dropDown: string;
-  dropDownBtn: string;
-
+interface Options {
+  dropDownMenu: string;
+  dropDownMenuBtn: string;
   menuMobile: string;
   menuMobileAnim: string;
   menuMobileBtn: string;
+  filter?: string;
+  filterBtn?: string;
+  filterCloseBtn?: string;
 }
 
-class Menu {
+class ClickButton {
   private _menuOpen: boolean;
 
-  private _dropDown: HTMLElement;
+  private _dropDownMenu: HTMLElement;
 
-  private _dropDownBtn: HTMLElement;
+  private _dropDownMenuBtn: HTMLElement;
 
   private _menuMobile: HTMLElement;
 
@@ -20,15 +22,25 @@ class Menu {
 
   private _menuMobileBtn: HTMLElement;
 
-  constructor(elements: MenuElements) {
+  private _filter: HTMLElement;
+
+  private _filterBtn: HTMLElement;
+
+  private _filterCloseBtn: HTMLElement;
+
+  constructor(elements: Options) {
     this._menuOpen = false;
 
-    this._dropDown = document.querySelector(elements.dropDown);
-    this._dropDownBtn = document.querySelector(elements.dropDownBtn);
+    this._dropDownMenu = document.querySelector(elements.dropDownMenu);
+    this._dropDownMenuBtn = document.querySelector(elements.dropDownMenuBtn);
 
     this._menuMobile = document.querySelector(elements.menuMobile);
     this._menuMobileAnim = document.querySelector(elements.menuMobileAnim);
     this._menuMobileBtn = document.querySelector(elements.menuMobileBtn);
+
+    this._filter = document.querySelector(elements.filter);
+    this._filterBtn = document.querySelector(elements.filterBtn);
+    this._filterCloseBtn = document.querySelector(elements.filterCloseBtn);
 
     this._onRemoveClickOut = this._onRemoveClickOut.bind(this);
     this._onRemoveScroll = this._onRemoveScroll.bind(this);
@@ -63,18 +75,34 @@ class Menu {
       });
     });
 
-    this._dropDownBtn.addEventListener('click', () => {
+    this._dropDownMenuBtn.addEventListener('click', () => {
       if (this._menuOpen) {
         this._menuOpen = false;
 
-        this._dropDown.classList.remove('active');
+        this._dropDownMenu.classList.remove('active');
       } else {
         this._menuOpen = true;
 
-        this._dropDown.classList.add('active');
+        this._dropDownMenu.classList.add('active');
         window.addEventListener('scroll', this._onRemoveScroll);
       }
     });
+
+    if (this._filterBtn) {
+      this._filterBtn.addEventListener('click', () => {
+        this._menuOpen = true;
+
+        this._filter.classList.add('active');
+        window.addEventListener('scroll', this._onRemoveScroll);
+      });
+
+      this._filterCloseBtn.addEventListener('click', () => {
+        if (this._menuOpen) {
+          this._menuOpen = false;
+          this._filter.classList.remove('active');
+        }
+      });
+    }
   }
 
   /**
@@ -86,10 +114,12 @@ class Menu {
   private _onRemoveScroll() {
     this._menuOpen = false;
 
-    this._dropDown.classList.remove('active');
+    this._dropDownMenu.classList.remove('active');
 
     this._menuMobile.classList.remove('active');
     this._menuMobileAnim.classList.remove('open');
+
+    this._filter.classList.remove('active');
 
     window.removeEventListener('scroll', this._onRemoveScroll);
   }
@@ -106,12 +136,14 @@ class Menu {
     if (e.target === e.currentTarget && this._menuOpen) {
       this._menuOpen = false;
 
-      this._dropDown.classList.remove('active');
+      this._dropDownMenu.classList.remove('active');
 
       this._menuMobile.classList.remove('active');
       this._menuMobileAnim.classList.remove('open');
+
+      this._filter.classList.remove('active');
     }
   }
 }
 
-export default Menu;
+export default ClickButton;

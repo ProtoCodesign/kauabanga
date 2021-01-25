@@ -18,8 +18,9 @@
 </section>
 
 <main class="section-main row container">
-  <section class="filters col m4 l3 xl3">
+  <section class="filters col s12 m3 l3 xl3">
     <h3 class="ka-title"><?php _e( 'Filtrar', 'kauabanga' ); ?></h3>
+    <span class="btn-close"></span>
 
     <ul class="filter-categories">
       <h4><?php _e( 'Categorias', 'kauabanga' ); ?></h4>
@@ -57,29 +58,29 @@
     ?>
 
     <form class="form-price">
-      <h4><?php _e( 'Preço', 'kauabanga' );?></h4>
+      <h4><?php _e( 'Preço', 'kauabanga' ); ?></h4>
 
       <span>
         <a href="<?= remove_query_arg( array( 'min_price', 'max_price' ) ); ?>?min_price=0&max_price=100">
-          <?php _e( 'Até R$100', 'kauabanga' );?>
+          <?php _e( 'Até R$100', 'kauabanga' ); ?>
         </a>
       </span>
 
       <span>
         <a href="<?= remove_query_arg( array( 'min_price', 'max_price' ) ); ?>?min_price=100&max_price=300">
-          <?php _e( 'R$100 a R$300', 'kauabanga' );?>
+          <?php _e( 'R$100 a R$300', 'kauabanga' ); ?>
         </a>
       </span>
 
       <span>
         <a href="<?= remove_query_arg( array( 'min_price', 'max_price' ) ); ?>?min_price=300&max_price=700">
-          <?php _e( 'R$300 a R$700', 'kauabanga' );?>
+          <?php _e( 'R$300 a R$700', 'kauabanga' ); ?>
         </a>
       </span>
 
       <span>
         <a href="<?= remove_query_arg( array( 'min_price', 'max_price' ) ); ?>?min_price=700&max_price=1200">
-          <?php _e( 'R$700 a R$1200', 'kauabanga' );?>
+          <?php _e( 'R$700 a R$1200', 'kauabanga' ); ?>
         </a>
       </span>
 
@@ -94,20 +95,24 @@
     </form>
   </section>
 
-  <section class="showcase-archive col m8 l9 xl9">
+  <section class="showcase-archive col s12 m9 l9 xl9">
     <section class="order-archive">
+      <span class="btn-filter"><img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/filter.svg' ); ?>"
+          alt="<?php _e( 'Filtrar produtos', 'kauabanga' ); ?>"></span>
       <?php woocommerce_catalog_ordering(); ?>
     </section>
 
     <div class="row">
       <?php if( is_array( $data['products'] ) ) : ?>
-      <?php ka_product_list( $data['products'], 'col m6 l4 xl4', array( 'container' => false ) ); ?>
-      <?php the_posts_pagination( array(
+      <?php ka_product_list( $data['products'], 'col s12 m6 l4 xl4', array( 'container' => false ) ); ?>
+      <div class="col s12 m12 l12 xl12">
+        <?php the_posts_pagination( array(
             'prev_text' => __( 'Anterior', 'kauabanga' ),
             'next_text' => __( 'Próxima', 'kauabanga' ),
           )
         );
       ?>
+      </div>
       <?php endif; ?>
     </div>
   </section>

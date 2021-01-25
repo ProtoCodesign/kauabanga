@@ -44,17 +44,17 @@
 <section class="banner-ruler">
   <div class="row container col s12 m10 l12 xl12">
     <span>
-      <img src="<?= $ka_uri; ?>assets/svgs/icons/safe.svg" alt="<?php esc_attr_e( 'Compra segura', 'kauabanga' ); ?>"
-        draggable="false" />
+      <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/safe.svg' ); ?>"
+        alt="<?php esc_attr_e( 'Compra segura', 'kauabanga' ); ?>" draggable="false" />
       <?php _e( 'Sua compra é 100% segura', 'kauabanga' ); ?>
     </span>
     <span>
-      <img src="<?= $ka_uri; ?>assets/svgs/icons/credit-card.svg"
+      <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/credit-card.svg' ); ?>"
         alt="<?php esc_attr_e( 'Compre parcelado', 'kauabanga' ); ?>" draggable="false" />
       <?php _e( 'Parcele em até 12x sem juros', 'kauabanga' ); ?>
     </span>
     <span>
-      <img src="<?= $ka_uri; ?>assets/svgs/icons/truck.svg"
+      <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/truck.svg' ); ?>"
         alt="<?php esc_attr_e( 'Entrega por todo o Brasil', 'kauabanga' ); ?>" draggable="false" />
       <?php _e( 'Entrega por todo o Brasil', 'kauabanga' ); ?>
     </span>

@@ -33,3 +33,22 @@
     margin-right: 5px;
   }
 }
+
+@media only screen and (max-width: 1100px) {
+  .breadcrumb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .woocommerce-breadcrumb {
+    font-size: 14px !important;
+    margin-left: 12px !important;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .woocommerce-breadcrumb a {
+    font-size: 14px !important;
+    margin-right: 5px;
+  }
+}
