@@ -1,38 +1,27 @@
 .single-product {
+  margin-top: 48px;
   .col {
     padding-top: 0;
     padding-bottom: 0;
   }
 
   .gallery {
-    margin-right: 15px;
+    padding-right: 30px;
   }
 
-  .product-info {
-    margin-left: 15px;
+  .product-infos {
+    padding-left: 30px;
   }
 }
 
 @media only screen and (max-width: 1599px) {
   .single-product {
     .gallery {
-      margin-right: 12px;
+      padding-right: 20px;
     }
 
-    .product-info {
-      margin-left: 12px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .single-product {
-    .gallery {
-      margin-right: 10px;
-    }
-
-    .product-info {
-      margin-left: 10px;
+    .product-infos {
+      padding-left: 20px;
     }
   }
 }
@@ -40,11 +29,24 @@
 @media only screen and (max-width: 1100px) {
   .single-product {
     .gallery {
-      margin-right: 0;
+      padding-right: 20px;
     }
 
-    .product-info {
-      margin-left: 0;
+    .product-s {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .single-product {
+    .gallery {
+      padding-right: 8px;
+    }
+
+    .product-infos {
+      padding-left: 16px;
+      padding-right: 16px;
     }
   }
 }

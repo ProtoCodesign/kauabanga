@@ -23,7 +23,9 @@ function ka_product_list( $products, $product_class = '', $args = array(
       <div class="image-product">
         <img src="<?= $product['image']; ?>" alt="<?= $product['name']; ?>" draggable="false" />
 
-        <small class="tag-discount"><?= 100 - (100 * $product['sale_price']) / $product['regular_price']; ?>%</small>
+        <?php if( !$product['is_variable'] ) { ?>
+        <small class="tag-discount"><?= $product['discount']; ?>%</small>
+        <?php } ?>
 
         <small class="tag-category"><?= $product['category']; ?></small>
       </div>
@@ -32,10 +34,19 @@ function ka_product_list( $products, $product_class = '', $args = array(
         <p class="product-name"><?= $product['name']; ?></p>
 
         <span class="price">
+          <?php if( $product['is_variable'] ) : ?>
+          <span>
+            <?php _e( 'A partir de:' ); ?>
+          </span>
+          <?php else : ?>
+
           <?php if( $product['price'] != $product['regular_price'] ) { ?>
           <p class="discount-price"><?php _e( 'R$', 'kauabanga' ); ?>
-            <?= number_format( $product['regular_price'], 2, ",", "." ); ?></p>
+            <?= number_format( $product['regular_price'], 2, ",", "." ); ?>
+          </p>
           <?php } ?>
+
+          <?php endif; ?>
 
           <h4 class="current-price"><?php _e( 'R$', 'kauabanga' ); ?>
             <?= number_format(  $product['price'], 2, ",", "." ); ?></h4>

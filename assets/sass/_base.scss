@@ -83,12 +83,15 @@ h4,
 p,
 a,
 small,
+input,
+select,
 span,
 div,
 main,
 section {
   font-weight: 500;
   line-height: 1.6;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
 small {
@@ -135,16 +138,36 @@ button.btn-secondary {
 label {
   color: #6b635f;
   margin-bottom: 5px;
+  display: block;
+  font-weight: 600;
 }
 
-input {
+input,
+select {
   border: none;
   border-radius: 5px;
   padding: 20px 25px;
+  font-size: 21px !important;
   background: #f4f4f4;
   color: #6b635f;
   width: 100%;
+  font-weight: 500 !important;
   outline: none;
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10"><path d="M1.415 1.414l8 8 8-8" fill="none" stroke="%236b635f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>');
+  background-position: right 20px top 50%;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+
+select option {
+  background-color: #ffffff;
 }
 
 input::placeholder {
@@ -181,12 +204,21 @@ input.bg-dark::placeholder {
   p,
   a,
   input,
+  select,
   label,
   span,
   div,
   main,
   section {
     font-size: 21px;
+  }
+
+  input,
+  select {
+    border-radius: 4px;
+    padding: 20px 25px;
+    font-weight: 500 !important;
+    font-size: 21px !important;
   }
 
   small {
@@ -212,9 +244,18 @@ input.bg-dark::placeholder {
     font-size: 21px;
   }
 
+  input,
+  select {
+    border-radius: 4px;
+    padding: 16px 20px;
+    font-weight: 500 !important;
+    font-size: 17px !important;
+  }
+
   p,
   a,
   input,
+  select,
   label,
   span,
   div,
@@ -241,10 +282,6 @@ input.bg-dark::placeholder {
     margin-bottom: 4px;
   }
 
-  input {
-    padding: 16px 20px;
-  }
-
   input::placeholder {
     color: #c1c1c1;
   }
@@ -268,9 +305,18 @@ input.bg-dark::placeholder {
     font-size: 17px;
   }
 
+  input,
+  select {
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+  }
+
   p,
   a,
   input,
+  select,
   label,
   span,
   div,
@@ -299,21 +345,28 @@ input.bg-dark::placeholder {
 
   h4,
   .widgettitle {
-    font-size: 17px;
+    font-size: 14px;
+  }
+
+  select {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    border-radius: 3px;
   }
 
   p,
   a,
   input,
+  select,
   label,
   span,
   div,
   main,
   section {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   small {
-    font-size: 12px;
+    font-size: 10px;
   }
 }

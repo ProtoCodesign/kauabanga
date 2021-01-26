@@ -1,4 +1,6 @@
 <?php
+  defined( 'ABSPATH' ) || exit;
+
   global $ka_uri;
 
   $data = array();
