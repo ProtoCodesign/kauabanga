@@ -47,10 +47,9 @@ const commonConfig = {
     ],
   },
   plugins: [
-    !process.argv.includes('production') &&
-      new MiniCssExtractPlugin({
-        filename: PATHS.files.css,
-      }),
+    new MiniCssExtractPlugin({
+      filename: PATHS.files.css,
+    }),
     new CleanWebpackPlugin(),
   ],
 };

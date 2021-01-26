@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.6.7
+  Version: 0.6.8
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -2325,4 +2325,106 @@ footer .logo {
     position: absolute;
     width: 25px;
     height: 25px; } }
+
+/* Gallery */
+.gallery {
+  width: 100%;
+  height: fit-content;
+  position: relative; }
+
+.gallery img {
+  min-width: 100%;
+  box-sizing: border-box;
+  border: 3px solid #f4f4f4;
+  border-radius: 10px; }
+
+.gallery .gallery-images {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 13%;
+  transition: all 0.3s ease-in-out; }
+
+.gallery .gallery-images li + li {
+  margin-top: 15px; }
+
+.gallery .gallery-images li {
+  display: block;
+  width: 100%; }
+
+.gallery .gallery-images li img {
+  display: block;
+  background-color: #ffffff; }
+
+.gallery .gallery-images li img.active {
+  opacity: 0.7; }
+
+@media only screen and (max-width: 1599px) {
+  .gallery img {
+    border: 3px solid #f4f4f4;
+    border-radius: 8px; }
+  .gallery .gallery-images {
+    margin-left: 16px;
+    margin-top: 16px;
+    width: 13%; }
+  .gallery .gallery-images li + li {
+    margin-top: 12px; }
+  .gallery .gallery-images li {
+    width: 100%; } }
+
+@media only screen and (max-width: 1100px) {
+  .gallery img {
+    border: 2px solid #f4f4f4;
+    border-radius: 6px; }
+  .gallery .gallery-images {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 15%; }
+  .gallery .gallery-images li + li {
+    margin-top: 8px; }
+  .gallery .gallery-images li {
+    width: 100%; } }
+
+@media only screen and (max-width: 767px) {
+  .gallery .gallery-images {
+    margin-left: 8px;
+    margin-top: 8px;
+    width: 15%; }
+  .gallery .gallery-images li + li {
+    margin-top: 6px; }
+  .gallery .gallery-images li {
+    width: 100%; } }
+
+/* Single product */
+.single-product .col {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.single-product .gallery {
+  margin-right: 15px; }
+
+.single-product .product-info {
+  margin-left: 15px; }
+
+@media only screen and (max-width: 1599px) {
+  .single-product .gallery {
+    margin-right: 12px; }
+  .single-product .product-info {
+    margin-left: 12px; } }
+
+@media only screen and (max-width: 1100px) {
+  .single-product .gallery {
+    margin-right: 10px; }
+  .single-product .product-info {
+    margin-left: 10px; } }
+
+@media only screen and (max-width: 1100px) {
+  .single-product .gallery {
+    margin-right: 0; }
+  .single-product .product-info {
+    margin-left: 0; } }
 
