@@ -23,7 +23,7 @@ function ka_product_list( $products, $product_class = '', $args = array(
       <div class="image-product">
         <img src="<?= $product['image']; ?>" alt="<?= $product['name']; ?>" draggable="false" />
 
-        <?php if( !$product['is_variable'] ) { ?>
+        <?php if( !$product['is_variable'] && !empty( $product['sale_price'] ) ) { ?>
         <small class="tag-discount"><?= $product['discount']; ?>%</small>
         <?php } ?>
 
