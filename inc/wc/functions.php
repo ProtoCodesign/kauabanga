@@ -27,6 +27,8 @@
         'regular_price'  => $regular_price,
         'discount'       => round( 100 - ( 100 *  $sale_price ) / $regular_price ),
         'is_variable'    => $product->is_type( 'variable' ),
+        'description'    => $product->get_description(),
+        'review_count'   => $product->get_review_count(),
         'image'          => wp_get_attachment_image_src( $product->get_image_id() )[0],
         'link'           => $product->get_permalink(),
         'category'       => get_the_category_by_ID( $product->get_category_ids()[0] ),
@@ -68,6 +70,7 @@
       'link'           => $state['product']->get_permalink(),
       'sku'            => $state['product']->get_sku(),
       'description'    => $state['product']->get_description(),
+      'review_count'   => $state['product']->get_review_count(),
       'img'            => wp_get_attachment_image_src( $state['product']->get_image_id(), 'high' )[0],
       'gallery'        => ka_get_gallery_images_link( $id, 'high' ),
     );
