@@ -1,0 +1,318 @@
+.filters {
+  &.col {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  h3 {
+    margin-bottom: 30px;
+  }
+
+  h4,
+  .widgettitle {
+    margin-bottom: 20px;
+  }
+
+  form .filter-checkbox + .filter-checkbox {
+    margin-top: 20px;
+  }
+
+  .filter-checkbox {
+    position: relative;
+    padding-left: 30px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #6b635f;
+  }
+
+  .filter-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .filter-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .filter-checkbox:hover input[type="checkbox"] ~ .checkmark {
+    background-color: #d6d6d6;
+    border: 1px solid #9b9b9b;
+  }
+
+  .filter-checkbox input[type="checkbox"]:checked ~ .checkmark {
+    background-color: #5277da;
+  }
+
+  .filter-checkbox input[type="checkbox"] .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .filter-checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .filter-checkbox .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .filter-color {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .filter-color input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .filter-color .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 3px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .filter-color .checkmark.black {
+    background-color: #25201b;
+    border-color: #0c0905;
+  }
+
+  .filter-color .checkmark.grey {
+    background-color: #6b635f;
+    border-color: #554d49;
+  }
+
+  .filter-color .checkmark.white {
+    background-color: #f4f4f4;
+    border-color: #ededed;
+  }
+
+  .filter-color .checkmark.red {
+    background-color: #f4516d;
+    border-color: #dd2f44;
+  }
+
+  .filter-color .checkmark.orange {
+    background-color: #efa357;
+    border-color: #f28d28;
+  }
+
+  .filter-color .checkmark.yellow {
+    background-color: #f7c94b;
+    border-color: #f4ab0b;
+  }
+
+  .filter-color .checkmark.green {
+    background-color: #4eea6f;
+    border-color: #25cc50;
+  }
+
+  .filter-color .checkmark.blue {
+    background-color: #63b0e5;
+    border-color: #3b8acc;
+  }
+
+  .filter-color .checkmark.purple {
+    background-color: #d65fe8;
+    border-color: #d82ae4;
+  }
+
+  .filter-color:hover input[type="radio"] ~ .checkmark {
+    opacity: 0.9;
+  }
+
+  .filter-color input[type="radio"]:checked ~ .checkmark {
+    opacity: 0.5;
+  }
+
+  .filter-categories,
+  .woocommerce-widget-layered-nav-list__item {
+    li + li {
+      margin-top: 20px;
+    }
+
+    a {
+      color: #6b635f;
+    }
+  }
+
+  ul .count {
+    font-size: 17px;
+    color: #d6d6d6;
+  }
+
+  .form-price {
+    span {
+      display: block;
+    }
+
+    a {
+      color: #6b635f;
+    }
+
+    div {
+      color: #9b9b9b;
+    }
+
+    span + span {
+      margin-top: 20px;
+    }
+
+    input {
+      width: 135px;
+      padding: 10px 15px;
+      font-size: 17px;
+    }
+  }
+
+  form + form,
+  .widget_layered_nav,
+  .form-price {
+    margin-top: 45px;
+  }
+
+  @media only screen and (max-width: 1599px) {
+    h3 {
+      margin-bottom: 24px;
+    }
+
+    h4,
+    .widgettitle {
+      margin-bottom: 16px;
+    }
+
+    form .filter-checkbox + .filter-checkbox {
+      margin-top: 16px;
+    }
+
+    .filter-checkbox {
+      padding-left: 24px;
+    }
+
+    .filter-checkbox .checkmark {
+      height: 16px;
+      width: 16px;
+      border-radius: 4px;
+      margin-right: 8px;
+    }
+
+    .filter-checkbox .checkmark:after {
+      left: 5px;
+      top: 2px;
+      width: 3px;
+      height: 6px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    .filter-color {
+      width: 48px;
+      height: 48px;
+      margin-right: 12px;
+    }
+
+    .filter-color .checkmark {
+      border-radius: 4px;
+    }
+
+    form + form,
+    .widget_layered_nav,
+    .form-price {
+      margin-top: 36px;
+    }
+
+    .filter-categories,
+    .woocommerce-widget-layered-nav-list__item {
+      li + li {
+        margin-top: 16px;
+      }
+    }
+
+    ul .count {
+      font-size: 14px;
+      color: #9b9b9b;
+    }
+
+    .form-price {
+      span {
+        display: block;
+      }
+
+      a {
+        color: #6b635f;
+      }
+
+      div {
+        color: #9b9b9b;
+      }
+
+      span + span {
+        margin-top: 16px;
+      }
+
+      input {
+        width: 108px;
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+    }
+  }
+}

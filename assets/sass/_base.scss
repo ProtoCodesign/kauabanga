@@ -1,0 +1,376 @@
+body {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+h1.ka-title,
+h2.ka-title,
+h3.ka-title {
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1.ka-title::before,
+h2.ka-title::before,
+h3.ka-title::before,
+h1.ka-title::after,
+h2.ka-title::after,
+h3.ka-title::after {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #f4ab0b;
+  font-style: italic;
+}
+
+h1.ka-title::before,
+h1.ka-title::after {
+  font-weight: 700;
+}
+
+h2.ka-title::before,
+h3.ka-title::before,
+h2.ka-title::after,
+h3.ka-title::after {
+  font-weight: 600;
+}
+
+h1.ka-title::before,
+h2.ka-title::before,
+h3.ka-title::before {
+  content: "/";
+  margin-right: 0.25em;
+}
+
+h1.ka-title::after,
+h2.ka-title::after,
+h3.ka-title::after {
+  content: "/";
+  margin-left: 0.25em;
+}
+
+h2 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h3 {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h4,
+.widgettitle {
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+p,
+a,
+small,
+input,
+select,
+span,
+div,
+main,
+section {
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+small {
+  font-weight: 600;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  color: #5277da;
+}
+
+a.bg-dark {
+  color: #8ea7e9;
+}
+
+a.btn-primary,
+button.btn-primary {
+  color: #25201b;
+  background-color: #f7bc28;
+  display: inline-block;
+  padding: 25px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+a.btn-secondary,
+button.btn-secondary {
+  color: #ffffff;
+  background-color: #6b635f;
+  display: inline-block;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+label {
+  color: #6b635f;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 20px 25px;
+  font-size: 21px !important;
+  background: #f4f4f4;
+  color: #6b635f;
+  width: 100%;
+  font-weight: 500 !important;
+  outline: none;
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10"><path d="M1.415 1.414l8 8 8-8" fill="none" stroke="%236b635f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>');
+  background-position: right 20px top 50%;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+
+select option {
+  background-color: #ffffff;
+}
+
+input::placeholder {
+  color: #c1c1c1;
+}
+
+input.bg-dark {
+  background-color: #554d49;
+  color: #ffffff;
+}
+
+input.bg-dark::placeholder {
+  color: #9b9b9b;
+}
+
+@media only screen and (min-width: 1600px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  h4,
+  .widgettitle {
+    font-size: 27px;
+  }
+
+  p,
+  a,
+  input,
+  select,
+  label,
+  span,
+  div,
+  main,
+  section {
+    font-size: 21px;
+  }
+
+  input,
+  select,
+  textarea {
+    border-radius: 4px;
+    padding: 20px 25px;
+    font-weight: 500 !important;
+    font-size: 21px !important;
+  }
+
+  small {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 27px;
+  }
+
+  h4,
+  .widgettitle {
+    font-size: 21px;
+  }
+
+  input,
+  select,
+  textarea {
+    border-radius: 4px;
+    padding: 16px 20px;
+    font-weight: 500 !important;
+    font-size: 17px !important;
+  }
+
+  p,
+  a,
+  input,
+  select,
+  label,
+  span,
+  div,
+  main,
+  section {
+    font-size: 17px;
+  }
+
+  small {
+    font-size: 14px;
+  }
+
+  a.btn-primary,
+  button.btn-primary {
+    padding: 20px 24px;
+  }
+
+  a.btn-secondary,
+  button.btn-secondary {
+    padding: 16px 20px;
+  }
+
+  label {
+    margin-bottom: 4px;
+  }
+
+  input::placeholder {
+    color: #c1c1c1;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  h4,
+  .widgettitle {
+    font-size: 17px;
+  }
+
+  input,
+  select,
+  textarea {
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+  }
+
+  p,
+  a,
+  input,
+  select,
+  label,
+  span,
+  div,
+  main,
+  section {
+    font-size: 14px;
+  }
+
+  small {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 27px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  h4,
+  .widgettitle {
+    font-size: 14px;
+  }
+
+  select {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    border-radius: 3px;
+  }
+
+  p,
+  a,
+  input,
+  select,
+  label,
+  span,
+  div,
+  main,
+  section {
+    font-size: 12px;
+  }
+
+  small {
+    font-size: 10px;
+  }
+}

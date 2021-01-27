@@ -1,0 +1,74 @@
+/*
+  Theme Name: Kauabanga
+  Theme URI: https://kauabanga.com.br
+  Author: ProtoCodesign
+  Author URI: https://protocodesign.com
+  Description: Tema exclusivo da loja virtual kauabanga
+  Version: 0.7.3
+  Text Domain: kauabanga
+*/
+
+/* Reset styles */
+@import "reset";
+
+/* Grid format */
+@import "grid";
+
+/* Base styles kauabanga */
+@import "base";
+
+/* Bar admin styles */
+@import "admin";
+
+/* Header */
+@import "header";
+
+@import "banners";
+
+/* Glider slider */
+@import "glider";
+
+/* Showcase vitrine */
+@import "showcase-vitrine";
+
+/* Categories */
+@import "categories";
+
+/* Card product */
+@import "product-card";
+
+/* Newsletter */
+@import "newsletter";
+
+/* Footer */
+@import "footer";
+
+/* Breadcrumb */
+@import "breadcrumb";
+
+/* Filters */
+@import "filters";
+
+/* Woocommerce archive */
+@import "wc-archive";
+
+/* Single product */
+@import "single-product";
+
+/* Woocommerce notification */
+@import "wc-notification";
+
+/* Gallery */
+@import "gallery";
+
+/* Products info */
+@import "product-infos";
+
+/* Tabs */
+@import "tabs";
+
+/* Reviews */
+@import "reviews";
+
+/* Products related */
+@import "products-related";

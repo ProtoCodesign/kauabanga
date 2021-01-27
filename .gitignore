@@ -1,2 +1,8 @@
+# Ignora a pasta node_modules
 assets/js/node_modules/
+
+# Ignora arquivos de erros do Yarn
 assets/js/yarn-*.*
+
+# Ignora arquivo de geração do css
+assets/js/dist/style.*.*

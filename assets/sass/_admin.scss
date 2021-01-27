@@ -1,0 +1,14 @@
+.customize-support header {
+  margin-top: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  .customize-support header {
+    margin-top: 46px;
+  }
+
+  #wpadminbar {
+    position: fixed !important;
+    top: 0 !important;
+  }
+}

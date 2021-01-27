@@ -14,3 +14,306 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: footer.php:29, header.php:26
+msgid "Kauabanga"
+msgstr ""
+
+#: footer.php:33
+msgid "Todos os direitos reservados &#169;"
+msgstr ""
+
+#: footer.php:44, inc/customizer/customize-footer.php:12
+msgid "Navegação"
+msgstr ""
+
+#: footer.php:87, inc/customizer/customize-footer.php:100
+msgid "Institucional"
+msgstr ""
+
+#: footer.php:124, inc/customizer/customize-footer.php:188
+msgid "Redes sociais"
+msgstr ""
+
+#: footer.php:129
+msgid "Facebook kauabanga"
+msgstr ""
+
+#: footer.php:130
+msgid "Facebook"
+msgstr ""
+
+#: footer.php:137
+msgid "Instagram kauabanga"
+msgstr ""
+
+#: footer.php:138
+msgid "Instagram"
+msgstr ""
+
+#: footer.php:146
+msgid "Whatsapp kauabanga"
+msgstr ""
+
+#: footer.php:147
+msgid "Whatsapp"
+msgstr ""
+
+#: footer.php:154
+msgid "Formas de pagamento"
+msgstr ""
+
+#: footer.php:156
+msgid "Cartão de crédito"
+msgstr ""
+
+#: footer.php:157
+msgid "Débito em conta"
+msgstr ""
+
+#: footer.php:158
+msgid "Boleto bancário"
+msgstr ""
+
+#: footer.php:159
+msgid "Tranferência PIX"
+msgstr ""
+
+#: functions.php:89, header.php:92, woocommerce/archive-product.php:28
+msgid "Categorias"
+msgstr ""
+
+#: header.php:32, header.php:39
+msgid "Pesquisar"
+msgstr ""
+
+#: header.php:67, header.php:70, header.php:104, header.php:105
+msgid "Minha conta"
+msgstr ""
+
+#: header.php:76, header.php:83, header.php:110, header.php:116
+msgid "Carrinho"
+msgstr ""
+
+#: header.php:95
+msgid "Abrir menu"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:4
+msgid "Banners"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:6
+msgid "Área de configurações dos banners da loja"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:13
+msgid "Topo"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:25, inc/customizer/customize-banners.php:127, inc/customizer/customize-footer.php:200, inc/customizer/customize-footer.php:232, inc/customizer/customize-footer.php:264, inc/customizer/customize-newsletter.php:17
+msgid "Ativar/Desativar"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:41
+msgid "Imagem do anúncio"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:58
+msgid "Título"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:74, inc/customizer/customize-newsletter.php:33, woocommerce/single-product.php:91
+msgid "Descrição"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:84
+msgid "Ver Mais"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:90
+msgid "Botão título"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:107
+msgid "Link"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:115
+msgid "Régua"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:4
+msgid "Rodapé"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:6
+msgid "Área de configurações do rodapé"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:24, inc/customizer/customize-footer.php:112
+msgid "Página 1"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:40, inc/customizer/customize-footer.php:128
+msgid "Página 2"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:56, inc/customizer/customize-footer.php:144
+msgid "Página 3"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:72, inc/customizer/customize-footer.php:160
+msgid "Página 4"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:88, inc/customizer/customize-footer.php:176
+msgid "Página 5"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:210
+msgid "https://facebook.com/"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:216
+msgid "Link(Facebook)"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:242
+msgid "https://www.instagram.com/"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:248
+msgid "Link(Instagram)"
+msgstr ""
+
+#: inc/customizer/customize-footer.php:280
+msgid "Número(Whatsapp)"
+msgstr ""
+
+#: inc/customizer/customize-newsletter.php:4
+msgid "Newsletter"
+msgstr ""
+
+#: inc/customizer/customize-newsletter.php:6
+msgid "Área de configurações da newsletter da loja"
+msgstr ""
+
+#: inc/customizer/customize-newsletter.php:27
+msgid "Assine a nossa newsletter e receba promoções em primeira mão!"
+msgstr ""
+
+#: inc/customizer/customize-newsletter.php:43
+msgid "Enviar"
+msgstr ""
+
+#: inc/customizer/customize-newsletter.php:49
+msgid "Botão"
+msgstr ""
+
+#: inc/customizer/customizer.php:23
+msgid "Informações da empresa"
+msgstr ""
+
+#: inc/wc/template-tags.php:44, inc/wc/template-tags.php:51
+msgid "R$"
+msgstr ""
+
+#: page-home.php:2
+msgid "Home"
+msgstr ""
+
+#: page-home.php:58
+msgid "Compra segura"
+msgstr ""
+
+#: page-home.php:59
+msgid "Sua compra é 100% segura"
+msgstr ""
+
+#: page-home.php:63
+msgid "Compre parcelado"
+msgstr ""
+
+#: page-home.php:64
+msgid "Parcele em até 12x sem juros"
+msgstr ""
+
+#: page-home.php:68, page-home.php:69
+msgid "Entrega por todo o Brasil"
+msgstr ""
+
+#: page-home.php:82, woocommerce/archive-product.php:112
+msgid "Anterior"
+msgstr ""
+
+#: page-home.php:100
+msgid "Próximo"
+msgstr ""
+
+#: page-home.php:108
+msgid "Destaques"
+msgstr ""
+
+#: page-home.php:141
+msgid "Mais vendidos"
+msgstr ""
+
+#: woocommerce/archive-product.php:24
+msgid "Filtrar"
+msgstr ""
+
+#: woocommerce/archive-product.php:63
+msgid "Preço"
+msgstr ""
+
+#: woocommerce/archive-product.php:67
+msgid "Até R$100"
+msgstr ""
+
+#: woocommerce/archive-product.php:73
+msgid "R$100 a R$300"
+msgstr ""
+
+#: woocommerce/archive-product.php:79
+msgid "R$300 a R$700"
+msgstr ""
+
+#: woocommerce/archive-product.php:85
+msgid "R$700 a R$1200"
+msgstr ""
+
+#: woocommerce/archive-product.php:91
+msgid "Mínimo"
+msgstr ""
+
+#: woocommerce/archive-product.php:94
+msgid "Máximo"
+msgstr ""
+
+#: woocommerce/archive-product.php:103
+msgid "Filtrar produtos"
+msgstr ""
+
+#: woocommerce/archive-product.php:113
+msgid "Próxima"
+msgstr ""
+
+#: woocommerce/single-product.php:49
+msgid "Marca:"
+msgstr ""
+
+#: woocommerce/single-product.php:58
+msgid "Categorias:"
+msgstr ""
+
+#: woocommerce/single-product.php:68
+msgid "Ref:"
+msgstr ""
+
+#: woocommerce/single-product.php:93
+msgid "Avaliações"
+msgstr ""
+
+#: woocommerce/single-product.php:113
+msgid "Relacionados"
+msgstr ""

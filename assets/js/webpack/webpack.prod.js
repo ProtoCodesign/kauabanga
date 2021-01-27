@@ -1,5 +1,20 @@
+const TerserPlugin = require('terser-webpack-plugin');
+
 const prodConfig = {
   mode: 'production',
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          format: {
+            comments: false,
+          },
+        },
+        extractComments: false,
+      }),
+    ],
+  },
   module: {
     rules: [
       {
@@ -12,6 +27,7 @@ const prodConfig = {
               plugins: [
                 '@babel/proposal-class-properties',
                 '@babel/proposal-object-rest-spread',
+                '@babel/plugin-transform-runtime',
               ],
             },
           },

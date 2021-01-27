@@ -1,0 +1,131 @@
+/* CARD PRODUCT */
+.showcase .col {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.product {
+  display: block;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.image-product {
+  position: relative;
+}
+
+.image-product img {
+  width: 100%;
+  border: 3px solid #f4f4f4;
+  border-radius: 10px;
+}
+
+.tag-discount,
+.tag-category {
+  padding: 15px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.tag-discount {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: #5277da;
+  color: #fff;
+}
+
+.tag-category {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  background-color: #d6d6d6;
+  color: #6b635f;
+}
+
+.product-info {
+  padding: 15px 10px 0px 10px;
+}
+
+.product-info .product-name {
+  color: #25201b;
+  font-weight: 600;
+}
+
+.product-info .price * {
+  display: inline-block;
+}
+
+.product-info .price .discount-price,
+.product-info span {
+  font-weight: 600;
+  color: #c1c1c1;
+  text-decoration: line-through;
+}
+
+.product-info span {
+  text-decoration: none;
+}
+
+.product-info .price .current-price {
+  font-weight: 600;
+  color: #3c3430;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 1599px) {
+  .product {
+    margin-top: 48px;
+  }
+
+  .image-product img {
+    border: 2.5px solid #f4f4f4;
+    border-radius: 8px;
+  }
+
+  .tag-discount,
+  .tag-category {
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+
+  .tag-discount {
+    right: 24px;
+    top: 24px;
+    background-color: #5277da;
+    color: #fff;
+  }
+
+  .tag-category {
+    left: 24px;
+    bottom: 24px;
+  }
+
+  .product-info {
+    padding: 12px 8px 0px 8px;
+  }
+
+  .product-info .price .current-price {
+    margin-left: 4px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .product {
+    margin-top: 48px;
+  }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+  .showcase .s12 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .product {
+    margin-top: 36px;
+  }
+}

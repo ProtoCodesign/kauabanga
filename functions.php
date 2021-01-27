@@ -19,7 +19,10 @@
   $ka_uri = trailingslashit( get_template_directory_uri() );
 
   // Hook executa as configurações do tema
-  add_action( 'after_setup_theme', 'ka_init_setup' );
+  add_action( 'after_setup_theme', 'ka_setup_init', 0 );
+
+  // Hook executa as configurações do tema
+  add_action( 'after_setup_theme', 'ka_customizer_init', 5 );
 
   // Hook remove estilos do wordpress
   add_action( 'wp_enqueue_scripts', 'deregister_styles' );
@@ -63,21 +66,27 @@
     remove_action( 'wp_print_styles', 'print_emoji_styles' );
   }
 
-  if( !function_exists( 'ka_init_setup' ) ) {
+  if( !function_exists( 'ka_setup_init' ) ) {
     /**
      * Carrega as configurações do tema
      *
      * @since 0.1.0
      * @return void
      */
-    function ka_init_setup() {
+    function ka_setup_init() {
       global $ka_dir;
 
       // Inicializa o arquivo de internacionalização
       load_theme_textdomain( 'kauabanga', $ka_dir . 'languages' );
 
-      // Adiciona suporte ao WooCommerce
-      add_theme_support( 'woocommerce' );
+      // Adiciona suporte a atualização em tempo real
+      add_theme_support( 'customize-selective-refresh-widgets' );
+
+      // Adiciona suporte a menus
+      add_theme_support( 'menus' );
+
+      // Registra o menu de categorias
+      register_nav_menu( 'categories', __( 'Categorias', 'kauabanga' ) );
 
       // Importa as outras configurações do tema
       require_once( $ka_dir . 'inc/kauabanga.php' );
@@ -109,4 +118,44 @@
       wp_dequeue_script( 'wp-embed' );
     }
   }
+
+  /**
+   * Função verifica se WooCommerce
+   *
+   * @since 0.5.9
+   * @return boolean
+   */
+  if( !function_exists( 'is_woocommerce_activated' ) ) {
+    function is_woocommerce_activated() {
+      return class_exists( 'woocommerce' );
+    }
+  }
+
+  /**
+   * Inicializa o custom preview
+   *
+   * @since 0.3.2
+   * @return void
+   */
+  function ka_customizer_init() {
+    global $ka_dir;
+
+    // Importa as configurações do custom preview
+    require_once( $ka_dir . 'inc/customizer/customizer.php' );
+  }
+
+  if( is_woocommerce_activated() ) {
+    // Adiciona suporte ao WooCommerce
+    add_theme_support( 'woocommerce' );
+
+    // Importa os hooks modificado do WooCommerce
+    require_once( $ka_dir . 'inc/wc/hooks.php' );
+
+    // Importa funções criadas para o WooCommerce
+    require_once( $ka_dir . 'inc/wc/functions.php' );
+
+    // Importa funções que retornam html para o WooCommerce
+    require_once( $ka_dir . 'inc/wc/template-tags.php' );
+  }
+
 ?>

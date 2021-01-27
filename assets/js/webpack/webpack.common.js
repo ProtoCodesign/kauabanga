@@ -1,27 +1,57 @@
-const { resolve } = require('path');
+const { join, resolve } = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const PATHS = {
-  dist: {
-    folder: resolve(__dirname, '..', 'dist'),
-  },
-  scripts: {
+  dist: resolve(__dirname, '..', 'dist'),
+  files: {
+    css: join('..', '..', '..', '[name].css'),
+    sass: resolve(__dirname, '..', '..', 'sass', 'style.scss'),
     ts: resolve(__dirname, '..', 'src', 'index.ts'),
   },
+  watch: [
+    resolve(__dirname, '..', '..', '..', '**', '*.php'),
+    resolve(__dirname, '..', '..', '..', 'languages', '*.pot'),
+  ],
 };
 
 const commonConfig = {
   entry: {
-    index: PATHS.scripts.ts,
+    index: PATHS.files.ts,
+    style: PATHS.files.sass,
   },
   output: {
     filename: '[name].[chunkhash].js',
-    path: PATHS.dist.folder,
+    path: PATHS.dist,
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.js', '.scss', '.css'],
   },
-  plugins: [new CleanWebpackPlugin()],
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/i,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.s(a|c)ss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'sass-loader',
+          },
+        ],
+      },
+    ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: PATHS.files.css,
+    }),
+    new CleanWebpackPlugin(),
+  ],
 };
 
 module.exports = { commonConfig, PATHS };
