@@ -1,8 +1,16 @@
 import './Glider';
 
+import ChangeTab from './ChangeTab';
 import ClickButton from './ClickButton';
 import Gallery from './Gallery';
 import HeaderSpace from './HeaderSpace';
+
+new ChangeTab({
+  descriptionData: '[data-tab="description"]',
+  descriptionContent: '[data-tab="description-content"]',
+  reviewsData: '[data-tab="reviews"]',
+  reviewsContent: '[data-tab="reviews-content"]',
+});
 
 new ClickButton({
   menuMobile: '.container-dropdown',

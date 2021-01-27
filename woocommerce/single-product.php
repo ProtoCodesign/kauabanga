@@ -69,7 +69,13 @@
       <h3><?= $state['product']['name']; ?></h3>
 
       <div class="price">
+        <?php if( !$state['product']['is_variable'] ) : ?>
+        <h4 class="older-price">R$ 199,00</h4>
+        <h3 class="current-price">R$ 149,00</h3>
+        <?php else : ?>
         <?php woocommerce_get_template( 'single-product/price.php' ); ?>
+        <?php endif; ?>
+
       </div>
     </div>
 
@@ -77,6 +83,27 @@
 
   </div>
   <?php } } ?>
+
+  <div class="product-tabs col s12 m12 l12 xl12">
+    <div class="tabs-navigation">
+      <span class="tab-button active" data-tab="description"><?php _e( 'Descrição', 'kauabanga' ); ?></span>
+
+      <span class="tab-button" data-tab="reviews"><?php _e( 'Avaliações', 'kauabanga' ); ?>
+        <?= '( ' . $state['product']['review_count'] . ' )'; ?>
+      </span>
+    </div>
+
+    <div class="tabs-container">
+      <div class="tab-content" data-tab="description-content" id="description">
+        <?= wc_format_content( $state['product']['description'] ); ?>
+      </div>
+
+      <div class="tab-content hidden" data-tab="reviews-content">
+        <?= comments_template(); ?>
+      </div>
+    </div>
+  </div>
+
 </main>
 
 <section class="products-related">

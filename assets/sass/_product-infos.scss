@@ -78,6 +78,18 @@
       font-size: 36px;
       font-weight: 600 !important;
 
+      h3,
+      h4 {
+        display: inline-block;
+        margin-top: 15px;
+      }
+
+      h4 {
+        color: #c1c1c1;
+        text-decoration: line-through;
+        margin-right: 5px;
+      }
+
       bdi span,
       bdi,
       span {
@@ -196,6 +208,15 @@
       .price {
         font-size: 27px;
 
+        h3,
+        h4 {
+          margin-top: 12px;
+        }
+
+        h4 {
+          margin-right: 4px;
+        }
+
         bdi span,
         bdi,
         span {
@@ -276,6 +297,15 @@
 
       .price {
         font-size: 21px;
+
+        h3,
+        h4 {
+          margin-top: 10px;
+        }
+
+        h4 {
+          margin-right: 4px;
+        }
 
         bdi span,
         bdi,
@@ -360,6 +390,15 @@
       .price {
         font-size: 17px;
 
+        h3,
+        h4 {
+          margin-top: 8px;
+        }
+
+        h4 {
+          margin-right: 3px;
+        }
+
         bdi span,
         bdi,
         span {
@@ -386,7 +425,7 @@
     .variation-form {
       display: block;
       width: 100%;
-      margin-top: 16px;
+      margin-left: 16px;
 
       & + .variation-form {
         margin-left: 0;
