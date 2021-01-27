@@ -42,23 +42,29 @@
   </div>
 
   <div class="product-infos col s12 m6 l6 xl6">
-    <?php if( have_posts() ) { while( have_posts() ) { the_post(); ?>
+    <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
     <div class="product-tags">
+
+      <?php if( is_array( $state['brands'] ) ) : ?>
       <span class="product-brand">
         <?php _e( 'Marca:', 'kauabanga' ); ?>
 
-        <?php foreach( $state['brands'] as $brand ) { ?>
+        <?php foreach( $state['brands'] as $brand ) : ?>
         <a href="<?= get_term_link( $brand, 'pwb-brands' ); ?>"><?= $brand->name; ?></a>
-        <?php } ?>
+        <?php endforeach; ?>
       </span>
+      <?php endif; ?>
 
+      <?php if( is_array( $state['categories'] ) ) : ?>
       <span class="product-categories">
         <?php _e( 'Categorias:', 'kauabanga' ); ?>
 
-        <?php foreach( $state['categories'] as $category ) { ?>
+        <?php foreach( $state['categories'] as $category ) : ?>
         <a href="<?= get_term_link( $category, 'product_cat' ); ?>"><?= $category->name; ?></a>
-        <?php } ?>
+        <?php endforeach; ?>
       </span>
+      <?php endif; ?>
+
     </div>
 
     <div class="product-head">
@@ -75,14 +81,13 @@
         <?php else : ?>
         <?php woocommerce_get_template( 'single-product/price.php' ); ?>
         <?php endif; ?>
-
       </div>
     </div>
 
     <?php woocommerce_template_single_add_to_cart(); ?>
 
   </div>
-  <?php } } ?>
+  <?php endwhile; endif; ?>
 
   <div class="product-tabs col s12 m12 l12 xl12">
     <div class="tabs-navigation">
