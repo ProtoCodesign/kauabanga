@@ -8,14 +8,14 @@
   $data = array();
   $data['featured'] = ka_sanitize_products( wc_get_products( array(
         'limit'     => 12,
-        'orderby'   => 'date',
+        'orderby'   => 'rand',
         'featured'  => true
       )
     )
   );
   $data['sales'] = ka_sanitize_products( wc_get_products( array(
         'limit'     => 12,
-        'order'     => 'DESC',
+        'order'     => 'rand',
         'orderby'   => 'meta_value_num',
         'meta_key'  => 'total_sales'
       )
