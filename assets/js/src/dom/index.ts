@@ -1,7 +1,8 @@
-import HeaderSpace from './HeaderSpace';
-import ClickButton from './ClickButton';
+import './Glider';
 
-new HeaderSpace('#next-element');
+import ClickButton from './ClickButton';
+import Gallery from './Gallery';
+import HeaderSpace from './HeaderSpace';
 
 new ClickButton({
   menuMobile: '.container-dropdown',
@@ -12,4 +13,12 @@ new ClickButton({
   filter: '.filters',
   filterBtn: '.btn-filter',
   filterCloseBtn: '.btn-close',
+});
+
+new HeaderSpace('#next-element');
+
+new Gallery({
+  gallery: '[data-gallery="gallery"]',
+  galleryMain: '[data-gallery="main"]',
+  galleryList: '[data-gallery="list"]',
 });

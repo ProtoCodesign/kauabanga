@@ -78,7 +78,7 @@ msgstr ""
 msgid "Tranferência PIX"
 msgstr ""
 
-#: functions.php:89, header.php:92, woocommerce/archive-product.php:26
+#: functions.php:89, header.php:92, woocommerce/archive-product.php:28
 msgid "Categorias"
 msgstr ""
 
@@ -214,7 +214,7 @@ msgstr ""
 msgid "Informações da empresa"
 msgstr ""
 
-#: inc/wc/template-tags.php:36, inc/wc/template-tags.php:40
+#: inc/wc/template-tags.php:44, inc/wc/template-tags.php:51
 msgid "R$"
 msgstr ""
 
@@ -222,74 +222,94 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: page-home.php:48
+#: page-home.php:58
 msgid "Compra segura"
 msgstr ""
 
-#: page-home.php:49
+#: page-home.php:59
 msgid "Sua compra é 100% segura"
 msgstr ""
 
-#: page-home.php:53
+#: page-home.php:63
 msgid "Compre parcelado"
 msgstr ""
 
-#: page-home.php:54
+#: page-home.php:64
 msgid "Parcele em até 12x sem juros"
 msgstr ""
 
-#: page-home.php:58, page-home.php:59
+#: page-home.php:68, page-home.php:69
 msgid "Entrega por todo o Brasil"
 msgstr ""
 
-#: page-home.php:66
-msgid "Destaques"
-msgstr ""
-
-#: page-home.php:99
-msgid "Mais vendidos"
-msgstr ""
-
-#: woocommerce/archive-product.php:22
-msgid "Filtrar"
-msgstr ""
-
-#: woocommerce/archive-product.php:61
-msgid "Preço"
-msgstr ""
-
-#: woocommerce/archive-product.php:65
-msgid "Até R$100"
-msgstr ""
-
-#: woocommerce/archive-product.php:71
-msgid "R$100 a R$300"
-msgstr ""
-
-#: woocommerce/archive-product.php:77
-msgid "R$300 a R$700"
-msgstr ""
-
-#: woocommerce/archive-product.php:83
-msgid "R$700 a R$1200"
-msgstr ""
-
-#: woocommerce/archive-product.php:89
-msgid "Mínimo"
-msgstr ""
-
-#: woocommerce/archive-product.php:92
-msgid "Máximo"
-msgstr ""
-
-#: woocommerce/archive-product.php:101
-msgid "Filtrar produtos"
-msgstr ""
-
-#: woocommerce/archive-product.php:110
+#: page-home.php:82, woocommerce/archive-product.php:112
 msgid "Anterior"
 msgstr ""
 
-#: woocommerce/archive-product.php:111
+#: page-home.php:100
+msgid "Próximo"
+msgstr ""
+
+#: page-home.php:108
+msgid "Destaques"
+msgstr ""
+
+#: page-home.php:141
+msgid "Mais vendidos"
+msgstr ""
+
+#: woocommerce/archive-product.php:24
+msgid "Filtrar"
+msgstr ""
+
+#: woocommerce/archive-product.php:63
+msgid "Preço"
+msgstr ""
+
+#: woocommerce/archive-product.php:67
+msgid "Até R$100"
+msgstr ""
+
+#: woocommerce/archive-product.php:73
+msgid "R$100 a R$300"
+msgstr ""
+
+#: woocommerce/archive-product.php:79
+msgid "R$300 a R$700"
+msgstr ""
+
+#: woocommerce/archive-product.php:85
+msgid "R$700 a R$1200"
+msgstr ""
+
+#: woocommerce/archive-product.php:91
+msgid "Mínimo"
+msgstr ""
+
+#: woocommerce/archive-product.php:94
+msgid "Máximo"
+msgstr ""
+
+#: woocommerce/archive-product.php:103
+msgid "Filtrar produtos"
+msgstr ""
+
+#: woocommerce/archive-product.php:113
 msgid "Próxima"
+msgstr ""
+
+#: woocommerce/single-product.php:44
+msgid "Marca:"
+msgstr ""
+
+#: woocommerce/single-product.php:52
+msgid "Categorias:"
+msgstr ""
+
+#: woocommerce/single-product.php:62
+msgid "Ref:"
+msgstr ""
+
+#: woocommerce/single-product.php:80
+msgid "Relacionados"
 msgstr ""

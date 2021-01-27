@@ -1,0 +1,106 @@
+.gallery {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+
+  img {
+    min-width: 100%;
+    box-sizing: border-box;
+    border: 3px solid #f4f4f4;
+    border-radius: 10px;
+  }
+
+  .gallery-images {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 13%;
+    transition: all 0.3s ease-in-out;
+
+    li + li {
+      margin-top: 15px;
+    }
+
+    li {
+      display: block;
+      width: 100%;
+
+      img {
+        display: block;
+        background-color: #ffffff;
+
+        &.active {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  .gallery {
+    img {
+      border: 3px solid #f4f4f4;
+      border-radius: 8px;
+    }
+
+    .gallery-images {
+      margin-left: 16px;
+      margin-top: 16px;
+      width: 13%;
+
+      li + li {
+        margin-top: 12px;
+      }
+
+      li {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .gallery {
+    img {
+      border: 2px solid #f4f4f4;
+      border-radius: 6px;
+    }
+
+    .gallery-images {
+      margin-left: 10px;
+      margin-top: 10px;
+      width: 15%;
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      li {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .gallery {
+    .gallery-images {
+      margin-left: 8px;
+      margin-top: 8px;
+      width: 15%;
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      li {
+        width: 100%;
+      }
+    }
+  }
+}

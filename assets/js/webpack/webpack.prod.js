@@ -1,5 +1,20 @@
+const TerserPlugin = require('terser-webpack-plugin');
+
 const prodConfig = {
   mode: 'production',
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          format: {
+            comments: false,
+          },
+        },
+        extractComments: false,
+      }),
+    ],
+  },
   module: {
     rules: [
       {

@@ -57,10 +57,15 @@
   display: inline-block;
 }
 
-.product-info .price .discount-price {
+.product-info .price .discount-price,
+.product-info span {
   font-weight: 600;
   color: #c1c1c1;
   text-decoration: line-through;
+}
+
+.product-info span {
+  text-decoration: none;
 }
 
 .product-info .price .current-price {
