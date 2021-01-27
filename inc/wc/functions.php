@@ -8,7 +8,6 @@
    */
   function ka_sanitize_products( $products ) {
     $state = array();
-    $state['products'] = array();
 
     foreach( $products as $product ) {
       if( $product->is_type( 'simple' ) ) {
@@ -46,6 +45,7 @@
    * @return array
    */
   function ka_sanitize_single_product( $id ) {
+    $state = array();
     $state['product'] = wc_get_product( $id );
 
     if( $state['product']->is_type( 'simple' ) ) {
@@ -83,10 +83,9 @@
    */
   function ka_get_gallery_images_link( $product_id, $size = 'medium' ) {
     $state = array();
-    $state['link'] = array();
-    $state['ids'] = wc_get_product( $product_id )->get_gallery_attachment_ids();
+    $state['ids']  = wc_get_product( $product_id )->get_gallery_attachment_ids();
 
-    if( !is_array( $state['ids'] ) ) {
+    if( empty( $state['ids'] ) ) {
       return;
     }
 
@@ -95,6 +94,26 @@
     }
 
     return $state['link'];
+  }
+
+
+  /**
+   * Retorna os produtos relacionados a um produto especifico
+   *
+   * @param integer $product_id
+   * @param integer $qtd
+   * @since 0.7.1
+   * @return array Produtos relacionados
+   */
+  function ka_products_related( $product_id, $qtd = 4 ) {
+    $state = array();
+    $state['related_ids'] = wc_get_related_products( $product_id, $qtd );
+
+    foreach( $state['related_ids'] as $id ) {
+      $state['products'][] = wc_get_product( $id);
+    }
+
+    return $state['products'];
   }
 
   /**
@@ -114,6 +133,6 @@
    * @return void
    */
   function refresh_function(){
-    header("Refresh:0");
+    header( 'Refresh:0' );
   }
 ?>

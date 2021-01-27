@@ -7,6 +7,7 @@
 <?php
   $state = array();
   $state['product']    = ka_sanitize_single_product( get_the_ID() );
+  $state['related']    = ka_sanitize_products( ka_products_related( get_the_ID() ) );
   $state['brands']     = get_the_terms( get_the_ID(), 'pwb-brand' );
   $state['categories'] = get_the_terms( get_the_ID(), 'product_cat' );
 ?>
@@ -25,11 +26,14 @@
         <img src="<?= $state['product']['img']; ?>" alt="<?= $state['product']['name']; ?>" data-gallery="list" />
       </li>
 
-      <?php foreach( $state['product']['gallery'] as $img ) { ?>
+      <?php
+        if( !empty( $state['product']['gallery'] ) ) :
+          foreach( $state['product']['gallery'] as $img ) :
+      ?>
       <li>
         <img src="<?= $img ?>" alt="<?= $state['product']['name']; ?>" data-gallery="list" />
       </li>
-      <?php } ?>
+      <?php endforeach; endif; ?>
     </ul>
   </div>
 
@@ -37,14 +41,16 @@
     <?php if( have_posts() ) { while( have_posts() ) { the_post(); ?>
     <div class="product-tags">
       <span class="product-brand">
-        Marca:
+        <?php _e( 'Marca:', 'kauabanga' ); ?>
+
         <?php foreach( $state['brands'] as $brand ) { ?>
         <a href="<?= get_term_link( $brand, 'pwb-brands' ); ?>"><?= $brand->name; ?></a>
         <?php } ?>
       </span>
 
       <span class="product-categories">
-        Categorias:
+        <?php _e( 'Categorias:', 'kauabanga' ); ?>
+
         <?php foreach( $state['categories'] as $category ) { ?>
         <a href="<?= get_term_link( $category, 'product_cat' ); ?>"><?= $category->name; ?></a>
         <?php } ?>
@@ -52,7 +58,9 @@
     </div>
 
     <div class="product-head">
-      <small>Ref: <?= $state['product']['sku']; ?></small>
+      <?php if( !empty( $state['product']['sku'] ) ) : ?>
+      <small><?php _e( 'Ref:', 'kauabanga' ); ?><?= $state['product']['sku']; ?></small>
+      <?php endif?>
 
       <h3><?= $state['product']['name']; ?></h3>
 
@@ -66,5 +74,12 @@
   </div>
   <?php } } ?>
 </main>
+
+<section class="products-related">
+  <div class="row container">
+    <h2 class="ka-title"><?php _e( 'Relacionados', 'kauabanga' ); ?></h2>
+    <?php ka_product_list( $state['related'],'col s12 m4 l3 xl3' ); ?>
+  </div>
+</section>
 
 <?php get_footer(); ?>

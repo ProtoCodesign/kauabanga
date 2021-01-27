@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.7.0
+  Version: 0.7.1
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -1831,6 +1831,10 @@ footer .main-content {
   padding-bottom: 90px;
   padding-top: 90px; }
 
+footer .main-content .logo img {
+  width: 40%;
+  height: auto; }
+
 footer .business-info {
   color: #ffffff;
   padding: 45px 0;
@@ -1879,6 +1883,9 @@ footer .logo {
   footer .main-content {
     padding-bottom: 72px;
     padding-top: 72px; }
+  footer .main-content .logo img {
+    width: 55%;
+    height: auto; }
   footer .business-info {
     padding: 36px 0; }
   footer p {
@@ -1897,6 +1904,9 @@ footer .logo {
   footer .main-content {
     padding-bottom: 54px;
     padding-top: 54px; }
+  footer .main-content .logo img {
+    width: 25%;
+    height: auto; }
   .footer-socials,
   .footer-payment-forms {
     margin-top: 36px; } }
@@ -2366,6 +2376,39 @@ footer .logo {
     width: 25px;
     height: 25px; } }
 
+/* Single product */
+.single-product {
+  margin-top: 48px; }
+
+.single-product .col {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.single-product .gallery {
+  padding-right: 30px; }
+
+.single-product .product-infos {
+  padding-left: 30px; }
+
+@media only screen and (max-width: 1599px) {
+  .single-product .gallery {
+    padding-right: 20px; }
+  .single-product .product-infos {
+    padding-left: 20px; } }
+
+@media only screen and (max-width: 1100px) {
+  .single-product .gallery {
+    padding-right: 20px; }
+  .single-product .product-s {
+    padding-left: 20px; } }
+
+@media only screen and (max-width: 1100px) {
+  .single-product .gallery {
+    padding-right: 8px; }
+  .single-product .product-infos {
+    padding-left: 16px;
+    padding-right: 16px; } }
+
 /* Gallery */
 .gallery {
   width: 100%;
@@ -2438,39 +2481,6 @@ footer .logo {
     margin-top: 6px; }
   .gallery .gallery-images li {
     width: 100%; } }
-
-/* Single product */
-.single-product {
-  margin-top: 48px; }
-
-.single-product .col {
-  padding-top: 0;
-  padding-bottom: 0; }
-
-.single-product .gallery {
-  padding-right: 30px; }
-
-.single-product .product-infos {
-  padding-left: 30px; }
-
-@media only screen and (max-width: 1599px) {
-  .single-product .gallery {
-    padding-right: 20px; }
-  .single-product .product-infos {
-    padding-left: 20px; } }
-
-@media only screen and (max-width: 1100px) {
-  .single-product .gallery {
-    padding-right: 20px; }
-  .single-product .product-s {
-    padding-left: 20px; } }
-
-@media only screen and (max-width: 1100px) {
-  .single-product .gallery {
-    padding-right: 8px; }
-  .single-product .product-infos {
-    padding-left: 16px;
-    padding-right: 16px; } }
 
 /* Products info */
 .product-infos {
@@ -2742,4 +2752,37 @@ footer .logo {
     padding: 16px 20px !important;
     border-radius: 4px;
     margin-top: 20px; } }
+
+/* Products related */
+.products-related {
+  background-color: #f9f9f9;
+  padding-top: 120px;
+  padding-bottom: 120px; }
+
+.products-related h2 {
+  display: block;
+  width: 100%;
+  text-align: center; }
+
+.products-related img {
+  mix-blend-mode: darken; }
+
+@media only screen and (max-width: 1599px) {
+  .products-related {
+    padding-top: 96px;
+    padding-bottom: 96px; } }
+
+@media only screen and (max-width: 1100px) {
+  .products-related {
+    padding-top: 72px;
+    padding-bottom: 72px; }
+  .products-related .col:last-child {
+    display: none; } }
+
+@media only screen and (max-width: 767px) {
+  .products-related {
+    padding-top: 48px;
+    padding-bottom: 48px; }
+  .products-related .col:last-child {
+    display: flex; } }
 
