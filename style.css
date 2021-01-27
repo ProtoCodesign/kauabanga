@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.7.1
+  Version: 0.7.2
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -2408,6 +2408,72 @@ footer .logo {
   .single-product .product-infos {
     padding-left: 16px;
     padding-right: 16px; } }
+
+/* Woocommerce notification */
+.woocommerce-message {
+  margin-top: 30px;
+  margin-bottom: -15px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 30px 260px 30px 45px;
+  position: relative;
+  background-color: #25cc50;
+  color: #ffffff;
+  font-weight: 600; }
+
+.woocommerce-message::before, .woocommerce-message::after {
+  display: none; }
+
+.woocommerce-message a {
+  position: absolute !important;
+  right: 45px;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+  transition: all 0.2s ease-in-out;
+  padding: 15px 20px !important;
+  border-radius: 5px !important; }
+
+.woocommerce-message a:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important; }
+
+@media only screen and (max-width: 1599px) {
+  .woocommerce-message {
+    margin-top: 24px;
+    margin-bottom: -12px;
+    border-radius: 8px;
+    padding: 24px 230px 24px 36px; }
+  .woocommerce-message a {
+    right: 36px;
+    padding: 12px 16px !important;
+    border-radius: 4px !important; } }
+
+@media only screen and (max-width: 1100px) {
+  .woocommerce-message {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    border-radius: 8px;
+    padding: 20px 200px 20px 28px; }
+  .woocommerce-message a {
+    right: 28px;
+    padding: 12px 16px !important;
+    border-radius: 4px !important; } }
+
+@media only screen and (max-width: 1100px) {
+  .woocommerce-message {
+    margin-top: 16px;
+    margin-bottom: -8px;
+    border-radius: 6px;
+    padding: 16px 170px 16px 20px; }
+  .woocommerce-message a {
+    right: 20px;
+    padding: 12px 16px !important;
+    border-radius: 3px !important; } }
 
 /* Gallery */
 .gallery {

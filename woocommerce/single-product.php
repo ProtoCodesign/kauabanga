@@ -16,6 +16,10 @@
   <div class="row container"><?php woocommerce_breadcrumb( array( 'delimiter' => ' ↣ ') ); ?></div>
 </section>
 
+<div class="row container col xl12 l12 m12 s12">
+  <?php wc_print_notices(); ?>
+</div>
+
 <main class="single-product row container">
   <div class="gallery col s12 m6 l6 xl6" data-gallery="gallery">
     <img class="image-main" src="<?= $state['product']['img']; ?>" alt="<?= $state['product']['name']; ?>"

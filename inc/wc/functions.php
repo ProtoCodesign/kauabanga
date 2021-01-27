@@ -133,6 +133,6 @@
    * @return void
    */
   function refresh_function(){
-    header( 'Refresh:0' );
+    header( 'Refresh:5' );
   }
 ?>
