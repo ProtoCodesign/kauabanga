@@ -1,4 +1,6 @@
-.woocommerce-message {
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info {
   margin-top: 30px;
   margin-bottom: -15px;
   width: 100%;
@@ -35,8 +37,18 @@
   }
 }
 
+.woocommerce-error {
+  background-color: #f4516d;
+}
+
+.woocommerce-info {
+  background-color: #5277da;
+}
+
 @media only screen and (max-width: 1599px) {
-  .woocommerce-message {
+  .woocommerce-message,
+  .woocommerce-error,
+  .woocommerce-info {
     margin-top: 24px;
     margin-bottom: -12px;
     border-radius: 8px;
@@ -51,7 +63,9 @@
 }
 
 @media only screen and (max-width: 1100px) {
-  .woocommerce-message {
+  .woocommerce-message,
+  .woocommerce-error,
+  .woocommerce-info {
     margin-top: 20px;
     margin-bottom: -10px;
     border-radius: 8px;
@@ -66,7 +80,9 @@
 }
 
 @media only screen and (max-width: 1100px) {
-  .woocommerce-message {
+  .woocommerce-message,
+  .woocommerce-error,
+  .woocommerce-info {
     margin-top: 16px;
     margin-bottom: -8px;
     border-radius: 6px;
