@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.7.6
+  Version: 0.7.8
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -2432,8 +2432,7 @@ footer .logo {
 .woocommerce-message,
 .woocommerce-error,
 .woocommerce-info {
-  margin-top: 30px;
-  margin-bottom: -15px;
+  margin-top: 60px;
   width: 100%;
   border: none;
   border-radius: 10px;
@@ -2472,7 +2471,15 @@ footer .logo {
   background-color: rgba(255, 255, 255, 0.1) !important; }
 
 .woocommerce-error {
-  background-color: #f4516d; }
+  background-color: #f4516d;
+  display: block; }
+
+.woocommerce-error li {
+  display: block;
+  width: 100%; }
+
+.woocommerce-error li + li {
+  margin-top: 0.5em; }
 
 .woocommerce-info {
   background-color: #5277da; }
@@ -2481,8 +2488,7 @@ footer .logo {
   .woocommerce-message,
   .woocommerce-error,
   .woocommerce-info {
-    margin-top: 24px;
-    margin-bottom: -12px;
+    margin-top: 48px;
     border-radius: 8px;
     padding: 24px 230px 24px 36px; }
   .woocommerce-message a,
@@ -2496,8 +2502,7 @@ footer .logo {
   .woocommerce-message,
   .woocommerce-error,
   .woocommerce-info {
-    margin-top: 20px;
-    margin-bottom: -10px;
+    margin-top: 36px;
     border-radius: 8px;
     padding: 20px 200px 20px 28px; }
   .woocommerce-message a,
@@ -3773,4 +3778,166 @@ footer .logo {
     margin-bottom: -10px; }
   .message-container .woocommerce-notices-wrapper {
     padding-bottom: 10px; } }
+
+/* Checkout */
+.woocommerce .woocommerce-form-coupon-toggle,
+.woocommerce .woocommerce-error {
+  width: calc(90% - 24px);
+  margin: 0 auto;
+  margin-top: 120px; }
+
+.woocommerce .customer_details {
+  margin-top: 48px; }
+
+.woocommerce .woocommerce-additional-fields h3,
+.woocommerce .woocommerce-billing-fields h3 {
+  font-size: 17px;
+  color: #fff;
+  padding: 20px 24px;
+  background-color: #25201b;
+  border-radius: 8px; }
+
+.woocommerce form .form-row {
+  margin: 0;
+  margin-top: 24px !important; }
+
+.woocommerce form .form-row.form-row-first, .woocommerce form .form-row.form-row-last {
+  width: calc(50% - 12px);
+  float: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
+
+.woocommerce form .form-row.form-row-last {
+  margin-left: 24px; }
+
+.woocommerce form .form-row.form-row-wide {
+  width: 100%;
+  float: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
+
+.woocommerce form .form-row.form-row-wide .select2-selection {
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 4px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10"><path d="M1.415 1.414l8 8 8-8" fill="none" stroke="%236b635f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>');
+  background-position: right 20px top 50%;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  outline: none !important; }
+
+.woocommerce form .form-row.form-row-wide .select2-selection.select2-selection--single {
+  height: auto;
+  padding: 16px 20px; }
+
+.woocommerce form .form-row.form-row-wide .select2-selection.select2-selection--single .select2-selection__arrow {
+  display: none; }
+
+.woocommerce form .form-row.form-row-wide#billing_address_1_field, .woocommerce form .form-row.form-row-wide#billing_address_2_field {
+  width: calc(50% - 12px);
+  float: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0; }
+
+.woocommerce form .form-row.form-row-wide#billing_address_2_field {
+  margin-left: 24px; }
+
+.woocommerce form .form-row textarea {
+  height: 144px;
+  resize: none;
+  line-height: 1.6; }
+
+.woocommerce form .form-row textarea::placeholder {
+  line-height: 1.6; }
+
+.woocommerce .order-infos {
+  margin-top: 48px;
+  margin-bottom: 96px; }
+
+.woocommerce .order-infos.col {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.woocommerce .order-infos .woocommerce-checkout-review-order-table {
+  margin-bottom: 48px; }
+
+.woocommerce .order-infos #order_review_heading {
+  display: none; }
+
+.woocommerce .order-infos #order_review table {
+  border: none !important;
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+.woocommerce .order-infos #order_review tbody tr td,
+.woocommerce .order-infos #order_review tbody tr th,
+.woocommerce .order-infos #order_review tfoot tr td,
+.woocommerce .order-infos #order_review tfoot tr th {
+  width: 50%;
+  font-weight: 500;
+  padding: 20px 24px;
+  color: #6b635f;
+  border-top: none; }
+
+.woocommerce .order-infos #order_review tfoot tr:last-of-type th {
+  border-bottom-left-radius: 8px; }
+
+.woocommerce .order-infos #order_review tfoot tr:last-of-type td {
+  border-bottom-right-radius: 8px; }
+
+.woocommerce .order-infos #order_review tr td,
+.woocommerce .order-infos #order_review tr th {
+  background-color: #f7f7f7; }
+
+.woocommerce .order-infos #order_review tr:last-of-type td,
+.woocommerce .order-infos #order_review tr:last-of-type th {
+  background-color: #f9f9f9; }
+
+.woocommerce .order-infos #order_review thead tr th {
+  width: 75%;
+  padding: 20px 24px;
+  color: #fff; }
+
+.woocommerce .order-infos #order_review thead tr th:first-of-type {
+  border-top-left-radius: 8px;
+  background-color: #25201b !important; }
+
+.woocommerce .order-infos #order_review thead tr th:last-of-type {
+  width: 25%;
+  border-top-right-radius: 8px;
+  background-color: #25201b !important; }
+
+.woocommerce .order-infos #order_review .product-total bdi,
+.woocommerce .order-infos #order_review .product-total span,
+.woocommerce .order-infos #order_review .cart-subtotal bdi,
+.woocommerce .order-infos #order_review .cart-subtotal span,
+.woocommerce .order-infos #order_review .order-total bdi,
+.woocommerce .order-infos #order_review .order-total span {
+  font-weight: 600; }
+
+.woocommerce #payment {
+  border: none;
+  background-color: #fff; }
+
+.woocommerce #payment .payment_methods {
+  padding: 0 !important; }
+
+.woocommerce #payment .form-row.place-order {
+  padding: 0;
+  margin-top: 48px !important; }
+
+.woocommerce #payment .form-row.place-order #place_order {
+  color: #25201b;
+  background-color: #f7bc28;
+  display: inline-block;
+  padding: 20px 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  float: none;
+  margin-top: 24px; }
 

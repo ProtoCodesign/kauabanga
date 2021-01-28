@@ -90,7 +90,7 @@ msgstr ""
 msgid "Minha conta"
 msgstr ""
 
-#: header.php:76, header.php:83, header.php:110, header.php:116
+#: header.php:76, header.php:83, header.php:110, header.php:116, index.php:7
 msgid "Carrinho"
 msgstr ""
 
@@ -122,7 +122,7 @@ msgstr ""
 msgid "Título"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:74, inc/customizer/customize-newsletter.php:33, woocommerce/single-product.php:91
+#: inc/customizer/customize-banners.php:74, inc/customizer/customize-newsletter.php:33, woocommerce/single-product.php:94
 msgid "Descrição"
 msgstr ""
 
@@ -298,22 +298,26 @@ msgstr ""
 msgid "Próxima"
 msgstr ""
 
-#: woocommerce/single-product.php:49
+#: woocommerce/single-product.php:50
 msgid "Marca:"
 msgstr ""
 
-#: woocommerce/single-product.php:58
+#: woocommerce/single-product.php:60
 msgid "Categorias:"
 msgstr ""
 
-#: woocommerce/single-product.php:68
+#: woocommerce/single-product.php:72
 msgid "Ref:"
 msgstr ""
 
-#: woocommerce/single-product.php:93
+#: woocommerce/single-product.php:96
 msgid "Avaliações"
 msgstr ""
 
-#: woocommerce/single-product.php:113
+#: woocommerce/single-product.php:116
 msgid "Relacionados"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:118
+msgid "Escolher mais"
 msgstr ""

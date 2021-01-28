@@ -1,0 +1,213 @@
+.woocommerce {
+  .woocommerce-form-coupon-toggle,
+  .woocommerce-error {
+    width: calc(90% - 24px);
+    margin: 0 auto;
+    margin-top: 120px;
+  }
+
+  .customer_details {
+    margin-top: 48px;
+  }
+
+  .woocommerce-additional-fields h3,
+  .woocommerce-billing-fields h3 {
+    font-size: 17px;
+    color: #fff;
+    padding: 20px 24px;
+    background-color: #25201b;
+    border-radius: 8px;
+  }
+  form {
+    .form-row {
+      margin: 0;
+      margin-top: 24px !important;
+
+      &.form-row-first,
+      &.form-row-last {
+        width: calc(50% - 12px);
+        float: none;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+      }
+
+      &.form-row-last {
+        margin-left: 24px;
+      }
+
+      &.form-row-wide {
+        width: 100%;
+        float: none;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+
+        .select2-selection {
+          background-color: #f4f4f4;
+          border: none;
+          border-radius: 4px;
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10"><path d="M1.415 1.414l8 8 8-8" fill="none" stroke="%236b635f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>');
+          background-position: right 20px top 50%;
+          background-repeat: no-repeat;
+          background-size: 14px;
+          outline: none !important;
+
+          &.select2-selection--single {
+            height: auto;
+            padding: 16px 20px;
+
+            .select2-selection__arrow {
+              display: none;
+            }
+          }
+        }
+
+        &#billing_address_1_field,
+        &#billing_address_2_field {
+          width: calc(50% - 12px);
+          float: none;
+          display: inline-block;
+          padding: 0;
+          margin: 0;
+        }
+
+        &#billing_address_2_field {
+          margin-left: 24px;
+        }
+      }
+
+      textarea {
+        height: 144px;
+        resize: none;
+        line-height: 1.6;
+
+        &::placeholder {
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  .order-infos {
+    &.col {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    margin-top: 48px;
+    margin-bottom: 96px;
+
+    .woocommerce-checkout-review-order-table {
+      margin-bottom: 48px;
+    }
+
+    #order_review_heading {
+      display: none;
+    }
+
+    #order_review {
+      table {
+        border: none !important;
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+
+      tbody,
+      tfoot {
+        tr {
+          td,
+          th {
+            width: 50%;
+            font-weight: 500;
+            padding: 20px 24px;
+            color: #6b635f;
+            border-top: none;
+          }
+        }
+      }
+
+      tfoot {
+        tr:last-of-type {
+          th {
+            border-bottom-left-radius: 8px;
+          }
+          td {
+            border-bottom-right-radius: 8px;
+          }
+        }
+      }
+
+      tr {
+        td,
+        th {
+          background-color: #f7f7f7;
+        }
+
+        &:last-of-type {
+          td,
+          th {
+            background-color: #f9f9f9;
+          }
+        }
+      }
+
+      thead {
+        tr {
+          th {
+            width: 75%;
+            padding: 20px 24px;
+            color: #fff;
+
+            &:first-of-type {
+              border-top-left-radius: 8px;
+              background-color: #25201b !important;
+            }
+
+            &:last-of-type {
+              width: 25%;
+              border-top-right-radius: 8px;
+              background-color: #25201b !important;
+            }
+          }
+        }
+      }
+
+      .product-total bdi,
+      .product-total span,
+      .cart-subtotal bdi,
+      .cart-subtotal span,
+      .order-total bdi,
+      .order-total span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  #payment {
+    border: none;
+    background-color: #fff;
+
+    .payment_methods {
+      padding: 0 !important;
+    }
+
+    .form-row.place-order {
+      padding: 0;
+      margin-top: 48px !important;
+
+      #place_order {
+        color: #25201b;
+        background-color: #f7bc28;
+        display: inline-block;
+        padding: 20px 24px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        text-transform: uppercase;
+        float: none;
+        margin-top: 24px;
+      }
+    }
+  }
+}
