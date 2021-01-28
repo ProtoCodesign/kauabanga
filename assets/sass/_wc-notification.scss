@@ -1,6 +1,7 @@
-.woocommerce-message {
-  margin-top: 30px;
-  margin-bottom: -15px;
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info {
+  margin-top: 60px;
   width: 100%;
   border: none;
   border-radius: 10px;
@@ -35,10 +36,28 @@
   }
 }
 
+.woocommerce-error {
+  background-color: #f4516d;
+  display: block;
+
+  li {
+    display: block;
+    width: 100%;
+    & + li {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+.woocommerce-info {
+  background-color: #5277da;
+}
+
 @media only screen and (max-width: 1599px) {
-  .woocommerce-message {
-    margin-top: 24px;
-    margin-bottom: -12px;
+  .woocommerce-message,
+  .woocommerce-error,
+  .woocommerce-info {
+    margin-top: 48px;
     border-radius: 8px;
     padding: 24px 230px 24px 36px;
 
@@ -51,9 +70,10 @@
 }
 
 @media only screen and (max-width: 1100px) {
-  .woocommerce-message {
-    margin-top: 20px;
-    margin-bottom: -10px;
+  .woocommerce-message,
+  .woocommerce-error,
+  .woocommerce-info {
+    margin-top: 36px;
     border-radius: 8px;
     padding: 20px 200px 20px 28px;
 
@@ -66,7 +86,9 @@
 }
 
 @media only screen and (max-width: 1100px) {
-  .woocommerce-message {
+  .woocommerce-message,
+  .woocommerce-error,
+  .woocommerce-info {
     margin-top: 16px;
     margin-bottom: -8px;
     border-radius: 6px;
