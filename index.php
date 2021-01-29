@@ -3,8 +3,8 @@
 ?>
 
 <?php if( is_cart() ) : ?>
-<section class="title-section">
-  <h2 class="ka-title" id="next-element"><?php _e( 'Carrinho', 'kauabanga' ); ?></h2>
+<section class="title-section" id="next-element">
+  <h2 class="ka-title"><?php _e( 'Carrinho', 'kauabanga' ); ?></h2>
 </section>
 <?php wc_get_template( 'cart/cart.php' ); ?>
 
@@ -27,6 +27,19 @@
   </h2>
 </section>
 <main class="login-register">
+  <?php the_content(); ?>
+</main>
+<?php endwhile; ?>
+
+<?php elseif( have_posts() ) :
+  while( have_posts() ) : the_post();
+?>
+<section class="title-section">
+  <h2 class="ka-title" id="next-element">
+    <?php the_title(); ?>
+  </h2>
+</section>
+<main class="login-register row container">
   <?php the_content(); ?>
 </main>
 <?php endwhile; ?>

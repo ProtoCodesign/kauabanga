@@ -138,4 +138,15 @@
   function refresh_function(){
     header( 'Refresh:5' );
   }
+
+  /**
+   * Função remove link de downloads do dashboard do cliente
+   *
+   * @since 0.8.2
+   * @return array
+   */
+  function ka_remove_link_account( $links ) {
+    unset($links['downloads']);
+    return $links;
+  }
 ?>

@@ -1,39 +1,45 @@
+.woocommerce-checkout .woocommerce {
+  display: block;
+}
+
 .woocommerce {
+  margin-top: 60px;
+  margin-bottom: 150px;
+
   .woocommerce-form-coupon-toggle,
   .woocommerce-error {
-    width: calc(90% - 24px);
+    width: calc(90% - 30px);
     margin: 0 auto;
-    margin-top: 120px;
-  }
-
-  .customer_details {
-    margin-top: 48px;
   }
 
   .woocommerce-additional-fields h3,
   .woocommerce-billing-fields h3 {
-    font-size: 17px;
+    font-size: 21px;
     color: #fff;
-    padding: 20px 24px;
+    padding: 25px 30px;
     background-color: #25201b;
-    border-radius: 8px;
+    border-radius: 5px;
   }
+
+  #place_order {
+    margin-top: 30px;
+  }
+
   form {
     .form-row {
       margin: 0;
-      margin-top: 24px !important;
+      margin-top: 30px !important;
 
       &.form-row-first,
       &.form-row-last {
-        width: calc(50% - 12px);
-        float: none;
-        display: inline-block;
+        width: calc(50% - 15px);
+        float: left;
         padding: 0;
         margin: 0;
       }
 
       &.form-row-last {
-        margin-left: 24px;
+        margin-left: 30px;
       }
 
       &.form-row-wide {
@@ -43,19 +49,23 @@
         padding: 0;
         margin: 0;
 
+        span em {
+          margin-top: 10px;
+        }
+
         .select2-selection {
           background-color: #f4f4f4;
           border: none;
-          border-radius: 4px;
+          border-radius: 5px;
           background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="10"><path d="M1.415 1.414l8 8 8-8" fill="none" stroke="%236b635f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>');
           background-position: right 20px top 50%;
           background-repeat: no-repeat;
-          background-size: 14px;
+          background-size: 16px;
           outline: none !important;
 
           &.select2-selection--single {
             height: auto;
-            padding: 16px 20px;
+            padding: 20px 25px;
 
             .select2-selection__arrow {
               display: none;
@@ -65,7 +75,7 @@
 
         &#billing_address_1_field,
         &#billing_address_2_field {
-          width: calc(50% - 12px);
+          width: calc(50% - 15px);
           float: none;
           display: inline-block;
           padding: 0;
@@ -73,12 +83,12 @@
         }
 
         &#billing_address_2_field {
-          margin-left: 24px;
+          margin-left: 30px;
         }
       }
 
       textarea {
-        height: 144px;
+        height: 180px;
         resize: none;
         line-height: 1.6;
 
@@ -95,11 +105,11 @@
       padding-bottom: 0;
     }
 
-    margin-top: 48px;
-    margin-bottom: 96px;
+    margin-top: 60px;
+    margin-bottom: 120px;
 
     .woocommerce-checkout-review-order-table {
-      margin-bottom: 48px;
+      margin-bottom: 60px;
     }
 
     #order_review_heading {
@@ -120,7 +130,7 @@
           th {
             width: 50%;
             font-weight: 500;
-            padding: 20px 24px;
+            padding: 25px 30px;
             color: #6b635f;
             border-top: none;
           }
@@ -130,10 +140,10 @@
       tfoot {
         tr:last-of-type {
           th {
-            border-bottom-left-radius: 8px;
+            border-bottom-left-radius: 10px;
           }
           td {
-            border-bottom-right-radius: 8px;
+            border-bottom-right-radius: 10px;
           }
         }
       }
@@ -156,17 +166,17 @@
         tr {
           th {
             width: 75%;
-            padding: 20px 24px;
+            padding: 25px 30px;
             color: #fff;
 
             &:first-of-type {
-              border-top-left-radius: 8px;
+              border-top-left-radius: 10px;
               background-color: #25201b !important;
             }
 
             &:last-of-type {
               width: 25%;
-              border-top-right-radius: 8px;
+              border-top-right-radius: 10px;
               background-color: #25201b !important;
             }
           }
@@ -194,19 +204,406 @@
 
     .form-row.place-order {
       padding: 0;
-      margin-top: 48px !important;
+      margin-top: 60px !important;
 
       #place_order {
         color: #25201b;
         background-color: #f7bc28;
         display: inline-block;
-        padding: 20px 24px;
+        padding: 25px 30px;
         border: none;
         border-radius: 5px;
         font-weight: 600;
         text-transform: uppercase;
         float: none;
-        margin-top: 24px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1599px) {
+  .woocommerce {
+    margin-top: 48px;
+    margin-bottom: 120px;
+
+    .woocommerce-form-coupon-toggle,
+    .woocommerce-error {
+      width: calc(90% - 24px);
+    }
+
+    .woocommerce-additional-fields h3,
+    .woocommerce-billing-fields h3 {
+      font-size: 17px;
+      padding: 20px 24px;
+      border-radius: 4px;
+    }
+
+    #place_order {
+      margin-top: 24px;
+    }
+
+    form {
+      .form-row {
+        margin-top: 24px !important;
+
+        &.form-row-first,
+        &.form-row-last {
+          width: calc(50% - 12px);
+        }
+
+        &.form-row-last {
+          margin-left: 24px;
+        }
+
+        &.form-row-wide {
+          span em {
+            margin-top: 8px;
+          }
+
+          .select2-selection {
+            border-radius: 4px;
+            background-position: right 20px top 50%;
+            background-size: 14px;
+
+            &.select2-selection--single {
+              padding: 16px 20px;
+            }
+          }
+
+          &#billing_address_1_field,
+          &#billing_address_2_field {
+            width: calc(50% - 12px);
+          }
+
+          &#billing_address_2_field {
+            margin-left: 24px;
+          }
+        }
+
+        textarea {
+          height: 144px;
+        }
+      }
+    }
+
+    .order-infos {
+      margin-top: 48px;
+      margin-bottom: 96px;
+
+      .woocommerce-checkout-review-order-table {
+        margin-bottom: 48px;
+      }
+
+      #order_review {
+        tbody,
+        tfoot {
+          tr {
+            td,
+            th {
+              width: 50%;
+              padding: 20px 24px;
+            }
+          }
+        }
+
+        tfoot {
+          tr:last-of-type {
+            th {
+              border-bottom-left-radius: 8px;
+            }
+            td {
+              border-bottom-right-radius: 8px;
+            }
+          }
+        }
+        thead {
+          tr {
+            th {
+              width: 75%;
+              padding: 20px 24px;
+
+              &:first-of-type {
+                border-top-left-radius: 8px;
+              }
+
+              &:last-of-type {
+                width: 25%;
+                border-top-right-radius: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #payment {
+      .form-row.place-order {
+        margin-top: 48px !important;
+
+        #place_order {
+          padding: 20px 24px;
+          border-radius: 4px;
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .woocommerce {
+    margin-top: 36px;
+    margin-bottom: 90px;
+
+    .woocommerce-form-coupon-toggle,
+    .woocommerce-error {
+      width: calc(90% - 20px);
+    }
+
+    .woocommerce-additional-fields h3,
+    .woocommerce-billing-fields h3 {
+      font-size: 14px;
+      padding: 16px 20px;
+      border-radius: 4px;
+    }
+
+    #place_order {
+      margin-top: 20px;
+    }
+
+    form {
+      .form-row {
+        margin-top: 20px !important;
+
+        &.form-row-first,
+        &.form-row-last {
+          width: calc(50% - 10px);
+        }
+
+        &.form-row-last {
+          margin-left: 20px;
+        }
+
+        &.form-row-wide {
+          span em {
+            margin-top: 8px;
+          }
+
+          .select2-selection {
+            border-radius: 4px;
+            background-position: right 16px top 50%;
+            background-size: 12px;
+
+            &.select2-selection--single {
+              padding: 12px 16px;
+            }
+          }
+
+          &#billing_address_1_field,
+          &#billing_address_2_field {
+            width: calc(50% - 10px);
+          }
+
+          &#billing_address_2_field {
+            margin-left: 20px;
+          }
+        }
+
+        textarea {
+          height: 108px;
+        }
+      }
+    }
+
+    .order-infos {
+      margin-top: 36px;
+      margin-bottom: 72px;
+
+      .woocommerce-checkout-review-order-table {
+        margin-bottom: 36px;
+      }
+
+      #order_review {
+        tbody,
+        tfoot {
+          tr {
+            td,
+            th {
+              width: 50%;
+              padding: 16px 20px;
+            }
+          }
+        }
+
+        tfoot {
+          tr:last-of-type {
+            th {
+              border-bottom-left-radius: 8px;
+            }
+            td {
+              border-bottom-right-radius: 8px;
+            }
+          }
+        }
+        thead {
+          tr {
+            th {
+              width: 75%;
+              padding: 16px 20px;
+
+              &:first-of-type {
+                border-top-left-radius: 8px;
+              }
+
+              &:last-of-type {
+                width: 25%;
+                border-top-right-radius: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #payment {
+      .form-row.place-order {
+        margin-top: 36px !important;
+
+        #place_order {
+          padding: 16px 20px;
+          border-radius: 4px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .woocommerce {
+    margin-top: 28px;
+    margin-bottom: 72px;
+
+    .woocommerce-form-coupon-toggle,
+    .woocommerce-error {
+      width: calc(90% - 16px);
+    }
+
+    .woocommerce-additional-fields h3,
+    .woocommerce-billing-fields h3 {
+      font-size: 12px;
+      padding: 12px 16px;
+      border-radius: 3px;
+    }
+
+    #place_order {
+      margin-top: 12px;
+    }
+
+    form {
+      .form-row {
+        margin-top: 12px !important;
+
+        &.form-row-first,
+        &.form-row-last {
+          width: calc(50% - 8px);
+        }
+
+        &.form-row-last {
+          margin-left: 16px;
+        }
+
+        &.form-row-wide {
+          span em {
+            margin-top: 8px;
+          }
+
+          .select2-selection {
+            border-radius: 3px;
+            background-position: right 12px top 50%;
+            background-size: 10px;
+
+            &.select2-selection--single {
+              padding: 12px 16px;
+            }
+          }
+
+          &#billing_address_1_field,
+          &#billing_address_2_field {
+            width: calc(50% - 8px);
+          }
+
+          &#billing_address_2_field {
+            margin-left: 16px;
+          }
+        }
+
+        textarea {
+          height: 72px;
+        }
+      }
+    }
+
+    .order-infos {
+      margin-top: 28px;
+      margin-bottom: 56px;
+
+      .woocommerce-checkout-review-order-table {
+        margin-bottom: 28px;
+      }
+
+      #order_review {
+        tbody,
+        tfoot {
+          tr {
+            td,
+            th {
+              width: 50%;
+              padding: 12px 16px;
+            }
+          }
+        }
+
+        tfoot {
+          tr:last-of-type {
+            th {
+              border-bottom-left-radius: 6px;
+            }
+            td {
+              border-bottom-right-radius: 6px;
+            }
+          }
+        }
+        thead {
+          tr {
+            th {
+              width: 75%;
+              padding: 12px 16px;
+
+              &:first-of-type {
+                border-top-left-radius: 6px;
+              }
+
+              &:last-of-type {
+                width: 25%;
+                border-top-right-radius: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #payment {
+      .form-row.place-order {
+        margin-top: 28px !important;
+
+        #place_order {
+          padding: 12px 16px;
+          border-radius: 3px;
+          margin-top: 16px;
+        }
       }
     }
   }
