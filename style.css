@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.7.8
+  Version: 0.8.0
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -3940,4 +3940,140 @@ footer .logo {
   text-transform: uppercase;
   float: none;
   margin-top: 24px; }
+
+/* Login & Register */
+.login-register {
+  margin-top: 60px;
+  margin-bottom: 150px; }
+
+.login-register .woocommerce-form.woocommerce-form-login.login,
+.login-register .woocommerce-form.woocommerce-form-register.register {
+  padding: 0;
+  border: none;
+  margin: 0; }
+
+.login-register .col {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.login-register .col > .login-form,
+.login-register .col > .register-form {
+  border-radius: 10px;
+  background-color: #fff;
+  border: 3px solid #f4f4f4;
+  padding: 60px;
+  width: 100%; }
+
+.login-register .col > .login-form h3,
+.login-register .col > .register-form h3 {
+  color: #3c3430; }
+
+.login-register .col > .login-form form div,
+.login-register .col > .login-form form .woocommerce-form-row,
+.login-register .col > .register-form form div,
+.login-register .col > .register-form form .woocommerce-form-row {
+  margin-top: 30px; }
+
+.login-register .col > .login-form form .show-password-input,
+.login-register .col > .register-form form .show-password-input {
+  right: 1.1em;
+  top: 0.85em;
+  color: #9b9b9b;
+  transition: all 0.2s ease-in-out; }
+
+.login-register .col > .login-form form .show-password-input:hover, .login-register .col > .login-form form .show-password-input:active,
+.login-register .col > .register-form form .show-password-input:hover,
+.login-register .col > .register-form form .show-password-input:active {
+  color: #6b635f; }
+
+.login-register .col > .login-form form .woocommerce-form-login__rememberme,
+.login-register .col > .register-form form .woocommerce-form-login__rememberme {
+  margin: 0;
+  display: flex;
+  align-items: center; }
+
+.login-register .col > .login-form form .woocommerce-form-login__rememberme input[type="checkbox"],
+.login-register .col > .register-form form .woocommerce-form-login__rememberme input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px; }
+
+.login-register .col > .login-form form .woocommerce-LostPassword,
+.login-register .col > .register-form form .woocommerce-LostPassword {
+  margin-top: 30px; }
+
+@media only screen and (max-width: 1599px) {
+  .login-register {
+    margin-top: 48px;
+    margin-bottom: 120px; }
+  .login-register .col > .login-form,
+  .login-register .col > .register-form {
+    border-radius: 8px;
+    padding: 48px; }
+  .login-register .col > .login-form form div,
+  .login-register .col > .login-form form .woocommerce-form-row,
+  .login-register .col > .register-form form div,
+  .login-register .col > .register-form form .woocommerce-form-row {
+    margin-top: 24px; }
+  .login-register .col > .login-form form .woocommerce-form-login__rememberme input[type="checkbox"],
+  .login-register .col > .register-form form .woocommerce-form-login__rememberme input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px; }
+  .login-register .col > .login-form form .woocommerce-LostPassword,
+  .login-register .col > .register-form form .woocommerce-LostPassword {
+    margin-top: 24px; } }
+
+@media only screen and (max-width: 1100px) {
+  .login-register {
+    margin-top: 36px;
+    margin-bottom: 96px; }
+  .login-register .col > .login-form,
+  .login-register .col > .register-form {
+    border-radius: 8px;
+    padding: 36px; }
+  .login-register .col > .login-form form div,
+  .login-register .col > .login-form form .woocommerce-form-row,
+  .login-register .col > .register-form form div,
+  .login-register .col > .register-form form .woocommerce-form-row {
+    margin-top: 20px; }
+  .login-register .col > .login-form form .woocommerce-form-login__rememberme input[type="checkbox"],
+  .login-register .col > .register-form form .woocommerce-form-login__rememberme input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px; }
+  .login-register .col > .login-form form .woocommerce-LostPassword,
+  .login-register .col > .register-form form .woocommerce-LostPassword {
+    margin-top: 20px; } }
+
+@media only screen and (max-width: 767px) {
+  .login-register {
+    margin-top: 28px;
+    margin-bottom: 64px; }
+  .login-register .col {
+    display: block;
+    flex: none;
+    width: 100%; }
+  .login-register .col > .register-form {
+    margin-top: 16px; }
+  .login-register .col > .login-form,
+  .login-register .col > .register-form {
+    border-radius: 6px;
+    padding: 28px; }
+  .login-register .col > .login-form form div,
+  .login-register .col > .login-form form .woocommerce-form-row,
+  .login-register .col > .register-form form div,
+  .login-register .col > .register-form form .woocommerce-form-row {
+    margin-top: 16px; }
+  .login-register .col > .login-form form .woocommerce-form-login__rememberme input[type="checkbox"],
+  .login-register .col > .register-form form .woocommerce-form-login__rememberme input[type="checkbox"] {
+    width: 12px;
+    height: 12px; }
+  .login-register .col > .login-form form .woocommerce-LostPassword,
+  .login-register .col > .register-form form .woocommerce-LostPassword {
+    margin-top: 16px; } }
 
