@@ -15,6 +15,10 @@ header div {
   justify-content: space-between;
 }
 
+.navigation-header {
+  margin-right: 15px;
+}
+
 header .logo {
   display: inline-flex;
 }
@@ -71,9 +75,10 @@ nav a img {
   font-weight: 500;
   border-radius: 50%;
   padding: 2px 6px 1px 6px;
+  color: #25201b;
   background-color: #f7bc28;
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: -2px;
 }
 
@@ -182,6 +187,10 @@ nav a {
     right: 12px;
   }
 
+  .navigation-header {
+    margin-right: 12px;
+  }
+
   .search button img {
     width: 16px;
   }
@@ -202,7 +211,7 @@ nav a {
   }
 
   .count-itens-cart {
-    left: 8px;
+    left: 12px;
     top: -2px;
   }
 
@@ -280,7 +289,7 @@ nav a {
   }
 
   .count-itens-cart {
-    left: 8px;
+    left: 12px;
     top: -2px;
   }
 

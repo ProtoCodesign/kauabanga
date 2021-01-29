@@ -1,37 +1,38 @@
 .woocommerce-message,
 .woocommerce-error,
 .woocommerce-info {
-  margin-top: 60px;
   width: 100%;
   border: none;
   border-radius: 10px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 30px 260px 30px 45px;
-  position: relative;
+  padding: 30px 45px 30px 45px;
   background-color: #25cc50;
   color: #ffffff;
   font-weight: 600;
+  margin-bottom: 60px;
 
   &::before,
   &::after {
     display: none;
   }
 
-  a {
-    position: absolute !important;
-    right: 45px;
+  a,
+  button {
+    float: none;
+    text-align: center;
     font-weight: 500 !important;
     text-transform: uppercase !important;
     background-color: transparent !important;
     color: #fff !important;
-    border: 2px solid #fff !important;
+    background-color: rgba(256, 256, 256, 0.2) !important;
     transition: all 0.2s ease-in-out;
     padding: 15px 20px !important;
     border-radius: 5px !important;
 
     &:hover {
-      background-color: rgba($color: #ffffff, $alpha: 0.1) !important;
+      background-color: rgba($color: #ffffff, $alpha: 0.4) !important;
     }
   }
 }
@@ -57,9 +58,9 @@
   .woocommerce-message,
   .woocommerce-error,
   .woocommerce-info {
-    margin-top: 48px;
     border-radius: 8px;
-    padding: 24px 230px 24px 36px;
+    padding: 24px 36px 24px 36px;
+    margin-bottom: 48px;
 
     a {
       right: 36px;
@@ -73,9 +74,9 @@
   .woocommerce-message,
   .woocommerce-error,
   .woocommerce-info {
-    margin-top: 36px;
     border-radius: 8px;
-    padding: 20px 200px 20px 28px;
+    padding: 20px 28px 20px 28px;
+    margin-bottom: 36px;
 
     a {
       right: 28px;
@@ -89,10 +90,9 @@
   .woocommerce-message,
   .woocommerce-error,
   .woocommerce-info {
-    margin-top: 16px;
-    margin-bottom: -8px;
     border-radius: 6px;
-    padding: 16px 170px 16px 20px;
+    padding: 16px 20px 16px 20px;
+    margin-bottom: 28px;
 
     a {
       right: 20px;
