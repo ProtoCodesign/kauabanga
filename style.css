@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.8.4
+  Version: 0.8.6
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -869,6 +869,20 @@ header .search form {
   align-items: center;
   width: 100%; }
 
+header .search input {
+  display: inline-block;
+  max-width: 100%; }
+
+header .search button {
+  display: inline-block;
+  padding: 25px;
+  background: transparent;
+  position: absolute;
+  right: 15px; }
+
+header .search button img {
+  width: 25px; }
+
 header .navigation-header {
   margin-right: 15px; }
 
@@ -882,20 +896,6 @@ header .logo img {
 header .container .col {
   padding-top: 0;
   padding-bottom: 0; }
-
-header .search input {
-  display: inline-block;
-  max-width: 100%; }
-
-header .search button {
-  display: inline-block;
-  padding: 25px;
-  background: transparent;
-  position: absolute;
-  right: 15px; }
-
-header .search button img {
-  width: 20px; }
 
 header nav a img {
   height: 25px;
@@ -1006,10 +1006,10 @@ header .container-dropdown .sub-menu a::before {
   header .search button {
     padding: 20px;
     right: 12px; }
+  header .search button img {
+    width: 20px; }
   header .navigation-header {
     margin-right: 12px; }
-  header .search button img {
-    width: 16px; }
   header .nav-dropdown img {
     margin-left: 8px;
     height: 7px; }
@@ -1164,7 +1164,7 @@ header .container-dropdown .sub-menu a::before {
     padding: 12px;
     right: 8px; }
   header .search button img {
-    width: 16px; }
+    width: 12px; }
   header .nav-dropdown img {
     margin-left: 8px;
     height: 7px; }
