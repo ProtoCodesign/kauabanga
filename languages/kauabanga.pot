@@ -90,7 +90,7 @@ msgstr ""
 msgid "Minha conta"
 msgstr ""
 
-#: header.php:76, header.php:83, header.php:110, header.php:116, index.php:7
+#: header.php:76, header.php:83, header.php:110, header.php:116
 msgid "Carrinho"
 msgstr ""
 
@@ -318,6 +318,14 @@ msgstr ""
 msgid "Relacionados"
 msgstr ""
 
-#: woocommerce/cart/cart-totals.php:118
+#: woocommerce/cart/cart-empty.php:28
+msgid "Carrinho vazio!"
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:30
+msgid "Você ainda não adicionou nenhum produto ao carrinho, adicione um produto ao carrinho antes de prosseguir para a próxima etapa."
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:121
 msgid "Escolher mais"
 msgstr ""
