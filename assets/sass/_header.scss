@@ -24,6 +24,23 @@ header {
       align-items: center;
       width: 100%;
     }
+
+    input {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    button {
+      display: inline-block;
+      padding: 25px;
+      background: transparent;
+      position: absolute;
+      right: 15px;
+
+      img {
+        width: 25px;
+      }
+    }
   }
 
   .navigation-header {
@@ -42,23 +59,6 @@ header {
   & .container .col {
     padding-top: 0;
     padding-bottom: 0;
-  }
-
-  .search input {
-    display: inline-block;
-    max-width: 100%;
-  }
-
-  .search button {
-    display: inline-block;
-    padding: 25px;
-    background: transparent;
-    position: absolute;
-    right: 15px;
-  }
-
-  .search button img {
-    width: 20px;
   }
 
   nav a img {
@@ -189,17 +189,19 @@ header {
     padding-top: 24px;
     padding-bottom: 24px;
 
-    .search button {
-      padding: 20px;
-      right: 12px;
+    .search {
+      button {
+        padding: 20px;
+        right: 12px;
+
+        img {
+          width: 20px;
+        }
+      }
     }
 
     .navigation-header {
       margin-right: 12px;
-    }
-
-    .search button img {
-      width: 16px;
     }
 
     .nav-dropdown img {
@@ -271,13 +273,15 @@ header {
       height: 22px;
     }
 
-    .search button {
-      padding: 16px;
-      right: 10px;
-    }
+    .search {
+      button {
+        padding: 16px;
+        right: 10px;
 
-    .search button img {
-      width: 16px;
+        img {
+          width: 16px;
+        }
+      }
     }
 
     .nav-dropdown img {
@@ -434,13 +438,15 @@ header {
       height: 16px;
     }
 
-    .search button {
-      padding: 12px;
-      right: 8px;
-    }
+    .search {
+      button {
+        padding: 12px;
+        right: 8px;
 
-    .search button img {
-      width: 16px;
+        img {
+          width: 12px;
+        }
+      }
     }
 
     .nav-dropdown img {
