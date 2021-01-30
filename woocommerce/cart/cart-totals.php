@@ -29,7 +29,8 @@ defined( 'ABSPATH' ) || exit;
     <div class="table-row cart-subtotal">
       <div class="table-head"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></div>
       <div class="table-body" data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>">
-        <?php wc_cart_totals_subtotal_html(); ?></div>
+        <?php wc_cart_totals_subtotal_html(); ?>
+      </div>
     </div>
 
     <?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
@@ -44,7 +45,9 @@ defined( 'ABSPATH' ) || exit;
 
     <?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
 
-    <?php wc_cart_totals_shipping_html(); ?>
+    <div class="table-row">
+      <?php wc_cart_totals_shipping_html(); ?>
+    </div>
 
     <?php do_action( 'woocommerce_cart_totals_after_shipping' ); ?>
 

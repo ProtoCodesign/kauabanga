@@ -2,11 +2,13 @@
   get_header();
 ?>
 
-<?php if( is_cart() ) : ?>
+<?php if( is_cart() && have_posts() ) : while( have_posts() ) : the_post(); ?>
 <section class="title-section" id="next-element">
-  <h2 class="ka-title"><?php _e( 'Carrinho', 'kauabanga' ); ?></h2>
+  <h2 class="ka-title"><?php the_title(); ?></h2>
 </section>
-<?php wc_get_template( 'cart/cart.php' ); ?>
+
+<?php the_content(); ?>
+<?php endwhile; ?>
 
 <?php elseif( is_checkout() && have_posts() ) : while ( have_posts() ) :
   the_post();

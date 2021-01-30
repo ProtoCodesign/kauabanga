@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 
-<div class="message-container row container col s12 m12 l12 xl12">
+<div class="message-container">
   <?php do_action( 'woocommerce_before_cart' ); ?>
 </div>
 
@@ -150,13 +150,13 @@ defined( 'ABSPATH' ) || exit;
             <?php if ( wc_coupons_enabled() ) { ?>
             <div class="coupon"><input type="text" name="coupon_code" class="bg-dark input-text" id="coupon_code"
                 value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" /> <button type="submit"
-                class="button btn-secondary" name="apply_coupon"
+                class="btn-secondary" name="apply_coupon"
                 value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?></button>
               <?php do_action( 'woocommerce_cart_coupon' ); ?>
             </div>
             <?php } ?>
 
-            <button type="submit" class="button btn-secondary" name="update_cart"
+            <button type="submit" class="btn-secondary" name="update_cart"
               value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
 
             <?php do_action( 'woocommerce_cart_actions' ); ?>
