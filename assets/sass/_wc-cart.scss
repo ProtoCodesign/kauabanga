@@ -166,6 +166,10 @@
         border-radius: 10px 10px 0 0;
       }
 
+      ul#shipping_method {
+        display: none;
+      }
+
       .table-row {
         padding: 30px 45px;
         width: 100%;
@@ -222,13 +226,22 @@
 
   .woocommerce-notices-wrapper {
     width: 100% !important;
-    padding-bottom: 12px;
 
     .woocommerce-message,
     .woocommerce-error,
     .woocommerce-info {
       margin-top: 0 !important;
     }
+  }
+}
+
+.woocommerce-shipping-destination {
+  margin-top: 0.5em;
+}
+
+.woocommerce-shipping-calculator {
+  .btn-secondary {
+    margin-top: 30px;
   }
 }
 
@@ -365,12 +378,9 @@
     }
   }
 
-  .message-container {
-    margin-top: 24px;
-    margin-bottom: -12px;
-
-    .woocommerce-notices-wrapper {
-      padding-bottom: 12px;
+  .woocommerce-shipping-calculator {
+    .btn-secondary {
+      margin-top: 24px;
     }
   }
 }
@@ -510,12 +520,9 @@
     }
   }
 
-  .message-container {
-    margin-top: 20px;
-    margin-bottom: -10px;
-
-    .woocommerce-notices-wrapper {
-      padding-bottom: 10px;
+  .woocommerce-shipping-calculator {
+    .btn-secondary {
+      margin-top: 20px;
     }
   }
 }
@@ -660,12 +667,9 @@
     }
   }
 
-  .message-container {
-    margin-top: 20px;
-    margin-bottom: -10px;
-
-    .woocommerce-notices-wrapper {
-      padding-bottom: 10px;
+  .woocommerce-shipping-calculator {
+    .btn-secondary {
+      margin-top: 16px;
     }
   }
 }

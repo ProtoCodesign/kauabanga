@@ -1,7 +1,8 @@
 .woocommerce-message,
 .woocommerce-error,
 .woocommerce-info {
-  width: 100%;
+  width: calc(90% - 30px);
+  margin: 0 auto;
   border: none;
   border-radius: 10px;
   display: flex;
@@ -37,6 +38,10 @@
   }
 }
 
+.woocommerce-form-coupon-toggle,
+.woocommerce-error {
+}
+
 .woocommerce-error {
   background-color: #f4516d;
   display: block;
@@ -58,6 +63,7 @@
   .woocommerce-message,
   .woocommerce-error,
   .woocommerce-info {
+    width: calc(90% - 24px);
     border-radius: 8px;
     padding: 24px 36px 24px 36px;
     margin-bottom: 48px;
@@ -74,6 +80,7 @@
   .woocommerce-message,
   .woocommerce-error,
   .woocommerce-info {
+    width: calc(90% - 20px);
     border-radius: 8px;
     padding: 20px 28px 20px 28px;
     margin-bottom: 36px;
@@ -90,6 +97,7 @@
   .woocommerce-message,
   .woocommerce-error,
   .woocommerce-info {
+    width: calc(90% - 16px);
     border-radius: 6px;
     padding: 16px 20px 16px 20px;
     margin-bottom: 28px;
