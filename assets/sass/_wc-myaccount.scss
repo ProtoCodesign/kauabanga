@@ -4,6 +4,32 @@
 }
 
 .woocommerce {
+  .lost-password-container {
+    .col {
+      display: block;
+    }
+
+    h3 {
+      display: block;
+      width: 100%;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #3c3430;
+    }
+
+    p.woocommerce-form-row {
+      width: 60%;
+    }
+
+    p {
+      color: #6b635f;
+    }
+
+    p button {
+      margin-top: 30px;
+    }
+  }
+
   .required {
     color: #f4ab0b !important;
   }
@@ -223,6 +249,19 @@
 
     .woocommerce-Addresses {
       margin-top: 45px;
+
+      .col {
+        display: block;
+
+        &:first-of-type {
+          padding-left: 0;
+        }
+
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
+
       .table-head {
         border-radius: 5px 5px 0 0;
       }
@@ -231,6 +270,12 @@
         padding: 25px 30px;
         color: #6b635f;
         background-color: #f9f9f9;
+
+        br::before {
+          content: "";
+          display: block;
+          margin-top: 12px;
+        }
       }
     }
 
@@ -242,6 +287,16 @@
 
 @media only screen and (max-width: 1599px) {
   .woocommerce {
+    .lost-password-container {
+      h3 {
+        margin-bottom: 12px;
+      }
+
+      p button {
+        margin-top: 24px;
+      }
+    }
+
     .woocommerce-MyAccount-navigation {
       width: 25%;
       padding: 12px;
@@ -336,6 +391,16 @@
   }
 
   .woocommerce {
+    .lost-password-container {
+      h3 {
+        margin-bottom: 10px;
+      }
+
+      p button {
+        margin-top: 20px;
+      }
+    }
+
     .woocommerce-MyAccount-navigation {
       width: 25%;
       padding: 10px;
@@ -441,8 +506,23 @@
     margin-top: 12px;
   }
 
-  .woocommerce {
+  .woocommerce-account .woocommerce {
     display: block;
+
+    .lost-password-container {
+      h3 {
+        margin-bottom: 8px;
+      }
+
+      p,
+      p.woocommerce-form-row {
+        width: 100%;
+      }
+
+      p button {
+        margin-top: 16px;
+      }
+    }
 
     .woocommerce-MyAccount-navigation {
       display: block;
@@ -515,6 +595,15 @@
 
       .woocommerce-Addresses {
         margin-top: 24px;
+
+        .col {
+          padding-right: 0;
+          padding-left: 0;
+
+          & + .col {
+            margin-top: 16px;
+          }
+        }
 
         .table-head {
           border-radius: 3px 3px 0 0;
