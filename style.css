@@ -874,6 +874,10 @@ header .logo {
   width: 100%;
   position: relative; }
 
+.search form {
+  display: inline-flex;
+  width: 100%; }
+
 header .container .col {
   padding-top: 0;
   padding-bottom: 0; }
@@ -884,7 +888,7 @@ header .container .col {
 
 .search button {
   display: inline-block;
-  padding: 20px;
+  padding: 25px;
   background: transparent;
   position: absolute;
   right: 15px; }
@@ -998,7 +1002,7 @@ nav a {
     padding-top: 24px;
     padding-bottom: 24px; }
   .search button {
-    padding: 16px;
+    padding: 20px;
     right: 12px; }
   .navigation-header {
     margin-right: 12px; }
@@ -1153,7 +1157,7 @@ nav a {
   .logo img {
     height: 16px; }
   .search button {
-    padding: 16px;
+    padding: 12px;
     right: 8px; }
   .search button img {
     width: 16px; }
@@ -3822,12 +3826,10 @@ footer .logo {
     padding-bottom: 10px; } }
 
 /* Checkout */
-.woocommerce-checkout .woocommerce {
-  display: block; }
-
-.woocommerce {
+.woocommerce-checkout .woocommerce,
+.woocommerce-account .woocommerce {
   margin-top: 60px;
-  margin-bottom: 150px; }
+  margin-bottom: 120px; }
 
 .woocommerce .woocommerce-form-coupon-toggle,
 .woocommerce .woocommerce-error {
@@ -3835,12 +3837,28 @@ footer .logo {
   margin: 0 auto; }
 
 .woocommerce .woocommerce-additional-fields h3,
-.woocommerce .woocommerce-billing-fields h3 {
+.woocommerce .woocommerce-billing-fields h3,
+.woocommerce #ship-to-different-address {
   font-size: 21px;
   color: #fff;
   padding: 25px 30px;
   background-color: #25201b;
   border-radius: 5px; }
+
+.woocommerce #ship-to-different-address {
+  display: flex;
+  align-items: center; }
+
+.woocommerce #ship-to-different-address input {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; }
+
+.woocommerce #ship-to-different-address h3 {
+  font-size: 21px;
+  color: #fff;
+  font-weight: 600; }
 
 .woocommerce #place_order {
   margin-top: 30px; }
@@ -3992,17 +4010,26 @@ footer .logo {
   margin-top: 30px; }
 
 @media only screen and (max-width: 1599px) {
-  .woocommerce {
+  .woocommerce-checkout .woocommerce,
+  .woocommerce-account .woocommerce {
     margin-top: 48px;
-    margin-bottom: 120px; }
+    margin-bottom: 96px; }
   .woocommerce .woocommerce-form-coupon-toggle,
   .woocommerce .woocommerce-error {
     width: calc(90% - 24px); }
   .woocommerce .woocommerce-additional-fields h3,
-  .woocommerce .woocommerce-billing-fields h3 {
+  .woocommerce .woocommerce-billing-fields h3,
+  .woocommerce #ship-to-different-address {
     font-size: 17px;
     padding: 20px 24px;
     border-radius: 4px; }
+  .woocommerce #ship-to-different-address input {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px; }
+  .woocommerce #ship-to-different-address h3 {
+    font-size: 17px; }
   .woocommerce #place_order {
     margin-top: 24px; }
   .woocommerce form .form-row {
@@ -4056,17 +4083,26 @@ footer .logo {
     margin-top: 24px; } }
 
 @media only screen and (max-width: 1100px) {
-  .woocommerce {
+  .woocommerce-checkout .woocommerce,
+  .woocommerce-account .woocommerce {
     margin-top: 36px;
-    margin-bottom: 90px; }
+    margin-bottom: 72px; }
   .woocommerce .woocommerce-form-coupon-toggle,
   .woocommerce .woocommerce-error {
     width: calc(90% - 20px); }
   .woocommerce .woocommerce-additional-fields h3,
-  .woocommerce .woocommerce-billing-fields h3 {
+  .woocommerce .woocommerce-billing-fields h3,
+  .woocommerce #ship-to-different-address {
     font-size: 14px;
     padding: 16px 20px;
     border-radius: 4px; }
+  .woocommerce #ship-to-different-address input {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px; }
+  .woocommerce #ship-to-different-address h3 {
+    font-size: 14px; }
   .woocommerce #place_order {
     margin-top: 20px; }
   .woocommerce form .form-row {
@@ -4120,17 +4156,26 @@ footer .logo {
     margin-top: 20px; } }
 
 @media only screen and (max-width: 767px) {
-  .woocommerce {
+  .woocommerce-checkout .woocommerce,
+  .woocommerce-account .woocommerce {
     margin-top: 28px;
-    margin-bottom: 72px; }
+    margin-bottom: 56px; }
   .woocommerce .woocommerce-form-coupon-toggle,
   .woocommerce .woocommerce-error {
     width: calc(90% - 16px); }
   .woocommerce .woocommerce-additional-fields h3,
-  .woocommerce .woocommerce-billing-fields h3 {
+  .woocommerce .woocommerce-billing-fields h3,
+  .woocommerce #ship-to-different-address {
     font-size: 12px;
     padding: 12px 16px;
     border-radius: 3px; }
+  .woocommerce #ship-to-different-address input {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px; }
+  .woocommerce #ship-to-different-address h3 {
+    font-size: 12px; }
   .woocommerce #place_order {
     margin-top: 12px; }
   .woocommerce form .form-row {
@@ -4335,7 +4380,7 @@ footer .logo {
     margin-top: 16px; } }
 
 /* My Account*/
-.woocommerce {
+.woocommerce-account .woocommerce {
   width: 100%;
   display: flex; }
 

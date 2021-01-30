@@ -1,7 +1,9 @@
-.woocommerce {
+.woocommerce-account .woocommerce {
   width: 100%;
   display: flex;
+}
 
+.woocommerce {
   .required {
     color: #f4ab0b !important;
   }
