@@ -51,16 +51,19 @@
   span.page-numbers {
     color: #ffffff;
     background-color: #554d49;
+    display: inline-flex;
+    align-items: center;
   }
 
   .next::after,
   .prev::before {
     content: "";
+    display: inline-block;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNC44MjkiIHZpZXdCb3g9IjAgMCAxOCAxNC44MjkiPgogIDxnIGlkPSJhcnJvdy1idXR0b24iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01MjcuNSAtNzczLjA4NikiPgogICAgPHBhdGggaWQ9IkNhbWluaG9fNzQiIGRhdGEtbmFtZT0iQ2FtaW5obyA3NCIgZD0iTTEzMzkuNjQxLDk4Ljg4M2w2LDYsNi02IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MzkuNjE3IDIxMjYuMTQxKSByb3RhdGUoLTkwKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjUyMDFiIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHBhdGggaWQ9IkNhbWluaG9fNzUiIGRhdGEtbmFtZT0iQ2FtaW5obyA3NSIgZD0iTTUxMS4xNiw3ODBoMTYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3LjM0IDAuNSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI1MjAxYiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8L2c+Cjwvc3ZnPgo=");
     margin-left: 8px;
-    width: 18px;
+    width: 16px;
     height: 12px;
-    background-size: contain;
+    background-size: 16px;
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -103,6 +106,16 @@
     margin-bottom: 72px;
   }
 
+  .nav-links {
+    .next::after,
+    .prev::before {
+      margin-left: 6px;
+      width: 12px;
+      height: 9px;
+      background-size: 12px;
+    }
+  }
+
   .order-archive {
     display: flex;
     width: 100%;
@@ -143,12 +156,13 @@
     position: fixed;
     top: 85px;
     left: -100vw;
+    min-width: 280px;
     overflow-y: scroll;
     height: calc(100vh - 151px);
     border-radius: 0 8px 8px 0;
     z-index: 1000;
     background: #fff;
-    padding: 24px !important;
+    padding: 24px 32px !important;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in-out;
 
@@ -218,8 +232,8 @@
   .btn-filter {
     display: inline-flex;
     position: relative;
-    height: 57.6px;
-    padding: 28.8px;
+    height: 51.6px;
+    padding: 25.8px;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;

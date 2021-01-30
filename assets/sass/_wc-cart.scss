@@ -73,16 +73,17 @@
         justify-content: center;
         font-size: 36px;
         background-color: #ededed;
-        color: #6b635f;
+        color: #6b635f !important;
         width: 45px;
         height: 45px;
         border-radius: 50%;
         margin-left: 24px;
+        font-weight: 500;
         transition: all 0.2s ease-in-out;
 
         &:hover {
           background-color: #f4516d;
-          color: #ffffff;
+          color: #ffffff !important;
         }
       }
     }
@@ -215,8 +216,6 @@
 }
 
 .message-container {
-  margin-top: 30px;
-  margin-bottom: -15px;
   transition: display 0.3s ease-in-out;
 
   &.col {
@@ -242,6 +241,38 @@
 .woocommerce-shipping-calculator {
   .btn-secondary {
     margin-top: 30px;
+  }
+}
+
+.woocommerce-cart {
+  .woocommerce {
+    margin-top: 60px;
+    margin-bottom: 120px;
+
+    .empty-cart-container {
+      .col {
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+
+      h3 {
+        display: block;
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #3c3430;
+      }
+
+      p {
+        color: #6b635f;
+      }
+
+      p + p {
+        display: block;
+        width: 100%;
+        margin-top: 45px;
+      }
+    }
   }
 }
 
@@ -381,6 +412,23 @@
   .woocommerce-shipping-calculator {
     .btn-secondary {
       margin-top: 24px;
+    }
+  }
+
+  .woocommerce-cart {
+    .woocommerce {
+      margin-top: 48px;
+      margin-bottom: 96px;
+
+      .empty-cart-container {
+        h3 {
+          margin-bottom: 12px;
+        }
+
+        p + p {
+          margin-top: 36px;
+        }
+      }
     }
   }
 }
@@ -523,6 +571,23 @@
   .woocommerce-shipping-calculator {
     .btn-secondary {
       margin-top: 20px;
+    }
+  }
+
+  .woocommerce-cart {
+    .woocommerce {
+      margin-top: 36px;
+      margin-bottom: 72px;
+
+      .empty-cart-container {
+        h3 {
+          margin-bottom: 10px;
+        }
+
+        p + p {
+          margin-top: 28px;
+        }
+      }
     }
   }
 }
@@ -670,6 +735,23 @@
   .woocommerce-shipping-calculator {
     .btn-secondary {
       margin-top: 16px;
+    }
+  }
+
+  .woocommerce-cart {
+    .woocommerce {
+      margin-top: 28px;
+      margin-bottom: 56px;
+
+      .empty-cart-container {
+        h3 {
+          margin-bottom: 8px;
+        }
+
+        p + p {
+          margin-top: 24px;
+        }
+      }
     }
   }
 }

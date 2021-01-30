@@ -59,6 +59,14 @@
   background-color: #5277da;
 }
 
+.single-product {
+  .woocommerce-message,
+  .woocommerce-error,
+  .woocommerce-info {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 1599px) {
   .woocommerce-message,
   .woocommerce-error,
