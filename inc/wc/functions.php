@@ -25,7 +25,7 @@
         'price'          => $product->get_price(),
         'sale_price'     => $sale_price,
         'regular_price'  => $regular_price,
-        'discount'       => round( 100 - ( 100 *  $sale_price ) / $regular_price ),
+        'discount'       => $sale_price ? round( 100 - ( 100 *  $sale_price ) / $regular_price ) : 0,
         'is_variable'    => $product->is_type( 'variable' ),
         'description'    => $product->get_description(),
         'review_count'   => $product->get_review_count(),
@@ -65,7 +65,7 @@
       'price'          => $state['product']->get_price(),
       'sale_price'     => $sale_price,
       'regular_price'  => $regular_price,
-      'discount'       => round( 100 - ( 100 *  $sale_price ) / $regular_price ),
+      'discount'       => $sale_price ? round( 100 - ( 100 *  $sale_price ) / $regular_price ) : 0,
       'is_variable'    => $state['product']->is_type('variable'),
       'link'           => $state['product']->get_permalink(),
       'sku'            => $state['product']->get_sku(),
@@ -137,5 +137,16 @@
    */
   function refresh_function(){
     header( 'Refresh:5' );
+  }
+
+  /**
+   * Função remove link de downloads do dashboard do cliente
+   *
+   * @since 0.8.2
+   * @return array
+   */
+  function ka_remove_link_account( $links ) {
+    unset($links['downloads']);
+    return $links;
   }
 ?>

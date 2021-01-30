@@ -82,6 +82,7 @@ h4,
 
 p,
 a,
+button,
 small,
 input,
 select,
@@ -133,6 +134,12 @@ button.btn-secondary {
   border-radius: 5px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+a:disabled,
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 label {
@@ -204,6 +211,7 @@ input.bg-dark::placeholder {
 
   p,
   a,
+  button,
   input,
   select,
   label,
@@ -257,6 +265,7 @@ input.bg-dark::placeholder {
 
   p,
   a,
+  button,
   input,
   select,
   label,
@@ -317,8 +326,19 @@ input.bg-dark::placeholder {
     font-size: 14px !important;
   }
 
+  a.btn-primary,
+  button.btn-primary {
+    padding: 16px 20px;
+  }
+
+  a.btn-secondary,
+  button.btn-secondary {
+    padding: 12px 16px;
+  }
+
   p,
   a,
+  button,
   input,
   select,
   label,
