@@ -29,7 +29,7 @@
         'is_variable'    => $product->is_type( 'variable' ),
         'description'    => $product->get_description(),
         'review_count'   => $product->get_review_count(),
-        'image'          => wp_get_attachment_image_src( $product->get_image_id() )[0],
+        'image'          => wp_get_attachment_image_src( $product->get_image_id(), 'high' )[0],
         'link'           => $product->get_permalink(),
         'category'       => get_the_category_by_ID( $product->get_category_ids()[0] ),
         'attributes'     => $product->get_attributes()
