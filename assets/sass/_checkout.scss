@@ -51,6 +51,7 @@
   form {
     .form-row {
       margin: 0;
+      padding: 0;
       margin-top: 30px !important;
 
       &.form-row-first,
@@ -59,6 +60,10 @@
         float: left;
         padding: 0;
         margin: 0;
+      }
+
+      &#billing_neighborhood_field {
+        width: 100%;
       }
 
       &.form-row-last {
@@ -96,7 +101,6 @@
           }
         }
 
-        &#billing_address_1_field,
         &#billing_address_2_field,
         &#shipping_address_1_field,
         &#shipping_address_2_field {
@@ -230,7 +234,7 @@
 
     .form-row.place-order {
       padding: 0;
-      margin-top: 60px !important;
+      // margin-top: 60px !important;
 
       #place_order {
         color: #25201b;
@@ -311,7 +315,6 @@
             }
           }
 
-          &#billing_address_1_field,
           &#billing_address_2_field,
           &#shipping_address_1_field,
           &#shipping_address_2_field {
@@ -382,7 +385,7 @@
 
     #payment {
       .form-row.place-order {
-        margin-top: 48px !important;
+        // margin-top: 48px !important;
 
         #place_order {
           padding: 20px 24px;
@@ -462,7 +465,6 @@
             }
           }
 
-          &#billing_address_1_field,
           &#billing_address_2_field,
           &#shipping_address_1_field,
           &#shipping_address_2_field {
@@ -533,7 +535,7 @@
 
     #payment {
       .form-row.place-order {
-        margin-top: 36px !important;
+        // margin-top: 36px !important;
 
         #place_order {
           padding: 16px 20px;
@@ -591,11 +593,11 @@
 
         &.form-row-first,
         &.form-row-last {
-          width: calc(50% - 8px);
+          width: 100%;
         }
 
         &.form-row-last {
-          margin-left: 16px;
+          margin-left: 0px;
         }
 
         &.form-row-wide {
@@ -613,16 +615,15 @@
             }
           }
 
-          &#billing_address_1_field,
           &#billing_address_2_field,
           &#shipping_address_1_field,
           &#shipping_address_2_field {
-            width: calc(50% - 8px);
+            width: 100%;
           }
 
           &#billing_address_2_field,
           &#shipping_address_2_field {
-            margin-left: 16px;
+            margin-left: 0px;
           }
         }
 
@@ -684,7 +685,7 @@
 
     #payment {
       .form-row.place-order {
-        margin-top: 28px !important;
+        // margin-top: 28px !important;
 
         #place_order {
           padding: 12px 16px;
