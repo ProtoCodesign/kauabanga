@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.8.7
+  Version: 0.8.8
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -897,10 +897,6 @@ header .container .col {
   padding-top: 0;
   padding-bottom: 0; }
 
-header nav a img {
-  height: 25px;
-  margin-right: 5px; }
-
 header .link-cart,
 header .link-account {
   margin-left: 30px; }
@@ -925,6 +921,11 @@ header nav {
 
 header nav * {
   display: inline-block; }
+
+header nav a img {
+  height: 30px !important;
+  width: 30px !important;
+  margin-right: 5px; }
 
 header .nav-dropdown,
 header nav a {
@@ -1014,7 +1015,8 @@ header .container-dropdown .sub-menu a::before {
     margin-left: 8px;
     height: 7px; }
   header nav a img {
-    height: 20px;
+    height: 24px !important;
+    width: 24px !important;
     margin-right: 4px; }
   header .link-cart,
   header .link-account {
@@ -1065,7 +1067,8 @@ header .container-dropdown .sub-menu a::before {
     margin-left: 8px;
     height: 7px; }
   header nav a img {
-    height: 20px;
+    height: 20px !important;
+    width: 20px !important;
     margin-right: 4px; }
   header .link-cart,
   header .link-account {
@@ -1084,13 +1087,13 @@ header .container-dropdown .sub-menu a::before {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    min-width: 25px;
-    height: 25px;
+    min-width: 20px;
+    height: 20px;
     border-radius: 4px;
     background-color: transparent;
     margin-right: 10px; }
   header .menu-btn-burger {
-    width: 25px;
+    width: 20px;
     height: 1px;
     border-radius: 1px;
     background-color: #6b635f;
@@ -1100,7 +1103,7 @@ header .container-dropdown .sub-menu a::before {
     content: "";
     display: block;
     position: absolute;
-    width: 25px;
+    width: 20px;
     height: 1px;
     border-radius: 1px;
     background-color: #6b635f;
@@ -1168,13 +1171,12 @@ header .container-dropdown .sub-menu a::before {
   header .nav-dropdown img {
     margin-left: 8px;
     height: 7px; }
-  header nav a img {
-    height: 16px; }
   header .btn-menu-mobile {
     display: flex;
     width: 100%;
     justify-content: center;
     background-color: #ffffff;
+    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1);
     padding: 16px;
     box-sizing: border-box;
     position: fixed;
@@ -3987,6 +3989,7 @@ footer .logo {
 
 .woocommerce form .form-row {
   margin: 0;
+  padding: 0;
   margin-top: 30px !important; }
 
 .woocommerce form .form-row.form-row-first, .woocommerce form .form-row.form-row-last {
@@ -3994,6 +3997,9 @@ footer .logo {
   float: left;
   padding: 0;
   margin: 0; }
+
+.woocommerce form .form-row#billing_neighborhood_field {
+  width: 100%; }
 
 .woocommerce form .form-row.form-row-last {
   margin-left: 30px; }
@@ -4025,7 +4031,7 @@ footer .logo {
 .woocommerce form .form-row.form-row-wide .select2-selection.select2-selection--single .select2-selection__arrow {
   display: none; }
 
-.woocommerce form .form-row.form-row-wide#billing_address_1_field, .woocommerce form .form-row.form-row-wide#billing_address_2_field, .woocommerce form .form-row.form-row-wide#shipping_address_1_field, .woocommerce form .form-row.form-row-wide#shipping_address_2_field {
+.woocommerce form .form-row.form-row-wide#billing_address_2_field, .woocommerce form .form-row.form-row-wide#shipping_address_1_field, .woocommerce form .form-row.form-row-wide#shipping_address_2_field {
   width: calc(50% - 15px);
   float: none;
   display: inline-block;
@@ -4116,8 +4122,7 @@ footer .logo {
   padding: 0 !important; }
 
 .woocommerce #payment .form-row.place-order {
-  padding: 0;
-  margin-top: 60px !important; }
+  padding: 0; }
 
 .woocommerce #payment .form-row.place-order #place_order {
   color: #25201b;
@@ -4165,7 +4170,7 @@ footer .logo {
     background-size: 14px; }
   .woocommerce form .form-row.form-row-wide .select2-selection.select2-selection--single {
     padding: 16px 20px; }
-  .woocommerce form .form-row.form-row-wide#billing_address_1_field, .woocommerce form .form-row.form-row-wide#billing_address_2_field, .woocommerce form .form-row.form-row-wide#shipping_address_1_field, .woocommerce form .form-row.form-row-wide#shipping_address_2_field {
+  .woocommerce form .form-row.form-row-wide#billing_address_2_field, .woocommerce form .form-row.form-row-wide#shipping_address_1_field, .woocommerce form .form-row.form-row-wide#shipping_address_2_field {
     width: calc(50% - 12px); }
   .woocommerce form .form-row.form-row-wide#billing_address_2_field, .woocommerce form .form-row.form-row-wide#shipping_address_2_field {
     margin-left: 24px; }
@@ -4194,8 +4199,6 @@ footer .logo {
   .woocommerce .order-infos #order_review thead tr th:last-of-type {
     width: 25%;
     border-top-right-radius: 8px; }
-  .woocommerce #payment .form-row.place-order {
-    margin-top: 48px !important; }
   .woocommerce #payment .form-row.place-order #place_order {
     padding: 20px 24px;
     border-radius: 4px;
@@ -4238,7 +4241,7 @@ footer .logo {
     background-size: 12px; }
   .woocommerce form .form-row.form-row-wide .select2-selection.select2-selection--single {
     padding: 12px 16px; }
-  .woocommerce form .form-row.form-row-wide#billing_address_1_field, .woocommerce form .form-row.form-row-wide#billing_address_2_field, .woocommerce form .form-row.form-row-wide#shipping_address_1_field, .woocommerce form .form-row.form-row-wide#shipping_address_2_field {
+  .woocommerce form .form-row.form-row-wide#billing_address_2_field, .woocommerce form .form-row.form-row-wide#shipping_address_1_field, .woocommerce form .form-row.form-row-wide#shipping_address_2_field {
     width: calc(50% - 10px); }
   .woocommerce form .form-row.form-row-wide#billing_address_2_field, .woocommerce form .form-row.form-row-wide#shipping_address_2_field {
     margin-left: 20px; }
@@ -4267,8 +4270,6 @@ footer .logo {
   .woocommerce .order-infos #order_review thead tr th:last-of-type {
     width: 25%;
     border-top-right-radius: 8px; }
-  .woocommerce #payment .form-row.place-order {
-    margin-top: 36px !important; }
   .woocommerce #payment .form-row.place-order #place_order {
     padding: 16px 20px;
     border-radius: 4px;
@@ -4300,9 +4301,9 @@ footer .logo {
   .woocommerce form .form-row {
     margin-top: 12px !important; }
   .woocommerce form .form-row.form-row-first, .woocommerce form .form-row.form-row-last {
-    width: calc(50% - 8px); }
+    width: 100%; }
   .woocommerce form .form-row.form-row-last {
-    margin-left: 16px; }
+    margin-left: 0px; }
   .woocommerce form .form-row.form-row-wide span em {
     margin-top: 8px; }
   .woocommerce form .form-row.form-row-wide .select2-selection {
@@ -4311,10 +4312,10 @@ footer .logo {
     background-size: 10px; }
   .woocommerce form .form-row.form-row-wide .select2-selection.select2-selection--single {
     padding: 12px 16px; }
-  .woocommerce form .form-row.form-row-wide#billing_address_1_field, .woocommerce form .form-row.form-row-wide#billing_address_2_field, .woocommerce form .form-row.form-row-wide#shipping_address_1_field, .woocommerce form .form-row.form-row-wide#shipping_address_2_field {
-    width: calc(50% - 8px); }
+  .woocommerce form .form-row.form-row-wide#billing_address_2_field, .woocommerce form .form-row.form-row-wide#shipping_address_1_field, .woocommerce form .form-row.form-row-wide#shipping_address_2_field {
+    width: 100%; }
   .woocommerce form .form-row.form-row-wide#billing_address_2_field, .woocommerce form .form-row.form-row-wide#shipping_address_2_field {
-    margin-left: 16px; }
+    margin-left: 0px; }
   .woocommerce form .form-row textarea {
     height: 72px; }
   .woocommerce .order-infos {
@@ -4340,8 +4341,6 @@ footer .logo {
   .woocommerce .order-infos #order_review thead tr th:last-of-type {
     width: 25%;
     border-top-right-radius: 6px; }
-  .woocommerce #payment .form-row.place-order {
-    margin-top: 28px !important; }
   .woocommerce #payment .form-row.place-order #place_order {
     padding: 12px 16px;
     border-radius: 3px;
@@ -4498,7 +4497,7 @@ footer .logo {
   .login-register .col > .register-form form .woocommerce-LostPassword {
     margin-top: 16px; } }
 
-/* My Account*/
+/* My Account */
 .woocommerce-account .woocommerce {
   width: 100%;
   display: flex; }
@@ -4880,4 +4879,284 @@ footer .logo {
     border-radius: 3px 3px 0 0; }
   .woocommerce-account .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .table-body {
     padding: 12px 16px; } }
+
+/* Payment Form */
+.wc_payment_methods .payment_method_juno-credit-card .payment_box {
+  margin-top: 10px !important; }
+
+.wc_payment_methods .payment_method_juno-credit-card .payment_box .payment-method-description {
+  margin-bottom: 30px; }
+
+.wc_payment_methods .payment_method_juno-bank-slip .payment-methods-title {
+  margin-top: 10px; }
+
+.wc_payment_methods .payment_method_juno-bank-slip .payment_box {
+  margin-top: 10px !important; }
+
+.wc_payment_methods .payment-methods-title {
+  display: inline-flex;
+  align-items: center; }
+
+.wc_payment_methods .payment-methods-title label {
+  display: inline-block;
+  margin: 0 !important;
+  width: auto;
+  padding: 30px 60px;
+  border: 3px solid #f4f4f4;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer; }
+
+.wc_payment_methods .payment-methods-title input {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 !important;
+  margin-right: 10px !important; }
+
+.wc_payment_methods .payment_box {
+  padding: 60px !important;
+  border-radius: 10px !important;
+  margin: 0 !important;
+  border: 3px solid #f4f4f4;
+  background-color: #ffffff !important; }
+
+.wc_payment_methods .payment_box input,
+.wc_payment_methods .payment_box select {
+  width: 100% !important; }
+
+.wc_payment_methods .payment_box::before {
+  border: none !important; }
+
+.wc_payment_methods .payment_box fieldset {
+  border: none !important;
+  padding: 0 !important; }
+
+.wc_payment_methods .payment_box .juno-credit-card-card-wrapper {
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  display: inline-block; }
+
+.wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card .jp-card-back,
+.wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card .jp-card-front {
+  background-color: #25201b;
+  color: #afafaf; }
+
+.wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card .jp-card-back .jp-card-shiny,
+.wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card .jp-card-front .jp-card-shiny {
+  top: 0px !important;
+  width: 40px !important;
+  height: 30px !important; }
+
+.wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-back .jp-card-shiny {
+  display: none; }
+
+.wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-back .jp-card-cvc {
+  top: 42.5% !important; }
+
+.wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-number {
+  font-size: 21px !important;
+  margin-bottom: 32px !important;
+  font-weight: 600 !important; }
+
+.wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-name {
+  font-size: 12px !important;
+  font-weight: 600 !important; }
+
+.wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-expiry {
+  font-size: 12px !important;
+  min-width: 75px !important;
+  font-weight: 500 !important; }
+
+.wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-expiry::before, .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-expiry::after {
+  display: none !important; }
+
+.wc_payment_methods .payment_box .wc-payment-form-fields {
+  display: table;
+  width: 100%; }
+
+.wc_payment_methods .payment_box .wc-payment-form-fields .form-row {
+  width: calc(50% - 15px);
+  display: inline-block;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0 !important;
+  margin-top: 30px !important; }
+
+.wc_payment_methods .payment_box .wc-payment-form-fields .form-row:nth-child(1) input {
+  text-transform: uppercase !important; }
+
+.wc_payment_methods .payment_box .wc-payment-form-fields .form-row:last-child {
+  width: 100% !important; }
+
+.wc_payment_methods .payment_box .wc-payment-form-fields .form-row.form-row-wide:nth-child(2), .wc_payment_methods .payment_box .wc-payment-form-fields .form-row.form-row-last {
+  margin-left: 30px !important; }
+
+.wc_payment_methods .payment_box .wc-payment-form-fields .form-row input {
+  margin: 0 !important; }
+
+.wc_payment_methods .payment_box .wc-payment-form-fields .form-row.save-card label {
+  display: flex;
+  align-items: center; }
+
+.wc_payment_methods .payment_box .wc-payment-form-fields .form-row.save-card label input {
+  width: 20px !important;
+  height: 20px;
+  margin-right: 10px !important;
+  display: inline-block; }
+
+.payment_methods {
+  border: none !important; }
+
+@media only screen and (max-width: 1599px) {
+  .wc_payment_methods .payment_method_juno-credit-card .payment_box {
+    margin-top: 8px !important; }
+  .wc_payment_methods .payment_method_juno-credit-card .payment_box .payment-method-description {
+    margin-bottom: 24px; }
+  .wc_payment_methods .payment_method_juno-bank-slip .payment-methods-title {
+    margin-top: 8px; }
+  .wc_payment_methods .payment_method_juno-bank-slip .payment_box {
+    margin-top: 8px !important; }
+  .wc_payment_methods .payment-methods-title label {
+    padding: 24px 48px;
+    border-radius: 8px !important; }
+  .wc_payment_methods .payment-methods-title input {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px !important; }
+  .wc_payment_methods .payment_box {
+    padding: 48px !important;
+    border-radius: 8px !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card .jp-card-back .jp-card-shiny,
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card .jp-card-front .jp-card-shiny {
+    top: 0px !important;
+    width: 40px !important;
+    height: 30px !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-back .jp-card-cvc {
+    top: 42.5% !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-number {
+    font-size: 21px !important;
+    margin-bottom: 32px !important;
+    font-weight: 600 !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-name {
+    font-size: 12px !important;
+    font-weight: 600 !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-expiry {
+    font-size: 12px !important;
+    min-width: 75px !important;
+    font-weight: 500 !important; }
+  .wc_payment_methods .payment_box .wc-payment-form-fields .form-row {
+    margin-top: 24px !important; }
+  .wc_payment_methods .payment_box .wc-payment-form-fields .form-row.form-row-wide:nth-child(2), .wc_payment_methods .payment_box .wc-payment-form-fields .form-row.form-row-last {
+    margin-left: 24px !important; }
+  .wc_payment_methods .payment_box .wc-payment-form-fields .form-row.save-card label input {
+    width: 16px !important;
+    height: 16px;
+    margin-right: 8px !important; } }
+
+@media only screen and (max-width: 1100px) {
+  .wc_payment_methods .payment_method_juno-credit-card .payment_box {
+    margin-top: 6px !important; }
+  .wc_payment_methods .payment_method_juno-credit-card .payment_box .payment-method-description {
+    margin-bottom: 20px; }
+  .wc_payment_methods .payment_method_juno-bank-slip .payment-methods-title {
+    margin-top: 6px; }
+  .wc_payment_methods .payment_method_juno-bank-slip .payment_box {
+    margin-top: 6px !important; }
+  .wc_payment_methods .payment-methods-title label {
+    padding: 20px 40px;
+    border-radius: 8px !important; }
+  .wc_payment_methods .payment-methods-title input {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px !important; }
+  .wc_payment_methods .payment_box {
+    padding: 40px !important;
+    border-radius: 8px !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card .jp-card-back .jp-card-shiny,
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card .jp-card-front .jp-card-shiny {
+    top: 0px !important;
+    width: 40px !important;
+    height: 30px !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-back .jp-card-cvc {
+    top: 42.5% !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-number {
+    font-size: 21px !important;
+    margin-bottom: 32px !important;
+    font-weight: 600 !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-name {
+    font-size: 12px !important;
+    font-weight: 600 !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-expiry {
+    font-size: 12px !important;
+    min-width: 75px !important;
+    font-weight: 500 !important; }
+  .wc_payment_methods .payment_box .wc-payment-form-fields .form-row {
+    margin-top: 20px !important; }
+  .wc_payment_methods .payment_box .wc-payment-form-fields .form-row.form-row-wide:nth-child(2), .wc_payment_methods .payment_box .wc-payment-form-fields .form-row.form-row-last {
+    margin-left: 20px !important; }
+  .wc_payment_methods .payment_box .wc-payment-form-fields .form-row.save-card label input {
+    width: 12px !important;
+    height: 12px;
+    margin-right: 6px !important; } }
+
+@media only screen and (max-width: 767px) {
+  .wc_payment_methods .payment_method_juno-credit-card .payment_box {
+    margin-top: 4px !important; }
+  .wc_payment_methods .payment_method_juno-credit-card .payment_box .payment-method-description {
+    margin-bottom: 16px; }
+  .wc_payment_methods .payment_method_juno-bank-slip .payment-methods-title {
+    margin-top: 4px; }
+  .wc_payment_methods .payment_method_juno-bank-slip .payment_box {
+    margin-top: 4px !important; }
+  .wc_payment_methods .payment-methods-title label {
+    padding: 16px 32px;
+    border-radius: 6px !important; }
+  .wc_payment_methods .payment-methods-title input {
+    width: 9px;
+    height: 9px;
+    margin-right: 6px !important; }
+  .wc_payment_methods .payment_box {
+    padding: 32px !important;
+    border-radius: 6px !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-container {
+    width: 210px;
+    height: 120px; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-container .jp-card {
+    min-width: 210px;
+    min-height: 120px; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card .jp-card-front .jp-card-lower,
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card .jp-card-back .jp-card-lower {
+    width: 85%;
+    left: 7.5%;
+    bottom: 12px; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card .jp-card-back .jp-card-shiny,
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card .jp-card-front .jp-card-shiny {
+    top: 4px !important;
+    width: 30px !important;
+    height: 19px !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-back .jp-card-cvc {
+    top: 42% !important;
+    font-size: 10px !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-number {
+    font-size: 14px !important;
+    margin-bottom: 16px !important;
+    font-weight: 600 !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-name {
+    font-size: 10px !important;
+    font-weight: 600 !important; }
+  .wc_payment_methods .payment_box .juno-credit-card-card-wrapper .jp-card-lower .jp-card-expiry {
+    font-size: 10px !important;
+    min-width: 75px !important;
+    font-weight: 500 !important; }
+  .wc_payment_methods .payment_box .wc-payment-form-fields .form-row {
+    margin-top: 16px !important;
+    width: 100% !important; }
+  .wc_payment_methods .payment_box .wc-payment-form-fields .form-row.form-row-wide:nth-child(2), .wc_payment_methods .payment_box .wc-payment-form-fields .form-row.form-row-last {
+    margin-left: 0px !important; }
+  .wc_payment_methods .payment_box .wc-payment-form-fields .form-row.save-card label input {
+    width: 9px !important;
+    height: 9px;
+    margin-right: 4px !important; } }
 
