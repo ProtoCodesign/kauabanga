@@ -76,8 +76,18 @@
 
       <div class="price">
         <?php if( !$state['product']['is_variable'] ) : ?>
-        <h4 class="older-price">R$ 199,00</h4>
-        <h3 class="current-price">R$ 149,00</h3>
+
+        <?php if( !empty( $state['product']['sale_price'] ) ) : ?>
+        <h4 class="older-price">
+          <?php _e( 'R$', 'kauabanga' ); ?>
+          <?= number_format($state['product']['regular_price'], 2, ",", "." ); ?>
+        </h4>
+        <?php endif; ?>
+
+        <h3 class="current-price">
+          <?php _e( 'R$', 'kauabanga' ); ?>
+          <?= number_format($state['product']['price'], 2, ",", "." ); ?>
+        </h3>
         <?php else : ?>
         <?php woocommerce_get_template( 'single-product/price.php' ); ?>
         <?php endif; ?>
