@@ -122,7 +122,7 @@ msgstr ""
 msgid "Título"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:74, inc/customizer/customize-newsletter.php:33, woocommerce/single-product.php:94
+#: inc/customizer/customize-banners.php:74, inc/customizer/customize-newsletter.php:33, woocommerce/single-product.php:104
 msgid "Descrição"
 msgstr ""
 
@@ -214,7 +214,7 @@ msgstr ""
 msgid "Informações da empresa"
 msgstr ""
 
-#: inc/wc/template-tags.php:44, inc/wc/template-tags.php:51
+#: inc/wc/template-tags.php:44, inc/wc/template-tags.php:51, woocommerce/single-product.php:82, woocommerce/single-product.php:88
 msgid "R$"
 msgstr ""
 
@@ -310,11 +310,11 @@ msgstr ""
 msgid "Ref:"
 msgstr ""
 
-#: woocommerce/single-product.php:96
+#: woocommerce/single-product.php:106
 msgid "Avaliações"
 msgstr ""
 
-#: woocommerce/single-product.php:116
+#: woocommerce/single-product.php:126
 msgid "Relacionados"
 msgstr ""
 
