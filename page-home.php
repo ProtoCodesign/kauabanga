@@ -5,15 +5,15 @@
 
   global $ka_uri;
 
-  $data = array();
-  $data['featured'] = ka_sanitize_products( wc_get_products( array(
+  $state = array();
+  $state['featured'] = ka_sanitize_products( wc_get_products( array(
         'limit'     => 12,
         'orderby'   => 'rand',
         'featured'  => true
       )
     )
   );
-  $data['sales'] = ka_sanitize_products( wc_get_products( array(
+  $state['sales'] = ka_sanitize_products( wc_get_products( array(
         'limit'     => 12,
         'order'     => 'rand',
         'orderby'   => 'meta_value_num',
@@ -23,7 +23,7 @@
   );
 
   if( taxonomy_exists( 'pwb-brand' ) ) {
-    $data['brands'] = get_terms( array (
+    $state['brands'] = get_terms( array (
         'order'      => 'ASC',
         'orderby'    => 'rand',
         'taxonomy'   => 'pwb-brand',
@@ -73,7 +73,7 @@
 <?php } ?>
 
 
-<?php if( is_array( $data['brands'] ) ) { ?>
+<?php if( is_array( $state['brands'] ) && !empty( $state['brands'] ) ) { ?>
 <section class="slider-brands">
   <div class="row container">
     <button aria-label="Previous" class="prev">
@@ -84,7 +84,7 @@
     </button>
 
     <ul id="brands-slider" class="col s8 m9 l10 xl10">
-      <?php foreach($data['brands'] as $brand) { ?>
+      <?php foreach( $state['brands'] as $brand ) { ?>
       <li>
         <a href="<?= get_term_link( $brand, 'pwb-brands' ); ?>">
           <img src="<?= wp_get_attachment_url( get_term_meta( $brand->term_id, 'pwb_brand_image', true ) ); ?>"
@@ -106,7 +106,7 @@
 
 <section class="ka-highlights container">
   <h2 class="ka-title"><?php _e( 'Destaques', 'kauabanga' ); ?></h2>
-  <?php ka_product_list( $data['featured'], 'col s12 m4 l3 xl3' ); ?>
+  <?php ka_product_list( $state['featured'], 'col s12 m4 l3 xl3' ); ?>
 </section>
 
 <section class="ka-categories row container">
@@ -139,7 +139,7 @@
 
 <section class="ka-highlights container">
   <h2 class="ka-title"><?php _e( 'Mais vendidos', 'kauabanga' ); ?></h2>
-  <?php ka_product_list( $data['sales'], 'col s12 m4 l3 xl3' ); ?>
+  <?php ka_product_list( $state['sales'], 'col s12 m4 l3 xl3' ); ?>
 </section>
 
 <?php if( get_theme_mod( 'newsletter-active' ) ) { ?>

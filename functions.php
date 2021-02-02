@@ -85,6 +85,10 @@
       // Adiciona suporte a menus
       add_theme_support( 'menus' );
 
+      // Novo tamanho adicionado para imagens, cropped está adicionado.
+      add_image_size( 'product-desktop', 1000, 1000, array( 'center', 'center' ) );
+      add_image_size( 'product-mobile', 500, 500, array( 'center', 'center' ) );
+
       // Registra o menu de categorias
       register_nav_menu( 'categories', __( 'Categorias', 'kauabanga' ) );
 
