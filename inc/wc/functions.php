@@ -29,7 +29,7 @@
         'is_variable'    => $product->is_type( 'variable' ),
         'description'    => $product->get_description(),
         'review_count'   => $product->get_review_count(),
-        'image'          => wp_get_attachment_image_src( $product->get_image_id(), 'high' )[0],
+        'image'          => wp_get_attachment_image_src( $product->get_image_id(), 'product-mobile' )[0],
         'link'           => $product->get_permalink(),
         'category'       => get_the_category_by_ID( $product->get_category_ids()[0] ),
         'attributes'     => $product->get_attributes()
@@ -46,7 +46,11 @@
    * @since 0.6.8
    * @return array
    */
-  function ka_sanitize_single_product( $id ) {
+  function ka_sanitize_single_product( $id, $size_image = '' ) {
+    if( empty( $size_image ) ) {
+      $size_image = wp_is_mobile() ? 'product-mobile' : 'product-desktop';
+    }
+
     $state = array();
     $state['product'] = wc_get_product( $id );
 
@@ -57,6 +61,13 @@
     else if( $state['product']->is_type('variable') ){
       $sale_price    = $state['product']->get_variation_sale_price( 'min', true );
       $regular_price = $state['product']->get_variation_regular_price( 'max', true );
+    }
+
+    $gallery = ka_get_gallery_images_link( $id, $size_image );
+    foreach( $gallery as $i => $image ) {
+      if( $i <= 4) {
+        $state['gallery'][] = $image;
+      }
     }
 
     return array(
@@ -71,8 +82,8 @@
       'sku'            => $state['product']->get_sku(),
       'description'    => $state['product']->get_description(),
       'review_count'   => $state['product']->get_review_count(),
-      'img'            => wp_get_attachment_image_src( $state['product']->get_image_id(), 'high' )[0],
-      'gallery'        => ka_get_gallery_images_link( $id, 'high' ),
+      'img'            => wp_get_attachment_image_src( $state['product']->get_image_id(), $size_image )[0],
+      'gallery'        => $state['gallery'],
     );
   }
 
