@@ -29,6 +29,19 @@
           'selector'  => array( '.business-info' )
         )
       );
+      $wp_customize->add_setting( 'title-tagline-kauabanga-favicon', array(
+          'default'    => null,
+          'transport'  => 'postMessage'
+        )
+      );
+      $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize,
+        'title-tagline-kauabanga-favicon', array(
+            'label'     => __( 'Favicon da kauabanga', 'kauabanga' ),
+            'section'   => 'title_tagline',
+            'priority'  => 65
+          )
+        )
+      );
     }
     add_action( 'customize_register', 'remove_customize', 10 );
 
