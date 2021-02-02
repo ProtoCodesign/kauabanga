@@ -27,7 +27,7 @@
         margin-left: -3px;
       }
       .product-quantity {
-        margin-left: 21px;
+        margin-left: 20px;
       }
 
       .product-subtotal {
@@ -158,7 +158,7 @@
       float: none !important;
 
       h2 {
-        font-size: 21px;
+        font-size: 20px;
         display: block;
         background-color: #25201b;
         color: #fff;
@@ -294,7 +294,7 @@
           margin-left: -3px;
         }
         .product-quantity {
-          margin-left: 21px;
+          margin-left: 20px;
         }
 
         .product-subtotal {
@@ -377,7 +377,7 @@
     .cart-collaterals {
       .cart_totals {
         h2 {
-          font-size: 17px;
+          font-size: 16px;
           padding: 27px 36px;
           border-radius: 8px 8px 0 0;
         }
@@ -451,7 +451,7 @@
           margin-left: -3px;
         }
         .product-quantity {
-          margin-left: 21px;
+          margin-left: 20px;
         }
 
         .product-subtotal {
@@ -480,7 +480,7 @@
         width: 68px;
 
         a {
-          font-size: 17px;
+          font-size: 16px;
           background-color: #ededed;
           color: #6b635f;
           width: 28px;
@@ -536,7 +536,7 @@
 
       .cart_totals {
         h2 {
-          font-size: 14px;
+          font-size: 13px;
           padding: 23px 28px;
           border-radius: 8px 8px 0 0;
         }
@@ -627,15 +627,25 @@
           & > input,
           & > button {
             display: block;
-            margin: 6px auto 0 auto;
+          }
+
+          button,
+          input {
+            border-radius: 3px;
           }
 
           .coupon {
             display: block;
             width: 100%;
+            margin: 0 auto;
 
             input {
-              width: 50%;
+              width: 100%;
+              margin-bottom: 6px;
+            }
+
+            button {
+              margin-bottom: 12px;
             }
           }
         }
@@ -646,7 +656,7 @@
         transform: translateY(-12px);
 
         a {
-          font-size: 14px;
+          font-size: 13px;
           background-color: #ededed;
           color: #6b635f;
           width: 20px;
@@ -700,7 +710,7 @@
 
       .cart_totals {
         h2 {
-          font-size: 14px;
+          font-size: 13px;
           padding: 23px 28px;
           border-radius: 8px 8px 0 0;
         }

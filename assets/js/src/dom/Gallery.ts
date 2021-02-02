@@ -33,8 +33,12 @@ class Gallery {
    */
   private _addEvents() {
     this._galleryList.forEach(img => {
-      img.addEventListener('click', e => {
-        this._changeImage(e);
+      const eventTypes = ['click', 'mouseover'];
+
+      eventTypes.forEach(eventType => {
+        img.addEventListener(eventType, e => {
+          this._changeImage(e);
+        });
       });
     });
   }
