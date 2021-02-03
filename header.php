@@ -16,7 +16,6 @@
 </head>
 
 <?php
-  global $ka_uri;
   $cart_count = WC()->cart->get_cart_contents_count();
 ?>
 

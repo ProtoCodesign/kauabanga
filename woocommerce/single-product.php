@@ -12,7 +12,7 @@
   $state['categories'] = get_the_terms( get_the_ID(), 'product_cat' );
 ?>
 
-<section id="next-element" class="breadcrumb">
+<section class="breadcrumb">
   <div class="row container"><?php woocommerce_breadcrumb( array( 'delimiter' => ' ↣ ') ); ?></div>
 </section>
 

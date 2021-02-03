@@ -3,8 +3,6 @@
 
   get_header();
 
-  global $ka_uri;
-
   $state = array();
   $state['featured'] = ka_sanitize_products( wc_get_products( array(
         'limit'     => 12,
@@ -34,8 +32,7 @@
 ?>
 
 <?php if( get_theme_mod( 'banner-home-top-active' ) ) { ?>
-<main class="banner-home" id="next-element"
-  style="background-image: url('<?= get_theme_mod( 'banner-home-top-background' ); ?>');">
+<main class="banner-home" style="background-image: url('<?= get_theme_mod( 'banner-home-top-background' ); ?>');">
   <div class="row container">
     <div class="banner-content col s12 m11 l8 xl8 m0-offset l1-offset xl1-offset">
       <h1><?= get_theme_mod( 'banner-home-top-title' ); ?></h1>

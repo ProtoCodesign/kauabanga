@@ -3,7 +3,7 @@ import './Glider';
 import ChangeTab from './ChangeTab';
 import ClickButton from './ClickButton';
 import Gallery from './Gallery';
-import HeaderSpace from './HeaderSpace';
+import NextElement from './NextElement';
 
 new ChangeTab({
   descriptionData: '[data-tab="description"]',
@@ -23,7 +23,7 @@ new ClickButton({
   filterCloseBtn: '.btn-close',
 });
 
-new HeaderSpace('#next-element');
+new NextElement('header');
 
 new Gallery({
   gallery: '[data-gallery="gallery"]',
