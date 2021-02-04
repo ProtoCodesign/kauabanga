@@ -1,0 +1,45 @@
+#shipping-simulator {
+  display: block;
+
+  form {
+    display: block;
+
+    label {
+      margin-bottom: 0;
+    }
+  }
+
+  #zipcode {
+    height: auto;
+    padding: 16px 20px;
+    width: 140px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  #idx-calc_shipping {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #6b635f;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 5px;
+    line-height: 1.6;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #6b635f;
+    width: 60%;
+  }
+
+  br + br {
+    display: none;
+  }
+
+  #loading_simulator,
+  #simulator-data {
+    margin-top: 0px;
+  }
+}

@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.9.4
+  Version: 0.9.5
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -2326,6 +2326,8 @@ footer .logo {
 .nav-links .page-numbers {
   padding: 16px 24px;
   border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
   color: #afafaf;
   background-color: #f4f4f4;
   font-weight: 600; }
@@ -2336,7 +2338,6 @@ footer .logo {
 .nav-links span.page-numbers {
   color: #ffffff;
   background-color: #554d49;
-  display: inline-flex;
   align-items: center; }
 
 .nav-links .next::after,
@@ -5493,4 +5494,43 @@ footer .logo {
     width: 35%; }
   .woocommerce-order .table-row > span {
     width: 65%; } }
+
+/* Form */
+#shipping-simulator {
+  display: block; }
+
+#shipping-simulator form {
+  display: block; }
+
+#shipping-simulator form label {
+  margin-bottom: 0; }
+
+#shipping-simulator #zipcode {
+  height: auto;
+  padding: 16px 20px;
+  width: 140px;
+  text-align: center;
+  display: inline-block; }
+
+#shipping-simulator #idx-calc_shipping {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #6b635f;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  line-height: 1.6;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+#shipping-simulator p {
+  color: #6b635f;
+  width: 60%; }
+
+#shipping-simulator br + br {
+  display: none; }
+
+#shipping-simulator #loading_simulator,
+#shipping-simulator #simulator-data {
+  margin-top: 0px; }
 
