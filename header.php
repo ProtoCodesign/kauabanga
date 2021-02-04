@@ -9,9 +9,6 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap"
     rel="stylesheet" />
 
-  <link rel="<?php esc_attr_e( 'Kauabanga favicon', 'kauabanga' ); ?>"
-    href="<?= esc_url( get_theme_mod( 'title-tagline-kauabanga-favicon' ) ); ?>" type="image/png" />
-
   <?php wp_head(); ?>
 </head>
 
