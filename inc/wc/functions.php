@@ -58,15 +58,17 @@
       $sale_price    = $state['product']->get_sale_price();
       $regular_price = $state['product']->get_regular_price();
     }
-    else if( $state['product']->is_type('variable') ){
+    else if( $state['product']->is_type( 'variable' ) ){
       $sale_price    = $state['product']->get_variation_sale_price( 'min', true );
       $regular_price = $state['product']->get_variation_regular_price( 'max', true );
     }
 
     $gallery = ka_get_gallery_images_link( $id, $size_image );
-    foreach( $gallery as $i => $image ) {
-      if( $i <= 4) {
-        $state['gallery'][] = $image;
+    if( !empty( $gallery ) ) {
+      foreach( $gallery as $i => $image ) {
+        if( $i <= 4) {
+          $state['gallery'][] = $image;
+        }
       }
     }
 
@@ -77,7 +79,7 @@
       'sale_price'     => $sale_price,
       'regular_price'  => $regular_price,
       'discount'       => $sale_price ? round( 100 - ( 100 *  $sale_price ) / $regular_price ) : 0,
-      'is_variable'    => $state['product']->is_type('variable'),
+      'is_variable'    => $state['product']->is_type( 'variable' ),
       'link'           => $state['product']->get_permalink(),
       'sku'            => $state['product']->get_sku(),
       'description'    => $state['product']->get_description(),

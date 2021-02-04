@@ -3,7 +3,7 @@
 ?>
 
 <?php if( is_cart() && have_posts() ) : while( have_posts() ) : the_post(); ?>
-<section class="title-section" id="next-element">
+<section class="title-section">
   <h2 class="ka-title"><?php the_title(); ?></h2>
 </section>
 
@@ -14,7 +14,7 @@
   the_post();
 ?>
 <section class="title-section">
-  <h2 class="ka-title" id="next-element">
+  <h2 class="ka-title">
     <?php the_title(); ?>
   </h2>
 </section>
@@ -24,7 +24,7 @@
   while( have_posts() ) : the_post();
 ?>
 <section class="title-section">
-  <h2 class="ka-title" id="next-element">
+  <h2 class="ka-title">
     <?php the_title(); ?>
   </h2>
 </section>
@@ -37,7 +37,7 @@
   while( have_posts() ) : the_post();
 ?>
 <section class="title-section">
-  <h2 class="ka-title" id="next-element">
+  <h2 class="ka-title">
     <?php the_title(); ?>
   </h2>
 </section>
