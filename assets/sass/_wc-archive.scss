@@ -39,6 +39,8 @@
   .page-numbers {
     padding: 16px 24px;
     border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
     color: #afafaf;
     background-color: #f4f4f4;
     font-weight: 600;
@@ -51,7 +53,6 @@
   span.page-numbers {
     color: #ffffff;
     background-color: #554d49;
-    display: inline-flex;
     align-items: center;
   }
 

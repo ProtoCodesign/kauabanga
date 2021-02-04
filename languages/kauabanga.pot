@@ -14,7 +14,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: footer.php:29, header.php:26
+#: footer.php:29, header.php:29
 msgid "Kauabanga"
 msgstr ""
 
@@ -78,23 +78,27 @@ msgstr ""
 msgid "Tranferência PIX"
 msgstr ""
 
-#: functions.php:93, header.php:92, woocommerce/archive-product.php:28
+#: functions.php:93, header.php:95, woocommerce/archive-product.php:28
 msgid "Categorias"
 msgstr ""
 
-#: header.php:32, header.php:39
+#: header.php:12
+msgid "Kauabanga favicon"
+msgstr ""
+
+#: header.php:35, header.php:42
 msgid "Pesquisar"
 msgstr ""
 
-#: header.php:67, header.php:70, header.php:104, header.php:105
+#: header.php:70, header.php:73, header.php:107, header.php:108
 msgid "Minha conta"
 msgstr ""
 
-#: header.php:76, header.php:83, header.php:110, header.php:116
+#: header.php:79, header.php:86, header.php:113, header.php:119
 msgid "Carrinho"
 msgstr ""
 
-#: header.php:95
+#: header.php:98
 msgid "Abrir menu"
 msgstr ""
 
@@ -212,6 +216,10 @@ msgstr ""
 
 #: inc/customizer/customizer.php:23
 msgid "Informações da empresa"
+msgstr ""
+
+#: inc/customizer/customizer.php:39
+msgid "Favicon da kauabanga"
 msgstr ""
 
 #: inc/wc/template-tags.php:44, inc/wc/template-tags.php:51, woocommerce/single-product.php:82, woocommerce/single-product.php:88

@@ -15,7 +15,7 @@
 
 <?php get_header(); ?>
 
-<section id="next-element" class="breadcrumb">
+<section class="breadcrumb">
   <div class="row container"><?php woocommerce_breadcrumb( array( 'delimiter' => ' ↣ ') ); ?></div>
 </section>
 
