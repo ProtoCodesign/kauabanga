@@ -163,6 +163,11 @@
     margin-left: 91.667%;
   }
 
+  .col.xl0-offset {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .xl-hidden {
     display: none;
     opacity: 0;
@@ -332,6 +337,11 @@
     margin-left: 91.667%;
   }
 
+  .col.l0-offset {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .l-hidden {
     display: none;
     opacity: 0;
@@ -464,7 +474,8 @@
   }
 
   .col.m0-offset {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .col.m1-offset {
@@ -680,7 +691,8 @@
   }
 
   .col.s0-offset {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .s-hidden {
