@@ -2,6 +2,7 @@ import './Glider';
 
 import ChangeTab from './ChangeTab';
 import ClickButton from './ClickButton';
+import DynamicPrice from './DynamicPrice';
 import Gallery from './Gallery';
 import NextElement from './NextElement';
 
@@ -21,6 +22,16 @@ new ClickButton({
   filter: '.filters',
   filterBtn: '.btn-filter',
   filterCloseBtn: '.btn-close',
+});
+
+new DynamicPrice({
+  mainSalePrice: '.product-head .price .current-price',
+  mainRegularPrice: '.product-head .price .older-price',
+  price: '.woocommerce-variation .woocommerce-variation-price .price bdi',
+  salePrice:
+    '.woocommerce-variation .woocommerce-variation-price .price ins bdi',
+  regularPrice:
+    '.woocommerce-variation .woocommerce-variation-price .price del bdi',
 });
 
 new NextElement('header');
