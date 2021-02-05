@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.9.5
+  Version: 0.9.7
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -165,6 +165,9 @@ li {
     margin-left: 83.333%; }
   .col.xl11-offset {
     margin-left: 91.667%; }
+  .col.xl0-offset {
+    margin-left: auto;
+    margin-right: auto; }
   .xl-hidden {
     display: none;
     opacity: 0; }
@@ -276,6 +279,9 @@ li {
     margin-left: 83.333%; }
   .col.l11-offset {
     margin-left: 91.667%; }
+  .col.l0-offset {
+    margin-left: auto;
+    margin-right: auto; }
   .l-hidden {
     display: none;
     opacity: 0; }
@@ -370,7 +376,8 @@ li {
     flex-basis: 100%;
     max-width: 100%; }
   .col.m0-offset {
-    margin-left: 0; }
+    margin-left: auto;
+    margin-right: auto; }
   .col.m1-offset {
     margin-left: 8.333%; }
   .col.m2-offset {
@@ -505,7 +512,8 @@ li {
   .col.s11-offset {
     margin-left: 91.667%; }
   .col.s0-offset {
-    margin-left: 0; }
+    margin-left: auto;
+    margin-right: auto; }
   .s-hidden {
     display: none;
     opacity: 0; }
@@ -846,8 +854,8 @@ input.bg-dark::placeholder {
 /* Header */
 header {
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   position: fixed;
@@ -891,7 +899,7 @@ header .logo {
 
 header .logo img {
   align-items: center;
-  width: 80%; }
+  height: 22px; }
 
 header .container .col {
   padding-top: 0;
@@ -1002,13 +1010,15 @@ header .container-dropdown .sub-menu a::before {
 
 @media only screen and (max-width: 1599px) {
   header {
-    padding-top: 24px;
-    padding-bottom: 24px; }
+    padding-top: 16px;
+    padding-bottom: 16px; }
   header .search button {
     padding: 20px;
     right: 12px; }
   header .search button img {
     width: 20px; }
+  header .logo img {
+    height: 20px; }
   header .navigation-header {
     margin-right: 12px; }
   header .nav-dropdown img {
@@ -1053,16 +1063,16 @@ header .container-dropdown .sub-menu a::before {
 
 @media only screen and (max-width: 1100px) {
   header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     /* #region 1.2.Menu animation */ }
-  header .logo img {
-    height: 22px; }
   header .search button {
     padding: 16px;
     right: 10px; }
   header .search button img {
     width: 16px; }
+  header .logo img {
+    height: 18px; }
   header .nav-dropdown img {
     margin-left: 8px;
     height: 7px; }
@@ -1159,8 +1169,8 @@ header .container-dropdown .sub-menu a::before {
 
 @media only screen and (max-width: 767px) {
   header {
-    padding-top: 16px;
-    padding-bottom: 16px; }
+    padding-top: 10px;
+    padding-bottom: 10px; }
   header .logo img {
     height: 16px; }
   header .search button {
@@ -5533,4 +5543,69 @@ footer .logo {
 #shipping-simulator #loading_simulator,
 #shipping-simulator #simulator-data {
   margin-top: 0px; }
+
+/* Form */
+.container-text {
+  margin-top: 460x;
+  margin-bottom: 120px; }
+
+.container-text.col {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.container-text h3 {
+  color: #0c0905;
+  font-weight: 700; }
+
+.container-text h4 {
+  display: block;
+  width: 100%;
+  margin-top: 45px;
+  color: #25201b;
+  font-weight: 600; }
+
+.container-text p,
+.container-text li {
+  margin-top: 15px;
+  color: #6b635f; }
+
+.container-text li {
+  list-style: disc;
+  margin-left: 30px; }
+
+@media only screen and (max-width: 1599px) {
+  .container-text {
+    margin-top: 48px;
+    margin-bottom: 96px; }
+  .container-text h4 {
+    margin-top: 36px; }
+  .container-text p,
+  .container-text li {
+    margin-top: 12px; }
+  .container-text li {
+    margin-left: 24px; } }
+
+@media only screen and (max-width: 1100px) {
+  .container-text {
+    margin-top: 36px;
+    margin-bottom: 72px; }
+  .container-text h4 {
+    margin-top: 28px; }
+  .container-text p,
+  .container-text li {
+    margin-top: 10px; }
+  .container-text li {
+    margin-left: 20px; } }
+
+@media only screen and (max-width: 1100px) {
+  .container-text {
+    margin-top: 28px;
+    margin-bottom: 56px; }
+  .container-text h4 {
+    margin-top: 24px; }
+  .container-text p,
+  .container-text li {
+    margin-top: 8px; }
+  .container-text li {
+    margin-left: 16px; } }
 
