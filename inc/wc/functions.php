@@ -58,7 +58,7 @@
       $sale_price    = $state['product']->get_sale_price();
       $regular_price = $state['product']->get_regular_price();
     }
-    else if( $state['product']->is_type( 'variable' ) ){
+    else if( $state['product']->is_type( 'variable' ) ) {
       $sale_price    = $state['product']->get_variation_sale_price( 'min', true );
       $regular_price = $state['product']->get_variation_regular_price( 'max', true );
     }
@@ -66,7 +66,7 @@
     $gallery = ka_get_gallery_images_link( $id, $size_image );
     if( !empty( $gallery ) ) {
       foreach( $gallery as $i => $image ) {
-        if( $i <= 4) {
+        if( $i <= 4 ) {
           $state['gallery'][] = $image;
         }
       }

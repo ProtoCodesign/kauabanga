@@ -75,22 +75,18 @@
       <h3><?= $state['product']['name']; ?></h3>
 
       <div class="price">
-        <?php if( !$state['product']['is_variable'] ) : ?>
 
         <?php if( !empty( $state['product']['sale_price'] ) ) : ?>
         <h4 class="older-price">
           <?php _e( 'R$', 'kauabanga' ); ?>
-          <?= number_format($state['product']['regular_price'], 2, ",", "." ); ?>
+          <?= number_format( $state['product']['regular_price'], 2, ",", "." ); ?>
         </h4>
         <?php endif; ?>
 
         <h3 class="current-price">
           <?php _e( 'R$', 'kauabanga' ); ?>
-          <?= number_format($state['product']['price'], 2, ",", "." ); ?>
+          <?= number_format( $state['product']['price'], 2, ",", "." ); ?>
         </h3>
-        <?php else : ?>
-        <?php woocommerce_get_template( 'single-product/price.php' ); ?>
-        <?php endif; ?>
       </div>
     </div>
 
