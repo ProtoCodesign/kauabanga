@@ -126,24 +126,7 @@
     }
   }
   .woocommerce-variation {
-    margin-top: 20px;
-    del {
-      color: #c1c1c1;
-      text-decoration: line-through;
-      font-weight: 500;
-      font-size: 21;
-    }
-
-    ins {
-      text-decoration: none !important;
-      bdi,
-      span {
-        color: #3c3430;
-        font-size: 27px;
-        font-weight: 600;
-        text-decoration: none !important;
-      }
-    }
+    display: none !important;
   }
 
   .cart {
@@ -225,21 +208,6 @@
       }
     }
 
-    .woocommerce-variation {
-      margin-top: 16px;
-
-      del {
-        font-size: 16px;
-      }
-
-      ins {
-        bdi,
-        span {
-          font-size: 20px;
-        }
-      }
-    }
-
     .variation-form {
       display: inline-block;
       width: 45%;
@@ -311,21 +279,6 @@
         bdi,
         span {
           font-size: 20px;
-        }
-      }
-    }
-
-    .woocommerce-variation {
-      margin-top: 12px;
-
-      del {
-        font-size: 13px;
-      }
-
-      ins {
-        bdi,
-        span {
-          font-size: 16px;
         }
       }
     }
@@ -403,21 +356,6 @@
         bdi,
         span {
           font-size: 16px;
-        }
-      }
-    }
-
-    .woocommerce-variation {
-      margin-top: 9px;
-
-      del {
-        font-size: 12px;
-      }
-
-      ins {
-        bdi,
-        span {
-          font-size: 13px;
         }
       }
     }

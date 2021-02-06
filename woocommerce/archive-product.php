@@ -26,26 +26,42 @@
 
     <ul class="filter-categories">
       <h4><?php _e( 'Categorias', 'kauabanga' ); ?></h4>
+
       <?php
-        $terms = get_terms( array (
-            'order'      => 'ASC',
-            'orderby'    => 'rand',
-            'taxonomy'   => 'product_cat',
-            'hide_empty' => true,
+        $taxonomies = get_categories( array(
+          'taxonomy'    => 'product_cat',
+          'hide_empty'  => false,
           )
         );
 
-        foreach( $terms as $term ) {
-          $link = get_term_link( $term, 'product_cat' );
+        if ( !empty( $taxonomies ) ) :
+          foreach( $taxonomies as $category ) :
+            if( $category->parent == 0 ) :
+             $category_link = get_category_link( $category->term_id );
       ?>
-
-      <li class="filter-category">
-        <a href="<?= $link; ?>">
-          <?= $term->name ?>
-          <span class="count"><?= '(' . $term->count . ')'; ?></span>
+      <li>
+        <a href="<?= esc_attr( $category_link ); ?>">
+          <?= $category->name; ?>
+          <span>(<?= $category->count; ?>)</span>
         </a>
+
+        <?php foreach( $taxonomies as $subcategory ) :
+          if( $subcategory->parent == $category->term_id ) :
+            $subcategory_link = get_category_link( $subcategory->term_id );
+        ?>
+        <ul>
+          <li>
+            <a href="<?= esc_attr( $subcategory_link ); ?>">
+              <?= $subcategory->name; ?>
+              <span>(<?= $subcategory->count; ?>)</span>
+            </a>
+          </li>
+        </ul>
+        <?php endif; endforeach; ?>
+
       </li>
-      <?php } ?>
+      <?php endif; endforeach; endif; ?>
+
     </ul>
 
     <?php

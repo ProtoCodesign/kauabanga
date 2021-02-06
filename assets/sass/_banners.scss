@@ -7,6 +7,11 @@
   background-position: 100% 100%;
   display: flex;
   align-items: center;
+
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.375s;
 }
 
 .banner-content.col {
@@ -17,12 +22,28 @@
 .banner-content h1 {
   color: #fff;
   margin-bottom: 30px;
+
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
 
 .banner-content h4 {
   color: #d6d6d6;
   font-weight: 500;
   margin-bottom: 60px;
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.625s;
+}
+
+.banner-content a {
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.75s;
 }
 
 @media only screen and (max-width: 1599px) {
@@ -78,12 +99,22 @@
   background-color: #25201b;
   padding-bottom: 45px;
   padding-top: 45px;
+
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.625s;
 }
 
 .banner-ruler div {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.75s;
 }
 
 .banner-ruler span {
