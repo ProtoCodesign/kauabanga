@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.9.8
+  Version: 0.9.9.1
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -870,7 +870,11 @@ header div {
 header .search {
   display: inline-block;
   width: 100%;
-  position: relative; }
+  position: relative;
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.25s; }
 
 header .search form {
   display: flex;
@@ -899,7 +903,11 @@ header .logo {
 
 header .logo img {
   align-items: center;
-  height: 22px; }
+  height: 22px;
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.25s; }
 
 header .container .col {
   padding-top: 0;
@@ -925,7 +933,11 @@ header .count-itens-cart {
 
 header nav {
   display: inline-flex;
-  align-items: center; }
+  align-items: center;
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.25s; }
 
 header nav * {
   display: inline-block; }
@@ -955,7 +967,7 @@ header .btn-menu-mobile {
 header .container-dropdown {
   position: absolute;
   min-width: 300px;
-  top: 70px;
+  top: 60px;
   left: 30%;
   transform: translateX(-50%);
   width: auto;
@@ -967,11 +979,13 @@ header .container-dropdown {
 
 header .container-dropdown.active {
   position: absolute;
-  top: 90px;
+  top: 70px;
   left: 30%;
   transform: translateX(-50%);
   background-color: #ffffff;
   height: auto;
+  max-height: 80vh;
+  overflow-y: scroll;
   padding: 45px 60px;
   border-radius: 5px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 5px 10px rgba(0, 0, 0, 0.2); }
@@ -996,9 +1010,12 @@ header .container-dropdown .sub-menu {
   display: block; }
 
 header .container-dropdown .sub-menu {
-  display: flex;
-  width: 100%;
-  margin-top: 15px; }
+  display: block;
+  width: 100%; }
+
+header .container-dropdown .sub-menu li {
+  display: block;
+  width: 100%; }
 
 header .container-dropdown .sub-menu a::before {
   content: "";
@@ -1035,14 +1052,14 @@ header .container-dropdown .sub-menu a::before {
     left: 12px;
     top: -2px; }
   header .container-dropdown {
-    top: 50px;
+    top: 40px;
     min-width: 240px;
     left: 40%;
     transform: translateX(-50%);
     padding: 0 48px;
     overflow: hidden; }
   header .container-dropdown.active {
-    top: 60px;
+    top: 50px;
     left: 40%;
     transform: translateX(-50%);
     padding: 36px 48px;
@@ -1054,8 +1071,6 @@ header .container-dropdown .sub-menu a::before {
     margin-right: 8px; }
   header .container-dropdown > li + li {
     margin-top: 24px; }
-  header .container-dropdown .sub-menu {
-    margin-top: 12px; }
   header .container-dropdown .sub-menu a::before {
     width: 4px;
     height: 4px;
@@ -1153,8 +1168,6 @@ header .container-dropdown .sub-menu a::before {
     margin-right: 8px; }
   header .container-dropdown > li + li {
     margin-top: 24px; }
-  header .container-dropdown .sub-menu {
-    margin-top: 12px; }
   header .container-dropdown .sub-menu a::before {
     width: 4px;
     height: 4px;
@@ -1229,27 +1242,27 @@ header .container-dropdown .sub-menu a::before {
     display: none; }
   header .btn-menu-mobile .nav-dropdown {
     position: fixed;
-    top: 0; }
+    top: 0;
+    left: 0; }
   header .container-dropdown,
   header .container-dropdown.active {
     position: fixed;
-    top: 85px;
     height: calc(100vh - 151px);
-    overflow-y: scroll;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1); }
   header .container-dropdown {
-    left: -100vw;
+    left: -160px;
+    top: 65px;
     padding: 0 24px;
-    overflow: hidden;
     border-radius: 0 8px 8px 0; }
   header .container-dropdown {
     min-width: 280px;
+    top: 85px;
     box-sizing: border-box;
     padding: 0 32px;
     overflow: hidden;
     z-index: -1; }
   header .container-dropdown.active {
-    left: 18.9vw;
+    left: 140px;
     padding: 24px 32px;
     border-radius: 0 8px 8px 0;
     z-index: -1; }
@@ -1260,8 +1273,6 @@ header .container-dropdown .sub-menu a::before {
     margin-right: 8px; }
   header .container-dropdown > li + li {
     margin-top: 24px; }
-  header .container-dropdown .sub-menu {
-    margin-left: 12px; }
   header .container-dropdown .sub-menu li {
     margin-top: 12px; }
   header .container-dropdown .sub-menu a::before {
@@ -1277,7 +1288,11 @@ header .container-dropdown .sub-menu a::before {
   background-size: cover;
   background-position: 100% 100%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.375s; }
 
 .banner-content.col {
   padding-top: 120px;
@@ -1285,12 +1300,26 @@ header .container-dropdown .sub-menu a::before {
 
 .banner-content h1 {
   color: #fff;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s; }
 
 .banner-content h4 {
   color: #d6d6d6;
   font-weight: 500;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.625s; }
+
+.banner-content a {
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.75s; }
 
 @media only screen and (max-width: 1599px) {
   .banner-home {
@@ -1326,12 +1355,20 @@ header .container-dropdown .sub-menu a::before {
   width: 100%;
   background-color: #25201b;
   padding-bottom: 45px;
-  padding-top: 45px; }
+  padding-top: 45px;
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.625s; }
 
 .banner-ruler div {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  opacity: 0;
+  animation: animeOpacity 0.25s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.75s; }
 
 .banner-ruler span {
   color: #ededed;
@@ -2168,6 +2205,23 @@ footer .logo {
 .filters .widget_layered_nav li + li {
   margin-top: 20px; }
 
+.filters .filter-categories li ul li,
+.filters .widget_layered_nav li ul li {
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  align-items: center; }
+
+.filters .filter-categories li ul li::before,
+.filters .widget_layered_nav li ul li::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+  margin-right: 15px; }
+
 .filters .filter-categories a,
 .filters .widget_layered_nav a {
   color: #6b635f; }
@@ -2236,6 +2290,18 @@ footer .logo {
   .filters .filter-categories li + li,
   .filters .widget_layered_nav li + li {
     margin-top: 16px; }
+  .filters .filter-categories li ul li,
+  .filters .widget_layered_nav li ul li {
+    margin-top: 12px; }
+  .filters .filter-categories li ul li::before,
+  .filters .widget_layered_nav li ul li::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+    margin-right: 12px; }
   .filters ul .count {
     font-size: 13px;
     color: #9b9b9b; }
@@ -2290,6 +2356,18 @@ footer .logo {
   .filters .filter-categories li + li,
   .filters .widget_layered_nav li + li {
     margin-top: 12px; }
+  .filters .filter-categories li ul li,
+  .filters .widget_layered_nav li ul li {
+    margin-top: 10px; }
+  .filters .filter-categories li ul li::before,
+  .filters .widget_layered_nav li ul li::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+    margin-right: 10px; }
   .filters ul .count {
     font-size: 12px; }
   .filters .form-price span + span {
@@ -2839,23 +2917,7 @@ footer .logo {
   width: 100%; }
 
 .product-infos .woocommerce-variation {
-  margin-top: 20px; }
-
-.product-infos .woocommerce-variation del {
-  color: #c1c1c1;
-  text-decoration: line-through;
-  font-weight: 500;
-  font-size: 21; }
-
-.product-infos .woocommerce-variation ins {
-  text-decoration: none !important; }
-
-.product-infos .woocommerce-variation ins bdi,
-.product-infos .woocommerce-variation ins span {
-  color: #3c3430;
-  font-size: 27px;
-  font-weight: 600;
-  text-decoration: none !important; }
+  display: none !important; }
 
 .product-infos .cart {
   margin-top: 30px; }
@@ -2907,13 +2969,6 @@ footer .logo {
   .product-infos .product-head .price bdi,
   .product-infos .product-head .price span {
     font-size: 27px; }
-  .product-infos .woocommerce-variation {
-    margin-top: 16px; }
-  .product-infos .woocommerce-variation del {
-    font-size: 16px; }
-  .product-infos .woocommerce-variation ins bdi,
-  .product-infos .woocommerce-variation ins span {
-    font-size: 20px; }
   .product-infos .variation-form {
     display: inline-block;
     width: 45%; }
@@ -2955,13 +3010,6 @@ footer .logo {
   .product-infos .product-head .price bdi,
   .product-infos .product-head .price span {
     font-size: 20px; }
-  .product-infos .woocommerce-variation {
-    margin-top: 12px; }
-  .product-infos .woocommerce-variation del {
-    font-size: 13px; }
-  .product-infos .woocommerce-variation ins bdi,
-  .product-infos .woocommerce-variation ins span {
-    font-size: 16px; }
   .product-infos .variation-form {
     display: block;
     width: 100%;
@@ -3005,13 +3053,6 @@ footer .logo {
   .product-infos .product-head .price bdi,
   .product-infos .product-head .price span {
     font-size: 16px; }
-  .product-infos .woocommerce-variation {
-    margin-top: 9px; }
-  .product-infos .woocommerce-variation del {
-    font-size: 12px; }
-  .product-infos .woocommerce-variation ins bdi,
-  .product-infos .woocommerce-variation ins span {
-    font-size: 13px; }
   .product-infos .variation-form {
     display: block;
     width: 100%;
@@ -5608,4 +5649,41 @@ footer .logo {
     margin-top: 8px; }
   .container-text li {
     margin-left: 16px; } }
+
+/* Form */
+@keyframes animeOpacity {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes animeTop {
+  from {
+    transform: translateY(-10px); }
+  to {
+    transform: translateY(0px); } }
+
+@keyframes animeBottom {
+  from {
+    transform: translateY(10px); }
+  to {
+    transform: translateY(0px); } }
+
+@keyframes animeLeft {
+  from {
+    transform: translateX(-10px); }
+  to {
+    transform: translateX(0px); } }
+
+@keyframes animeRight {
+  from {
+    transform: translateX(10px); }
+  to {
+    transform: translateX(0px); } }
+
+@keyframes animeSize {
+  from {
+    transform: scale(0.95); }
+  to {
+    transform: scale(1); } }
 
