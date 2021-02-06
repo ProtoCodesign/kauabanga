@@ -19,6 +19,11 @@ header {
     width: 100%;
     position: relative;
 
+    opacity: 0;
+    animation: animeOpacity 0.25s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0.25s;
+
     form {
       display: flex;
       align-items: center;
@@ -54,6 +59,11 @@ header {
   .logo img {
     align-items: center;
     height: 22px;
+
+    opacity: 0;
+    animation: animeOpacity 0.25s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0.25s;
   }
 
   & .container .col {
@@ -85,6 +95,10 @@ header {
   nav {
     display: inline-flex;
     align-items: center;
+    opacity: 0;
+    animation: animeOpacity 0.25s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0.25s;
   }
 
   nav * {
@@ -121,7 +135,7 @@ header {
   .container-dropdown {
     position: absolute;
     min-width: 300px;
-    top: 70px;
+    top: 60px;
     left: 30%;
     transform: translateX(-50%);
     width: auto;
@@ -134,11 +148,13 @@ header {
 
   .container-dropdown.active {
     position: absolute;
-    top: 90px;
+    top: 70px;
     left: 30%;
     transform: translateX(-50%);
     background-color: #ffffff;
     height: auto;
+    max-height: 80vh;
+    overflow-y: scroll;
     padding: 45px 60px;
     border-radius: 5px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
@@ -170,9 +186,13 @@ header {
   }
 
   .container-dropdown .sub-menu {
-    display: flex;
+    display: block;
     width: 100%;
-    margin-top: 15px;
+
+    li {
+      display: block;
+      width: 100%;
+    }
   }
 
   .container-dropdown .sub-menu a::before {
@@ -231,7 +251,7 @@ header {
     }
 
     .container-dropdown {
-      top: 50px;
+      top: 40px;
       min-width: 240px;
       left: 40%;
       transform: translateX(-50%);
@@ -240,7 +260,7 @@ header {
     }
 
     .container-dropdown.active {
-      top: 60px;
+      top: 50px;
       left: 40%;
       transform: translateX(-50%);
       padding: 36px 48px;
@@ -256,10 +276,6 @@ header {
 
     .container-dropdown > li + li {
       margin-top: 24px;
-    }
-
-    .container-dropdown .sub-menu {
-      margin-top: 12px;
     }
 
     .container-dropdown .sub-menu a::before {
@@ -411,10 +427,6 @@ header {
       margin-top: 24px;
     }
 
-    .container-dropdown .sub-menu {
-      margin-top: 12px;
-    }
-
     .container-dropdown .sub-menu a::before {
       width: 4px;
       height: 4px;
@@ -532,26 +544,26 @@ header {
     .btn-menu-mobile .nav-dropdown {
       position: fixed;
       top: 0;
+      left: 0;
     }
 
     .container-dropdown,
     .container-dropdown.active {
       position: fixed;
-      top: 85px;
       height: calc(100vh - 151px);
-      overflow-y: scroll;
       box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
     }
 
     .container-dropdown {
-      left: -100vw;
+      left: -160px;
+      top: 65px;
       padding: 0 24px;
-      overflow: hidden;
       border-radius: 0 8px 8px 0;
     }
 
     .container-dropdown {
       min-width: 280px;
+      top: 85px;
       box-sizing: border-box;
       padding: 0 32px;
       overflow: hidden;
@@ -559,7 +571,7 @@ header {
     }
 
     .container-dropdown.active {
-      left: 18.9vw;
+      left: 140px;
       padding: 24px 32px;
       border-radius: 0 8px 8px 0;
       z-index: -1;
@@ -574,10 +586,6 @@ header {
 
     .container-dropdown > li + li {
       margin-top: 24px;
-    }
-
-    .container-dropdown .sub-menu {
-      margin-left: 12px;
     }
 
     .container-dropdown .sub-menu li {
