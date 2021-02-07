@@ -13,6 +13,22 @@
       $wp_customize->remove_section( 'custom_css' ); // Remove a customização de css
 
       // Identidade do site
+      $wp_customize->add_setting( 'title-tagline-kauabanga-email', array(
+          'default'    => null,
+          'transport'  => 'postMessage'
+        )
+      );
+      $wp_customize->add_control( 'title-tagline-kauabanga-email', array(
+          'type'      => 'email',
+          'label'     => __( 'Email da kauabanga', 'kauabanga' ),
+          'section'   => 'title_tagline',
+          'priority'  => 60
+        )
+      );
+      $wp_customize->selective_refresh->add_partial( 'title-tagline-kauabanga-email', array(
+          'selector'  => array( '.container-404 p strong' )
+        )
+      );
       $wp_customize->add_setting( 'title-tagline-business-info', array(
           'default'    => null,
           'transport'  => 'postMessage'

@@ -14,7 +14,23 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: footer.php:29, header.php:29
+#: 404.php:4
+msgid "404"
+msgstr ""
+
+#: 404.php:6
+msgid "Página não encontrada"
+msgstr ""
+
+#: 404.php:8
+msgid "A página não existe ou foi apagada, confira se você digitou o link corretamente, dúvidas entre em contato pelo nosso email:"
+msgstr ""
+
+#: 404.php:11
+msgid "Voltar para a loja"
+msgstr ""
+
+#: footer.php:29, header.php:25
 msgid "Kauabanga"
 msgstr ""
 
@@ -78,27 +94,23 @@ msgstr ""
 msgid "Tranferência PIX"
 msgstr ""
 
-#: functions.php:93, header.php:95, woocommerce/archive-product.php:28
+#: functions.php:93, header.php:92, woocommerce/archive-product.php:28
 msgid "Categorias"
 msgstr ""
 
-#: header.php:12
-msgid "Kauabanga favicon"
-msgstr ""
-
-#: header.php:35, header.php:42
+#: header.php:31, header.php:38
 msgid "Pesquisar"
 msgstr ""
 
-#: header.php:70, header.php:73, header.php:107, header.php:108
+#: header.php:66, header.php:69, header.php:105, header.php:106
 msgid "Minha conta"
 msgstr ""
 
-#: header.php:79, header.php:86, header.php:113, header.php:119
+#: header.php:75, header.php:82, header.php:111, header.php:117
 msgid "Carrinho"
 msgstr ""
 
-#: header.php:98
+#: header.php:95
 msgid "Abrir menu"
 msgstr ""
 
@@ -126,7 +138,7 @@ msgstr ""
 msgid "Título"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:74, inc/customizer/customize-newsletter.php:33, woocommerce/single-product.php:104
+#: inc/customizer/customize-banners.php:74, inc/customizer/customize-newsletter.php:33, woocommerce/single-product.php:100
 msgid "Descrição"
 msgstr ""
 
@@ -215,54 +227,58 @@ msgid "Botão"
 msgstr ""
 
 #: inc/customizer/customizer.php:23
-msgid "Informações da empresa"
+msgid "Email da kauabanga"
 msgstr ""
 
 #: inc/customizer/customizer.php:39
-msgid "Favicon da kauabanga"
+msgid "Informações da empresa"
 msgstr ""
 
-#: inc/wc/template-tags.php:44, inc/wc/template-tags.php:51, woocommerce/single-product.php:82, woocommerce/single-product.php:88
+#: inc/wc/template-tags.php:44, inc/wc/template-tags.php:51, woocommerce/single-product.php:81, woocommerce/single-product.php:87
 msgid "R$"
+msgstr ""
+
+#: page-default.php:2
+msgid "Padrão"
 msgstr ""
 
 #: page-home.php:2
 msgid "Home"
 msgstr ""
 
-#: page-home.php:58
+#: page-home.php:55
 msgid "Compra segura"
 msgstr ""
 
-#: page-home.php:59
+#: page-home.php:56
 msgid "Sua compra é 100% segura"
 msgstr ""
 
-#: page-home.php:63
+#: page-home.php:60
 msgid "Compre parcelado"
 msgstr ""
 
-#: page-home.php:64
+#: page-home.php:61
 msgid "Parcele em até 12x sem juros"
 msgstr ""
 
-#: page-home.php:68, page-home.php:69
+#: page-home.php:65, page-home.php:66
 msgid "Entrega por todo o Brasil"
 msgstr ""
 
-#: page-home.php:82, woocommerce/archive-product.php:112
+#: page-home.php:79, woocommerce/archive-product.php:128
 msgid "Anterior"
 msgstr ""
 
-#: page-home.php:100
+#: page-home.php:97
 msgid "Próximo"
 msgstr ""
 
-#: page-home.php:108
+#: page-home.php:105
 msgid "Destaques"
 msgstr ""
 
-#: page-home.php:141
+#: page-home.php:138
 msgid "Mais vendidos"
 msgstr ""
 
@@ -270,39 +286,39 @@ msgstr ""
 msgid "Filtrar"
 msgstr ""
 
-#: woocommerce/archive-product.php:63
+#: woocommerce/archive-product.php:79
 msgid "Preço"
 msgstr ""
 
-#: woocommerce/archive-product.php:67
+#: woocommerce/archive-product.php:83
 msgid "Até R$100"
 msgstr ""
 
-#: woocommerce/archive-product.php:73
+#: woocommerce/archive-product.php:89
 msgid "R$100 a R$300"
 msgstr ""
 
-#: woocommerce/archive-product.php:79
+#: woocommerce/archive-product.php:95
 msgid "R$300 a R$700"
 msgstr ""
 
-#: woocommerce/archive-product.php:85
+#: woocommerce/archive-product.php:101
 msgid "R$700 a R$1200"
 msgstr ""
 
-#: woocommerce/archive-product.php:91
+#: woocommerce/archive-product.php:107
 msgid "Mínimo"
 msgstr ""
 
-#: woocommerce/archive-product.php:94
+#: woocommerce/archive-product.php:110
 msgid "Máximo"
 msgstr ""
 
-#: woocommerce/archive-product.php:103
+#: woocommerce/archive-product.php:119
 msgid "Filtrar produtos"
 msgstr ""
 
-#: woocommerce/archive-product.php:113
+#: woocommerce/archive-product.php:129
 msgid "Próxima"
 msgstr ""
 
@@ -318,11 +334,11 @@ msgstr ""
 msgid "Ref:"
 msgstr ""
 
-#: woocommerce/single-product.php:106
+#: woocommerce/single-product.php:102
 msgid "Avaliações"
 msgstr ""
 
-#: woocommerce/single-product.php:126
+#: woocommerce/single-product.php:122
 msgid "Relacionados"
 msgstr ""
 

@@ -4,7 +4,7 @@
   Author: ProtoCodesign
   Author URI: https://protocodesign.com
   Description: Tema exclusivo da loja virtual kauabanga
-  Version: 0.9.9.1
+  Version: 0.9.9.2
   Text Domain: kauabanga
 */
 /* Reset styles */
@@ -957,6 +957,9 @@ header nav a {
 header .nav-dropdown {
   position: relative; }
 
+header .nav-dropdown > span {
+  cursor: pointer; }
+
 header .nav-dropdown img {
   margin-left: 10px;
   height: 8px; }
@@ -985,7 +988,7 @@ header .container-dropdown.active {
   background-color: #ffffff;
   height: auto;
   max-height: 80vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 45px 60px;
   border-radius: 5px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 5px 10px rgba(0, 0, 0, 0.2); }
@@ -2003,6 +2006,68 @@ footer .logo {
   .footer-socials,
   .footer-payment-forms {
     margin-top: 36px; } }
+
+/* Page 404 */
+.container-404 {
+  text-align: center;
+  padding-top: 90px !important;
+  margin-bottom: 120px; }
+
+.container-404.col {
+  padding-bottom: 0;
+  padding-top: 0; }
+
+.container-404 h1,
+.container-404 h4 {
+  display: block;
+  width: 100%; }
+
+.container-404 h1 {
+  font-size: 150px;
+  line-height: 1; }
+
+.container-404 p {
+  margin-top: 15px; }
+
+.container-404 p strong {
+  font-weight: 600; }
+
+.container-404 a {
+  margin: 0 auto;
+  margin-top: 45px; }
+
+@media only screen and (max-width: 1599px) {
+  .container-404 {
+    padding-top: 72px !important;
+    margin-bottom: 96px; }
+  .container-404 h1 {
+    font-size: 120px; }
+  .container-404 p {
+    margin-top: 12px; }
+  .container-404 a {
+    margin-top: 36px; } }
+
+@media only screen and (max-width: 1100px) {
+  .container-404 {
+    padding-top: 56px !important;
+    margin-bottom: 72px; }
+  .container-404 h1 {
+    font-size: 96px; }
+  .container-404 p {
+    margin-top: 10px; }
+  .container-404 a {
+    margin-top: 28px; } }
+
+@media only screen and (max-width: 767px) {
+  .container-404 {
+    padding-top: 36px !important;
+    margin-bottom: 56px; }
+  .container-404 h1 {
+    font-size: 72px; }
+  .container-404 p {
+    margin-top: 8px; }
+  .container-404 a {
+    margin-top: 24px; } }
 
 /* Breadcrumb */
 .breadcrumb {
