@@ -16,7 +16,7 @@
       )
     );
     $wp_customize->add_setting( 'banner-home-top-active', array(
-        'default'    => '1',
+        'default'    => 1,
         'transport'  => 'postMessage'
       )
     );
@@ -118,7 +118,7 @@
       )
     );
     $wp_customize->add_setting( 'banner-home-regua-active', array(
-        'default'    => '1',
+        'default'    => 1,
         'transport'  => 'postMessage'
       )
     );
@@ -131,6 +131,22 @@
     );
     $wp_customize->selective_refresh->add_partial( 'banner-home-regua-active', array(
         'fallback_refresh'  => true,
+      )
+    );
+    $wp_customize->add_setting( 'banner-home-regua-plots', array(
+        'default'    => null,
+        'transport'  => 'postMessage'
+      )
+    );
+    $wp_customize->add_control( 'banner-home-regua-plots', array(
+        'type'      => 'text',
+        'label'     => __( 'Quantas parcelas serão aceitas?', 'kauabanga' ),
+        'section'   => 'banner-home-regua',
+        'priority'  => 5,
+      )
+    );
+    $wp_customize->selective_refresh->add_partial( 'banner-home-regua-plots', array(
+        'selector'  => array( '.banner-ruler .jq-banner-plots' ),
       )
     );
   }

@@ -55,11 +55,14 @@
         alt="<?php esc_attr_e( 'Compra segura', 'kauabanga' ); ?>" draggable="false" />
       <?php _e( 'Sua compra é 100% segura', 'kauabanga' ); ?>
     </span>
-    <span>
+
+    <?php if( !empty( get_theme_mod( 'banner-home-regua-plots' ) ) ) : ?>
+    <span class="jq-banner-plots">
       <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/credit-card.svg' ); ?>"
         alt="<?php esc_attr_e( 'Compre parcelado', 'kauabanga' ); ?>" draggable="false" />
-      <?php _e( 'Parcele em até 12x sem juros', 'kauabanga' ); ?>
+      <?= get_theme_mod( 'banner-home-regua-plots' ); ?>
     </span>
+    <?php endif; ?>
     <span>
       <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/truck.svg' ); ?>"
         alt="<?php esc_attr_e( 'Entrega por todo o Brasil', 'kauabanga' ); ?>" draggable="false" />
@@ -69,8 +72,7 @@
 </section>
 <?php } ?>
 
-
-<?php if( is_array( $state['brands'] ) && !empty( $state['brands'] ) ) { ?>
+<?php if( is_array( $state['brands'] ) && sizeof( $state['brands'] )  >= 5 ) { ?>
 <section class="slider-brands">
   <div class="row container">
     <button aria-label="Previous" class="prev">
