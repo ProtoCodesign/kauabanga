@@ -149,6 +149,53 @@
         'selector'  => array( '.banner-ruler .jq-banner-plots' ),
       )
     );
+
+    // Categorias da Vitrine
+    $wp_customize->add_section( 'vitrine-categories', array(
+      'title'     => __( 'Categorias', 'kauabanga' ),
+      'priority'  => 10,
+      'panel'     => 'banners'
+      )
+    );
+    $wp_customize->add_setting( 'vitrine-categories-limit', array(
+        'default'    => 1,
+        'transport'  => 'postMessage'
+      )
+    );
+    $wp_customize->add_control( 'vitrine-categories-limit', array(
+        'type'      => 'number',
+        'label'     => __( 'Máximo de categorias que irão aparecer', 'kauabanga' ),
+        'section'   => 'vitrine-categories',
+        'priority'  => 0
+      )
+    );
+    $wp_customize->selective_refresh->add_partial( 'vitrine-categories-limit', array(
+        'selector'  => array( '.home section.ka-categories' ),
+      )
+    );
+    $wp_customize->add_setting( 'vitrine-categories-ordeby', array(
+        'default'    => 'rand',
+        'transport'  => 'postMessage'
+      )
+    );
+    $wp_customize->add_control( 'vitrine-categories-ordeby', array(
+        'type'      => 'select',
+        'label'     => __( 'Máximo de categorias que irão aparecer', 'kauabanga' ),
+        'section'   => 'vitrine-categories',
+        'priority'  => 5,
+        'choices'   => array(
+            'none'    => __( 'Nenhuma ordem', 'kauabanga' ),
+            'author'  => __( 'Ordenar por autor', 'kauabanga' ),
+            'date'    => __( 'Ordenar por data', 'kauabanga' ),
+            'name'    => __( 'Ordenar por slug', 'kauabanga' ),
+            'rand'    => __( 'Ordem aleatória', 'kauabanga' )
+        )
+      )
+    );
+    $wp_customize->selective_refresh->add_partial( 'vitrine-categories-ordeby', array(
+        'fallback_refresh'  => true,
+      )
+    );
   }
 
   add_action( 'customize_register', 'customize_banners', 15 );

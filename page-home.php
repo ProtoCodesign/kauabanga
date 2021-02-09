@@ -1,7 +1,9 @@
 <?php
   // Template Name: Home
 
-  get_header();
+use function PHPSTORM_META\type;
+
+get_header();
 
   $state = array();
   $state['featured'] = ka_sanitize_products( wc_get_products( array(
@@ -108,11 +110,13 @@
   <?php ka_product_list( $state['featured'], 'col s12 m4 l3 xl3' ); ?>
 </section>
 
+<?php if( intval( get_theme_mod( 'vitrine-categories-limit' ) ) > 0 ) : ?>
 <section class="ka-categories row container">
   <?php
-    $terms = get_terms( array (
+    $terms = get_categories( array (
         'order'      => 'ASC',
-        'orderby'    => 'rand',
+        'orderby'    => get_theme_mod( 'vitrine-categories-ordeby' ),
+        'number'     => intval( get_theme_mod( 'vitrine-categories-limit' ) ),
         'taxonomy'   => 'product_cat',
         'hide_empty' => true,
       )
@@ -135,6 +139,7 @@
   <?php endforeach; ?>
 
 </section>
+<?php endif; ?>
 
 <section class="ka-highlights container">
   <h2 class="ka-title"><?php _e( 'Mais vendidos', 'kauabanga' ); ?></h2>

@@ -18,15 +18,15 @@ msgstr ""
 msgid "404"
 msgstr ""
 
-#: 404.php:6
+#: 404.php:5
 msgid "Página não encontrada"
 msgstr ""
 
-#: 404.php:8
+#: 404.php:7
 msgid "A página não existe ou foi apagada, confira se você digitou o link corretamente, dúvidas entre em contato pelo nosso email:"
 msgstr ""
 
-#: 404.php:11
+#: 404.php:10
 msgid "Voltar para a loja"
 msgstr ""
 
@@ -94,7 +94,7 @@ msgstr ""
 msgid "Tranferência PIX"
 msgstr ""
 
-#: functions.php:93, header.php:92, woocommerce/archive-product.php:28
+#: functions.php:93, header.php:92, inc/customizer/customize-banners.php:155, woocommerce/archive-product.php:28
 msgid "Categorias"
 msgstr ""
 
@@ -156,6 +156,34 @@ msgstr ""
 
 #: inc/customizer/customize-banners.php:115
 msgid "Régua"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:143
+msgid "Quantas parcelas serão aceitas?"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:167, inc/customizer/customize-banners.php:183
+msgid "Máximo de categorias que irão aparecer"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:187
+msgid "Nenhuma ordem"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:188
+msgid "Ordenar por autor"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:189
+msgid "Ordenar por data"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:190
+msgid "Ordenar por slug"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:191
+msgid "Ordem aleatória"
 msgstr ""
 
 #: inc/customizer/customize-footer.php:4
@@ -246,39 +274,35 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: page-home.php:55
+#: page-home.php:57
 msgid "Compra segura"
 msgstr ""
 
-#: page-home.php:56
+#: page-home.php:58
 msgid "Sua compra é 100% segura"
 msgstr ""
 
-#: page-home.php:60
+#: page-home.php:64
 msgid "Compre parcelado"
 msgstr ""
 
-#: page-home.php:61
-msgid "Parcele em até 12x sem juros"
-msgstr ""
-
-#: page-home.php:65, page-home.php:66
+#: page-home.php:70, page-home.php:71
 msgid "Entrega por todo o Brasil"
 msgstr ""
 
-#: page-home.php:79, woocommerce/archive-product.php:128
+#: page-home.php:83, woocommerce/archive-product.php:128
 msgid "Anterior"
 msgstr ""
 
-#: page-home.php:97
+#: page-home.php:101
 msgid "Próximo"
 msgstr ""
 
-#: page-home.php:105
+#: page-home.php:109
 msgid "Destaques"
 msgstr ""
 
-#: page-home.php:138
+#: page-home.php:143
 msgid "Mais vendidos"
 msgstr ""
 
