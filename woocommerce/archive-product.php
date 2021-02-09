@@ -1,8 +1,6 @@
 <?php
   defined( 'ABSPATH' ) || exit;
 
-  global $ka_uri;
-
   $data = array();
   $products = array();
 
@@ -30,7 +28,7 @@
       <?php
         $taxonomies = get_categories( array(
           'taxonomy'    => 'product_cat',
-          'hide_empty'  => false,
+          'hide_empty'  => true,
           )
         );
 
