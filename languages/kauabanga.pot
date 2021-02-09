@@ -94,7 +94,7 @@ msgstr ""
 msgid "Tranferência PIX"
 msgstr ""
 
-#: functions.php:93, header.php:92, inc/customizer/customize-banners.php:155, woocommerce/archive-product.php:28
+#: functions.php:93, header.php:92, inc/customizer/customize-banners.php:168, woocommerce/archive-product.php:26
 msgid "Categorias"
 msgstr ""
 
@@ -126,7 +126,7 @@ msgstr ""
 msgid "Topo"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:25, inc/customizer/customize-banners.php:127, inc/customizer/customize-footer.php:200, inc/customizer/customize-footer.php:232, inc/customizer/customize-footer.php:264, inc/customizer/customize-newsletter.php:17
+#: inc/customizer/customize-banners.php:25, inc/customizer/customize-banners.php:140, inc/customizer/customize-footer.php:200, inc/customizer/customize-footer.php:232, inc/customizer/customize-footer.php:264, inc/customizer/customize-newsletter.php:17
 msgid "Ativar/Desativar"
 msgstr ""
 
@@ -134,55 +134,79 @@ msgstr ""
 msgid "Imagem do anúncio"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:58
+#: inc/customizer/customize-banners.php:42
+msgid "Coloque a imagem do produto que ficara em destaque - Tamanho recomendado: 1600x800"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:49, inc/customizer/customize-banners.php:50, inc/customizer/customize-banners.php:55
+msgid "Selecionar banner"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:51, page-default.php:2
+msgid "Padrão"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:52
+msgid "Remover banner"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:53
+msgid "No logo selected"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:54
+msgid "Qual banner será usado?"
+msgstr ""
+
+#: inc/customizer/customize-banners.php:71
 msgid "Título"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:74, inc/customizer/customize-newsletter.php:33, woocommerce/single-product.php:100
+#: inc/customizer/customize-banners.php:87, inc/customizer/customize-newsletter.php:33, woocommerce/single-product.php:100
 msgid "Descrição"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:84
+#: inc/customizer/customize-banners.php:97
 msgid "Ver Mais"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:90
+#: inc/customizer/customize-banners.php:103
 msgid "Botão título"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:107
+#: inc/customizer/customize-banners.php:120
 msgid "Link"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:115
+#: inc/customizer/customize-banners.php:128
 msgid "Régua"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:143
+#: inc/customizer/customize-banners.php:156
 msgid "Quantas parcelas serão aceitas?"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:167, inc/customizer/customize-banners.php:183
+#: inc/customizer/customize-banners.php:180, inc/customizer/customize-banners.php:196
 msgid "Máximo de categorias que irão aparecer"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:187
+#: inc/customizer/customize-banners.php:200
 msgid "Nenhuma ordem"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:188
+#: inc/customizer/customize-banners.php:201
 msgid "Ordenar por autor"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:189
+#: inc/customizer/customize-banners.php:202
 msgid "Ordenar por data"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:190
+#: inc/customizer/customize-banners.php:203
 msgid "Ordenar por slug"
 msgstr ""
 
-#: inc/customizer/customize-banners.php:191
+#: inc/customizer/customize-banners.php:204
 msgid "Ordem aleatória"
 msgstr ""
 
@@ -266,83 +290,79 @@ msgstr ""
 msgid "R$"
 msgstr ""
 
-#: page-default.php:2
-msgid "Padrão"
-msgstr ""
-
 #: page-home.php:2
 msgid "Home"
 msgstr ""
 
-#: page-home.php:57
+#: page-home.php:58
 msgid "Compra segura"
 msgstr ""
 
-#: page-home.php:58
+#: page-home.php:59
 msgid "Sua compra é 100% segura"
 msgstr ""
 
-#: page-home.php:64
+#: page-home.php:65
 msgid "Compre parcelado"
 msgstr ""
 
-#: page-home.php:70, page-home.php:71
+#: page-home.php:71, page-home.php:72
 msgid "Entrega por todo o Brasil"
 msgstr ""
 
-#: page-home.php:83, woocommerce/archive-product.php:128
+#: page-home.php:84, woocommerce/archive-product.php:126
 msgid "Anterior"
 msgstr ""
 
-#: page-home.php:101
+#: page-home.php:102
 msgid "Próximo"
 msgstr ""
 
-#: page-home.php:109
+#: page-home.php:110
 msgid "Destaques"
 msgstr ""
 
-#: page-home.php:143
+#: page-home.php:146
 msgid "Mais vendidos"
 msgstr ""
 
-#: woocommerce/archive-product.php:24
+#: woocommerce/archive-product.php:22
 msgid "Filtrar"
 msgstr ""
 
-#: woocommerce/archive-product.php:79
+#: woocommerce/archive-product.php:77
 msgid "Preço"
 msgstr ""
 
-#: woocommerce/archive-product.php:83
+#: woocommerce/archive-product.php:81
 msgid "Até R$100"
 msgstr ""
 
-#: woocommerce/archive-product.php:89
+#: woocommerce/archive-product.php:87
 msgid "R$100 a R$300"
 msgstr ""
 
-#: woocommerce/archive-product.php:95
+#: woocommerce/archive-product.php:93
 msgid "R$300 a R$700"
 msgstr ""
 
-#: woocommerce/archive-product.php:101
+#: woocommerce/archive-product.php:99
 msgid "R$700 a R$1200"
 msgstr ""
 
-#: woocommerce/archive-product.php:107
+#: woocommerce/archive-product.php:105
 msgid "Mínimo"
 msgstr ""
 
-#: woocommerce/archive-product.php:110
+#: woocommerce/archive-product.php:108
 msgid "Máximo"
 msgstr ""
 
-#: woocommerce/archive-product.php:119
+#: woocommerce/archive-product.php:117
 msgid "Filtrar produtos"
 msgstr ""
 
-#: woocommerce/archive-product.php:129
+#: woocommerce/archive-product.php:127
 msgid "Próxima"
 msgstr ""
 

@@ -36,11 +36,24 @@
         'transport'  => 'postMessage'
       )
     );
-    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize,
-      'banner-home-top-background', array(
-          'label'     => __( 'Imagem do anúncio', 'kauabanga' ),
-          'section'   => 'banner-home-top',
-          'priority'  => 10
+    $wp_customize->add_control( new WP_Customize_Cropped_Image_Control(
+      $wp_customize, 'banner-home-top-background', array(
+        'label'          => __( 'Imagem do anúncio', 'kauabanga', 'kauabanga' ),
+        'description'    => __( 'Coloque a imagem do produto que ficara em destaque - Tamanho recomendado: 1600x800', 'kauabanga' ),
+        'priority'       => 10,
+        'section'        => 'banner-home-top',
+        'width'          => 1600,
+        'height'         => 800,
+        'button_labels'  =>
+          array(
+            'select'        => __( 'Selecionar banner', 'kauabanga' ),
+            'change'        => __( 'Selecionar banner', 'kauabanga' ),
+            'default'       => __( 'Padrão', 'kauabanga' ),
+            'remove'        => __( 'Remover banner', 'kauabanga' ),
+            'placeholder'   => __( 'No logo selected', 'kauabanga' ),
+            'frame_title'   => __( 'Qual banner será usado?', 'kauabanga' ),
+            'frame_button'  => __( 'Selecionar banner', 'kauabanga' ),
+          )
         )
       )
     );

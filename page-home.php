@@ -34,7 +34,8 @@ get_header();
 ?>
 
 <?php if( get_theme_mod( 'banner-home-top-active' ) ) { ?>
-<main class="banner-home" style="background-image: url('<?= get_theme_mod( 'banner-home-top-background' ); ?>');">
+<main class="banner-home"
+  style="background-image: url('<?= wp_get_attachment_image_url( get_theme_mod( 'banner-home-top-background' ), 'full' ); ?>');">
   <div class="row container">
     <div class="banner-content col s12 m11 l8 xl8 m0-offset l1-offset xl1-offset">
       <h1><?= get_theme_mod( 'banner-home-top-title' ); ?></h1>
