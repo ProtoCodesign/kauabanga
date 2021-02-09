@@ -1,7 +1,9 @@
 <?php
   // Template Name: Home
 
-  get_header();
+use function PHPSTORM_META\type;
+
+get_header();
 
   $state = array();
   $state['featured'] = ka_sanitize_products( wc_get_products( array(
@@ -32,7 +34,8 @@
 ?>
 
 <?php if( get_theme_mod( 'banner-home-top-active' ) ) { ?>
-<main class="banner-home" style="background-image: url('<?= get_theme_mod( 'banner-home-top-background' ); ?>');">
+<main class="banner-home"
+  style="background-image: url('<?= wp_get_attachment_image_url( get_theme_mod( 'banner-home-top-background' ), 'full' ); ?>');">
   <div class="row container">
     <div class="banner-content col s12 m11 l8 xl8 m0-offset l1-offset xl1-offset">
       <h1><?= get_theme_mod( 'banner-home-top-title' ); ?></h1>
@@ -55,11 +58,14 @@
         alt="<?php esc_attr_e( 'Compra segura', 'kauabanga' ); ?>" draggable="false" />
       <?php _e( 'Sua compra é 100% segura', 'kauabanga' ); ?>
     </span>
-    <span>
+
+    <?php if( !empty( get_theme_mod( 'banner-home-regua-plots' ) ) ) : ?>
+    <span class="jq-banner-plots">
       <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/credit-card.svg' ); ?>"
         alt="<?php esc_attr_e( 'Compre parcelado', 'kauabanga' ); ?>" draggable="false" />
-      <?php _e( 'Parcele em até 12x sem juros', 'kauabanga' ); ?>
+      <?= get_theme_mod( 'banner-home-regua-plots' ); ?>
     </span>
+    <?php endif; ?>
     <span>
       <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/truck.svg' ); ?>"
         alt="<?php esc_attr_e( 'Entrega por todo o Brasil', 'kauabanga' ); ?>" draggable="false" />
@@ -69,8 +75,7 @@
 </section>
 <?php } ?>
 
-
-<?php if( is_array( $state['brands'] ) && !empty( $state['brands'] ) ) { ?>
+<?php if( is_array( $state['brands'] ) && sizeof( $state['brands'] )  >= 5 ) { ?>
 <section class="slider-brands">
   <div class="row container">
     <button aria-label="Previous" class="prev">
@@ -106,11 +111,13 @@
   <?php ka_product_list( $state['featured'], 'col s12 m4 l3 xl3' ); ?>
 </section>
 
+<?php if( intval( get_theme_mod( 'vitrine-categories-limit' ) ) > 0 ) : ?>
 <section class="ka-categories row container">
   <?php
-    $terms = get_terms( array (
+    $terms = get_categories( array (
         'order'      => 'ASC',
-        'orderby'    => 'rand',
+        'orderby'    => get_theme_mod( 'vitrine-categories-ordeby' ),
+        'number'     => intval( get_theme_mod( 'vitrine-categories-limit' ) ),
         'taxonomy'   => 'product_cat',
         'hide_empty' => true,
       )
@@ -133,6 +140,7 @@
   <?php endforeach; ?>
 
 </section>
+<?php endif; ?>
 
 <section class="ka-highlights container">
   <h2 class="ka-title"><?php _e( 'Mais vendidos', 'kauabanga' ); ?></h2>

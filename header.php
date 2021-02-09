@@ -88,10 +88,12 @@
       <nav class="navigation-header">
 
         <span class="nav-dropdown">
-          <?php _e( 'Categorias', 'kauabanga' ); ?>
+          <span>
+            <?php _e( 'Categorias', 'kauabanga' ); ?>
 
-          <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/arrow-down.svg' ); ?>"
-            alt="<?php esc_attr_e( 'Abrir menu', 'kauabanga' ); ?>" />
+            <img src="<?php file_to_base64( 'image/svg+xml', 'svgs/icons/arrow-down.svg' ); ?>"
+              alt="<?php esc_attr_e( 'Abrir menu', 'kauabanga' ); ?>" />
+          </span>
 
           <ul class="container-dropdown">
             <?php wp_nav_menu( $args ); ?>
